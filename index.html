@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CD Projects | Designer digital</title>
+<meta name="description" content="Portfolio de Clara, designer digitale : UX/UI design et identité de marque.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="assets/js/gsap.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav-shell" id="nav-shell">
+      <div class="bar">
+        <a class="brand" href="#/" data-i18n-aria="brandAria">
+          <span class="brand-name">CD Projects</span>
+        </a>
+        <div class="bar-end">
+          <button class="lang-btn fill" type="button" lang="en">EN</button>
+          <button class="sm-toggle fill" type="button" aria-expanded="false" aria-controls="sm-panel" aria-label="Ouvrir le menu">
+            <span class="sm-toggle-textWrap" aria-hidden="true"><span class="sm-toggle-textInner"><span class="sm-toggle-line">Menu</span></span></span>
+            <span class="sm-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sm-icon" aria-hidden="true"><span class="sm-icon-line"></span><span class="sm-icon-line sm-icon-line-v"></span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- StaggeredMenu (React Bits) adapté en JavaScript : couches décalées + panneau -->
+<div class="sm-prelayers" aria-hidden="true">
+  <div class="sm-prelayer" style="background:var(--c-blue-light)"></div>
+  <div class="sm-prelayer" style="background:var(--c-blue)"></div>
+</div>
+<aside id="sm-panel" class="sm-panel" aria-hidden="true" inert data-i18n-aria="navAria">
+  <div class="sm-panel-inner">
+    <ul class="sm-panel-list">
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="#/" data-nav="home"><span class="sm-panel-itemLabel" data-i18n="navHome">Accueil</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="#/projets" data-nav="projets"><span class="sm-panel-itemLabel" data-i18n="navProjects">Projets</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="#/a-propos" data-nav="a-propos"><span class="sm-panel-itemLabel" data-i18n="navAbout">À propos</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="#/contact" data-nav="contact"><span class="sm-panel-itemLabel" data-i18n="navContact">Contact</span></a></li>
+    </ul>
+    <div class="sm-socials">
+      <h3 class="sm-socials-title" data-i18n="socials">Réseaux</h3>
+      <ul class="sm-socials-list">
+        <li><a class="sm-socials-link js-behance" href="https://www.behance.net/" target="_blank" rel="noopener">Behance<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+        <li><a class="sm-socials-link js-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-card">
+      <h2 data-i18n="footTitle">Un projet en tête&nbsp;?</h2>
+      <a class="btn btn-light fill" href="#/contact" data-i18n="footBtn">Me contacter</a>
+      <div class="footer-bottom">
+        <div class="socials foot-socials">
+              <span class="soc-label" data-i18n="socials">Réseaux</span>
+              <ul data-i18n-aria="socialsAria">
+                <li><a class="ul js-behance" href="https://www.behance.net/" target="_blank" rel="noopener">Behance<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+                <li><a class="ul js-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+              </ul>
+            </div>
+        <div class="socials foot-socials foot-portfolio">
+              <span class="soc-label" data-i18n="footPortfolio">Portfolio</span>
+              <ul><li><a class="ul" href="#/projets" data-i18n="footProjects">Découvrir les projets</a></li></ul>
+            </div>
+        <hr class="divider">
+        <button class="to-top" type="button">
+          <span data-i18n="toTop">Revenir en haut de page</span>
+          <span class="circle fill" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
