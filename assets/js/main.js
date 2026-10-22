@@ -7,21 +7,21 @@ var FEATURED       = ["grpf","groupe-apb","nyro"]; // les 3 projets mis en avant
 
 var IMG = {
  "logo": {
-  "src": "images/projets/groupe-apb/groupe-apb-logo-anime.gif",
+  "src": "/images/projets/groupe-apb/groupe-apb-logo-anime.gif",
   "w": 1920,
   "h": 956,
   "alt": "Logo Groupe APB en blanc sur fond bleu",
   "alt_en": "White Groupe APB logo on a blue background"
  },
  "browser": {
-  "src": "images/projets/groupe-apb/groupe-apb-navigateur.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-navigateur.webp",
   "w": 733,
   "h": 490,
   "alt": "Onglet de navigateur avec le favicon Groupe APB",
   "alt_en": "Browser tab with the Groupe APB favicon"
  },
  "house": {
-  "src": "images/projets/groupe-apb/groupe-apb-maison.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-maison.webp",
   "w": 779,
   "h": 376,
   "alt": "Maison équipée de panneaux solaires avec le pictogramme Groupe APB",
@@ -42,77 +42,77 @@ var IMG = {
   "alt_en": "Colour palette: orange, white, light grey, APB blue and navy blue"
  },
  "sign": {
-  "src": "images/projets/groupe-apb/groupe-apb-ordinateur.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-ordinateur.webp",
   "w": 1600,
   "h": 1104,
   "alt": "Site Groupe APB affiché sur un ordinateur portable",
   "alt_en": "Groupe APB website on a laptop"
  },
  "slogan": {
-  "src": "images/projets/groupe-apb/groupe-apb-slogan.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-slogan.webp",
   "w": 682,
   "h": 471,
   "alt": "Carte avec le slogan Rénovez aujourd'hui, économisez demain",
   "alt_en": "Card with the slogan “Rénovez aujourd’hui, économisez demain”"
  },
  "tote": {
-  "src": "images/projets/groupe-apb/groupe-apb-tote-bag.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-tote-bag.webp",
   "w": 659,
   "h": 998,
   "alt": "Tote bag au logo Groupe APB",
   "alt_en": "Groupe APB logo tote bag"
  },
  "site": {
-  "src": "images/projets/groupe-apb/groupe-apb-site-accueil.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-site-accueil.webp",
   "w": 1395,
   "h": 919,
   "alt": "Page d'accueil du site Groupe APB",
   "alt_en": "Groupe APB website homepage"
  },
  "pages": {
-  "src": "images/projets/groupe-apb/groupe-apb-site-pages.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-site-pages.webp",
   "w": 1205,
   "h": 537,
   "alt": "Six pages du site Groupe APB",
   "alt_en": "Six pages of the Groupe APB website"
  },
  "hand": {
-  "src": "images/projets/groupe-apb/groupe-apb-mobile-main.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-mobile-main.webp",
   "w": 580,
   "h": 976,
   "alt": "Site Groupe APB affiché sur un smartphone",
   "alt_en": "Groupe APB website on a smartphone"
  },
  "phones": {
-  "src": "images/projets/groupe-apb/groupe-apb-mobile-ecrans.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-mobile-ecrans.webp",
   "w": 761,
   "h": 975,
   "alt": "Six écrans mobiles du site Groupe APB",
   "alt_en": "Six mobile screens of the Groupe APB website"
  },
  "apbpro_browser": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-navigateur.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-navigateur.webp",
   "w": 628,
   "h": 419,
   "alt": "Onglet de navigateur avec le favicon Groupe APB Pro",
   "alt_en": "Browser tab with the Groupe APB Pro favicon"
  },
  "apbpro_deco1": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-declinaison.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-declinaison.webp",
   "w": 720,
   "h": 495,
   "alt": "Techniciens portant la veste Groupe APB",
   "alt_en": "Technicians wearing the Groupe APB jacket"
  },
  "apbpro_logo": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-logo-anime.gif",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-logo-anime.gif",
   "w": 1920,
   "h": 956,
   "alt": "Logo Groupe APB Pro",
   "alt_en": "Groupe APB Pro logo"
  },
  "apbpro_pages": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-site-pages.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-pages.webp",
   "w": 1475,
   "h": 735,
   "alt": "Pages du site Groupe APB Pro",
@@ -126,28 +126,28 @@ var IMG = {
   "alt_en": "Groupe APB Pro colour palette"
  },
  "apbpro_photo": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-photo.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-photo.webp",
   "w": 822,
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme Groupe APB Pro",
   "alt_en": "Lifestyle photo with the Groupe APB Pro symbol"
  },
  "apbpro_site": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-site-accueil.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-accueil.webp",
   "w": 1474,
   "h": 970,
   "alt": "Page d’accueil du site Groupe APB Pro",
   "alt_en": "Groupe APB Pro website homepage"
  },
  "apbpro_slogan": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-slogan.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-slogan.webp",
   "w": 722,
   "h": 497,
   "alt": "Carte au slogan de Groupe APB Pro",
   "alt_en": "Groupe APB Pro slogan card"
  },
  "apbpro_tall": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-declinaison-verticale.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-declinaison-verticale.webp",
   "w": 694,
   "h": 1053,
   "alt": "Catalogue professionnel Groupe APB Pro",
@@ -161,35 +161,35 @@ var IMG = {
   "alt_en": "Groupe APB Pro brand typography"
  },
  "grpf_browser": {
-  "src": "images/projets/grpf/grpf-navigateur.webp",
+  "src": "/images/projets/grpf/grpf-navigateur.webp",
   "w": 594,
   "h": 395,
   "alt": "Onglet de navigateur avec le favicon GRPF",
   "alt_en": "Browser tab with the GRPF favicon"
  },
  "grpf_deco1": {
-  "src": "images/projets/grpf/grpf-declinaison.webp",
+  "src": "/images/projets/grpf/grpf-declinaison.webp",
   "w": 722,
   "h": 497,
   "alt": "Carte de visite GRPF",
   "alt_en": "GRPF business card"
  },
  "grpf_hand": {
-  "src": "images/projets/grpf/grpf-mobile-main.webp",
+  "src": "/images/projets/grpf/grpf-mobile-main.webp",
   "w": 612,
   "h": 1030,
   "alt": "Site GRPF affiché sur un smartphone",
   "alt_en": "GRPF website on a smartphone"
  },
  "grpf_logo": {
-  "src": "images/projets/grpf/grpf-logo-anime.gif",
+  "src": "/images/projets/grpf/grpf-logo-anime.gif",
   "w": 1920,
   "h": 956,
   "alt": "Logo GRPF",
   "alt_en": "GRPF logo"
  },
  "grpf_pages": {
-  "src": "images/projets/grpf/grpf-site-pages.webp",
+  "src": "/images/projets/grpf/grpf-site-pages.webp",
   "w": 1476,
   "h": 735,
   "alt": "Pages du site GRPF",
@@ -203,35 +203,35 @@ var IMG = {
   "alt_en": "GRPF colour palette"
  },
  "grpf_phones": {
-  "src": "images/projets/grpf/grpf-mobile-ecrans.webp",
+  "src": "/images/projets/grpf/grpf-mobile-ecrans.webp",
   "w": 803,
   "h": 1030,
   "alt": "Écrans mobiles du site GRPF",
   "alt_en": "GRPF mobile screens"
  },
  "grpf_photo": {
-  "src": "images/projets/grpf/grpf-photo.webp",
+  "src": "/images/projets/grpf/grpf-photo.webp",
   "w": 823,
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme GRPF",
   "alt_en": "Lifestyle photo with the GRPF symbol"
  },
  "grpf_site": {
-  "src": "images/projets/grpf/grpf-site-accueil.webp",
+  "src": "/images/projets/grpf/grpf-site-accueil.webp",
   "w": 1474,
   "h": 970,
   "alt": "Page d’accueil du site GRPF",
   "alt_en": "GRPF website homepage"
  },
  "grpf_slogan": {
-  "src": "images/projets/grpf/grpf-slogan.webp",
+  "src": "/images/projets/grpf/grpf-slogan.webp",
   "w": 722,
   "h": 497,
   "alt": "Carte au slogan de GRPF",
   "alt_en": "GRPF slogan card"
  },
  "grpf_tall": {
-  "src": "images/projets/grpf/grpf-declinaison-verticale.webp",
+  "src": "/images/projets/grpf/grpf-declinaison-verticale.webp",
   "w": 694,
   "h": 1053,
   "alt": "Mug au logo GRPF",
@@ -245,28 +245,28 @@ var IMG = {
   "alt_en": "GRPF brand typography"
  },
  "nyro_browser": {
-  "src": "images/projets/nyro/nyro-navigateur.webp",
+  "src": "/images/projets/nyro/nyro-navigateur.webp",
   "w": 594,
   "h": 396,
   "alt": "Onglet de navigateur avec le favicon NYRO",
   "alt_en": "Browser tab with the NYRO favicon"
  },
  "nyro_deco1": {
-  "src": "images/projets/nyro/nyro-declinaison.webp",
+  "src": "/images/projets/nyro/nyro-declinaison.webp",
   "w": 722,
   "h": 497,
   "alt": "Savon NYRO tenu contre l’épaule",
   "alt_en": "NYRO soap held against the shoulder"
  },
  "nyro_logo": {
-  "src": "images/projets/nyro/nyro-logo-anime.gif",
+  "src": "/images/projets/nyro/nyro-logo-anime.gif",
   "w": 1920,
   "h": 956,
   "alt": "Logo NYRO",
   "alt_en": "NYRO logo"
  },
  "nyro_pages": {
-  "src": "images/projets/nyro/nyro-site-pages.webp",
+  "src": "/images/projets/nyro/nyro-site-pages.webp",
   "w": 1475,
   "h": 433,
   "alt": "Pages du site NYRO",
@@ -280,28 +280,28 @@ var IMG = {
   "alt_en": "NYRO colour palette"
  },
  "nyro_photo": {
-  "src": "images/projets/nyro/nyro-photo.webp",
+  "src": "/images/projets/nyro/nyro-photo.webp",
   "w": 823,
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme NYRO",
   "alt_en": "Lifestyle photo with the NYRO symbol"
  },
  "nyro_site": {
-  "src": "images/projets/nyro/nyro-site-accueil.webp",
+  "src": "/images/projets/nyro/nyro-site-accueil.webp",
   "w": 1474,
   "h": 970,
   "alt": "Page d’accueil du site NYRO",
   "alt_en": "NYRO website homepage"
  },
  "nyro_slogan": {
-  "src": "images/projets/nyro/nyro-slogan.webp",
+  "src": "/images/projets/nyro/nyro-slogan.webp",
   "w": 722,
   "h": 497,
   "alt": "Carte au slogan de NYRO",
   "alt_en": "NYRO slogan card"
  },
  "nyro_tall": {
-  "src": "images/projets/nyro/nyro-declinaison-verticale.webp",
+  "src": "/images/projets/nyro/nyro-declinaison-verticale.webp",
   "w": 694,
   "h": 1053,
   "alt": "Flacon de sérum NYRO",
@@ -315,21 +315,21 @@ var IMG = {
   "alt_en": "NYRO brand typography"
  },
  "m2_logo": {
-  "src": "images/projets/2m-energie/2m-energie-logo-anime.gif",
+  "src": "/images/projets/2m-energie/2m-energie-logo-anime.gif",
   "w": 1920,
   "h": 956,
   "alt": "Logo 2M Energie",
   "alt_en": "2M Energie logo"
  },
  "m2_browser": {
-  "src": "images/projets/2m-energie/2m-energie-navigateur.webp",
+  "src": "/images/projets/2m-energie/2m-energie-navigateur.webp",
   "w": 593,
   "h": 395,
   "alt": "Onglet de navigateur avec le favicon 2M Energie",
   "alt_en": "Browser tab with the 2M Energie favicon"
  },
  "m2_photo": {
-  "src": "images/projets/2m-energie/2m-energie-photo.webp",
+  "src": "/images/projets/2m-energie/2m-energie-photo.webp",
   "w": 822,
   "h": 395,
   "alt": "Couple consultant le site 2M Energie sur un smartphone",
@@ -350,35 +350,35 @@ var IMG = {
   "alt_en": "2M Energie palette: Light, Sage, Avocado, Forest and Dark"
  },
  "m2_deco1": {
-  "src": "images/projets/2m-energie/2m-energie-declinaison.webp",
+  "src": "/images/projets/2m-energie/2m-energie-declinaison.webp",
   "w": 721,
   "h": 496,
   "alt": "Cartes de visite 2M Energie",
   "alt_en": "2M Energie business cards"
  },
  "m2_tall": {
-  "src": "images/projets/2m-energie/2m-energie-declinaison-verticale.webp",
+  "src": "/images/projets/2m-energie/2m-energie-declinaison-verticale.webp",
   "w": 695,
   "h": 1054,
   "alt": "Casquette au logo 2M Energie",
   "alt_en": "2M Energie logo cap"
  },
  "m2_slogan": {
-  "src": "images/projets/2m-energie/2m-energie-slogan.webp",
+  "src": "/images/projets/2m-energie/2m-energie-slogan.webp",
   "w": 719,
   "h": 495,
   "alt": "Carte au slogan La rénovation globale pour les particuliers",
   "alt_en": "Card with the slogan “La rénovation globale pour les particuliers”"
  },
  "m2_billboard": {
-  "src": "images/projets/2m-energie/2m-energie-panneau.webp",
+  "src": "/images/projets/2m-energie/2m-energie-panneau.webp",
   "w": 1476,
   "h": 593,
   "alt": "Panneau d'affichage 2M Energie sur la pompe à chaleur et le solaire",
   "alt_en": "2M Energie billboard about heat pumps and solar panels"
  },
  "mk_grpf": {
-  "src": "images/projets/grpf/grpf-banniere.webp",
+  "src": "/images/projets/grpf/grpf-banniere.webp",
   "w": 2400,
   "h": 1490,
   "alt": "",
@@ -397,7 +397,7 @@ var IMG = {
   ]
  },
  "mk_m2": {
-  "src": "images/projets/2m-energie/2m-energie-banniere.webp",
+  "src": "/images/projets/2m-energie/2m-energie-banniere.webp",
   "w": 2400,
   "h": 1340,
   "alt": "",
@@ -414,7 +414,7 @@ var IMG = {
   ]
  },
  "mk_apbpro": {
-  "src": "images/projets/groupe-apb-pro/groupe-apb-pro-banniere.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-banniere.webp",
   "w": 2400,
   "h": 1382,
   "alt": "",
@@ -433,7 +433,7 @@ var IMG = {
   ]
  },
  "mk_apb": {
-  "src": "images/projets/groupe-apb/groupe-apb-banniere.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-banniere.webp",
   "w": 2400,
   "h": 1644,
   "alt": "",
@@ -452,7 +452,7 @@ var IMG = {
   ]
  },
  "mk_nyro": {
-  "src": "images/projets/nyro/nyro-banniere.webp",
+  "src": "/images/projets/nyro/nyro-banniere.webp",
   "w": 2400,
   "h": 1497,
   "alt": "",
@@ -471,14 +471,14 @@ var IMG = {
   ]
  },
  "nyro_prod": {
-  "src": "images/projets/nyro/nyro-produit.webp",
+  "src": "/images/projets/nyro/nyro-produit.webp",
   "w": 1672,
   "h": 941,
   "alt": "Gamme de soins NYRO",
   "alt_en": "NYRO skincare range"
  },
  "nyro_schema": {
-  "src": "images/projets/nyro/nyro-schemas.webp",
+  "src": "/images/projets/nyro/nyro-schemas.webp",
   "w": 2400,
   "h": 1073,
   "alt": "Schémas des packagings NYRO",
@@ -492,24 +492,24 @@ var IMG = {
   "alt_en": "Groupe APB Pro secondary sector colours"
  },
  "apb_icons": {
-  "src": "images/projets/groupe-apb/groupe-apb-pictos.mp4",
+  "src": "/images/projets/groupe-apb/groupe-apb-pictos.mp4",
   "w": 2000,
   "h": 300,
   "video": 1,
   "bg": "#0247CE",
   "alt": "Animation de l'iconographie de Groupe APB",
   "alt_en": "Groupe APB iconography animation",
-  "webm": "images/projets/groupe-apb/groupe-apb-pictos.webm"
+  "webm": "/images/projets/groupe-apb/groupe-apb-pictos.webm"
  },
  "m2_lp": {
-  "src": "images/projets/2m-energie/2m-energie-onepage-pompe-a-chaleur.webp",
+  "src": "/images/projets/2m-energie/2m-energie-onepage-pompe-a-chaleur.webp",
   "w": 1200,
   "h": 4297,
   "alt": "One-page de 2M Energie dédiée à la pompe à chaleur",
   "alt_en": "2M Energie heat pump one-page"
  },
  "m2_home": {
-  "src": "images/projets/2m-energie/2m-energie-onepage-accueil.webp",
+  "src": "/images/projets/2m-energie/2m-energie-onepage-accueil.webp",
   "w": 1200,
   "h": 4832,
   "alt": "One-page d’accueil de 2M Energie",
@@ -518,15 +518,23 @@ var IMG = {
 };
 
 /* ============ LANGUE ============ */
+var PATH_MODE=true; /* true sur le site en ligne : vraies adresses (/projets/nyro/), false dans l'aperçu en un seul fichier (#/projets/nyro) */
 var LANG="fr";
-try{var saved=localStorage.getItem("cd-lang");if(saved==="en"||saved==="fr")LANG=saved}catch(e){}
+if(PATH_MODE){if(/^\/en(\/|$)/.test(location.pathname))LANG="en"}
+else{try{var saved=localStorage.getItem("cd-lang");if(saved==="en"||saved==="fr")LANG=saved}catch(e){}}
+/* Adresse d'une page dans la langue courante */
+function u(p){return PATH_MODE?(LANG==="en"?"/en":"")+p:"#"+p}
 function L(v){return v&&typeof v==="object"&&!Array.isArray(v)&&("fr" in v)?v[LANG]:v}
 function t(k){return T[LANG][k]}
 
 /* ============ TEXTES FIXES ============ */
 var T={
 fr:{
-  title:"CD Projects | Designer digital", tProjects:"Projets", tAbout:"À propos", tContact:"Contact",
+  title:"Clara Debarle, UI/UX & Brand Designer | CD Projects", metaWho:"Clara Debarle, UI/UX & Brand Designer",
+  metaHome:"Portfolio de Clara Debarle, designer UI/UX et identité de marque. Sites web, interfaces et identités visuelles pensés pour des marques qui se retiennent.",
+  metaProjects:"Projets de Clara Debarle en identité de marque, UI et UX design, de la refonte de site web à la création d\u2019identité visuelle.",
+  metaContact:"Alternance, mission freelance ou projet de marque, contactez Clara Debarle, designer UI/UX et identité de marque.",
+  heroAlt:"Visuel du projet", tProjects:"Projets", tAbout:"À propos", tContact:"Contact",
   brandAria:"CD Projects, accueil", navAria:"Navigation principale", 
   menuOpen:"Ouvrir le menu", menuClose:"Fermer le menu", langSwitch:"EN", langAria:"Switch to English",
   navHome:"Accueil", navProjects:"Projets", navAbout:"À propos", navContact:"Contact", smMenu:"Menu", smClose:"Fermer",
@@ -568,7 +576,11 @@ fr:{
   nfTitle:"Cette page n’existe pas", nfLink:"Revenir à l’accueil"
 },
 en:{
-  title:"CD Projects | Digital designer", tProjects:"Projects", tAbout:"About", tContact:"Contact",
+  title:"Clara Debarle, UI/UX & Brand Designer | CD Projects", metaWho:"Clara Debarle, UI/UX & Brand Designer",
+  metaHome:"Portfolio of Clara Debarle, UI/UX and brand identity designer. Websites, interfaces and visual identities crafted for memorable brands.",
+  metaProjects:"Projects by Clara Debarle in brand identity, UI and UX design, from website redesigns to visual identity creation.",
+  metaContact:"Work-study, freelance assignment or brand project, get in touch with Clara Debarle, UI/UX and brand identity designer.",
+  heroAlt:"Project visual for", tProjects:"Projects", tAbout:"About", tContact:"Contact",
   brandAria:"CD Projects, home", navAria:"Main navigation", 
   menuOpen:"Open menu", menuClose:"Close menu", langSwitch:"FR", langAria:"Passer en français",
   navHome:"Home", navProjects:"Projects", navAbout:"About", navContact:"Contact", smMenu:"Menu", smClose:"Close",
@@ -827,7 +839,7 @@ var TYPOS={
   apbpro_typo:{n:"Mazzard",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#FFFFFF",lc:"#6E6E6E"},
   m2_typo:{n:"Neulis Neue",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#CEF17B",lc:"#4B6624"},
   ited_typo:{n:"Aptos",w:{fr:"Extra Bold",en:"Extra Bold"},bg:"#FCFBFC",lc:"#6E6E6E"}};
-var GLYPHS={"typo": "images/typo/groupe-apb-aa.png", "grpf_typo": "images/typo/grpf-aa.png", "nyro_typo": "images/typo/nyro-aa.png", "apbpro_typo": "images/typo/groupe-apb-pro-aa.png", "m2_typo": "images/typo/2m-energie-aa.png", "ited_typo": ""};
+var GLYPHS={"typo": "/images/typo/groupe-apb-aa.png", "grpf_typo": "/images/typo/grpf-aa.png", "nyro_typo": "/images/typo/nyro-aa.png", "apbpro_typo": "/images/typo/groupe-apb-pro-aa.png", "m2_typo": "/images/typo/2m-energie-aa.png", "ited_typo": ""};
 function tile(k,cls){var ty=TYPOS[k];if(ty&&GLYPHS[k]){var i1=IMG[k];return `<figure class="tile typ" style="--ar:${i1.w}/${i1.h};background:${ty.bg};--lc:${ty.lc}" role="img" aria-label="${esc(LANG==="en"?i1.alt_en:i1.alt)}"><span class="typ-n">${ty.n}</span><img class="typ-g" src="${GLYPHS[k]}" alt=""><span class="typ-w">${L(ty.w)}</span></figure>`}var pl=PALETTES[k];if(pl){var i0=IMG[k];return `<figure class="tile pal" style="--ar:${i0.w}/${i0.h}" role="img" aria-label="${esc(LANG==="en"?i0.alt_en:i0.alt)}">${pl.map(c=>`<div class="pal-sw${c[2]?" dark":""}" style="background:${c[1]}"><span class="pal-n">${L(c[0])}</span><span class="pal-h">${c[1]}</span></div>`).join("")}</figure>`}var i=IMG[k];if(i.video)return `<figure class="tile vid" style="--ar:${i.w}/${i.h};background:${i.bg||"transparent"}" role="img" aria-label="${esc(LANG==="en"&&i.alt_en?i.alt_en:i.alt)}"><video autoplay muted loop playsinline preload="auto" aria-hidden="true">${i.webm?`<source src="${i.webm}" type="video/webm">`:""}<source src="${i.src}" type="video/mp4"></video></figure>`;return `<figure class="tile${cls?" "+cls:""}" style="--ar:${i.w}/${i.h}"><img src="${i.src}" loading="lazy" decoding="async" alt="${esc(LANG==="en"&&i.alt_en?i.alt_en:i.alt)}" width="${i.w}" height="${i.h}"></figure>`}
 function cover(p){var m=p.cover&&IMG[p.cover];return `<div class="proj-cover${m&&m.box?" is-mk":""}" style="--c:${p.color}"${m&&m.box?` data-mk="${p.cover}"`:""}>${m?`<img src="${m.src}" alt="">`:""}</div>`}
 var ARROW_DOWN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
@@ -859,7 +871,7 @@ function methodBlock(){
           <div class="ap-outs"><span class="ap-outs-l">${t("stepOut")}\u00a0:</span><ul class="badges">${L(s.outs).map(x=>`<li class="badge">${x}</li>`).join("")}</ul></div>
         </div></div>
       </li>`).join("")}</ol>
-    <div class="ap-cta" data-reveal><a class="btn btn-ink fill" href="#/contact">${t("stpDone")}</a></div>
+    <div class="ap-cta" data-reveal><a class="btn btn-ink fill" href="${u('/contact/')}">${t("stpDone")}</a></div>
   </div></section>`;
 }
 function initApproach(root){
@@ -896,7 +908,7 @@ function initStepper(root){
       }else{if(old)old.remove();vp.appendChild(pane)}
     }
     function go(num){
-      if(num>n){location.hash="#/contact";return}
+      if(num>n){go(u("/contact/"));return}
       num=Math.max(1,Math.min(n,num));if(num===cur)return;
       var focusIn=st.contains(document.activeElement)&&document.activeElement.closest(".stp-pane");
       cur=num;if(cur>reached)reached=cur;paint();render(cur,true);if(focusIn)pane.focus({preventScroll:true});
@@ -933,11 +945,11 @@ function pageHome(){
   <section class="hero wrap">
     <p class="status"><span class="dot" aria-hidden="true"></span>${t("status")}</p>
     <p class="hero-name">Clara Debarle</p>
-    <h1><span class="line"><span>${t("heroL1")}</span></span><span class="line"><span>${t("heroL2")}</span></span></h1>
+    <h1><span class="sr">Clara Debarle, </span><span class="line"><span>${t("heroL1")}</span></span><span class="line"><span>${t("heroL2")}</span></span></h1>
     <p class="hero-lead">${t("heroP")}</p>
     <div class="btn-row">
-      <a class="btn btn-ink fill" href="#/projets">${t("ctaProjects")}</a>
-      <a class="btn btn-outline fill" href="#/contact">${t("footBtn")}</a>
+      <a class="btn btn-ink fill" href="${u('/projets/')}">${t("ctaProjects")}</a>
+      <a class="btn btn-outline fill" href="${u('/contact/')}">${t("footBtn")}</a>
     </div>
   </section>
 
@@ -946,12 +958,12 @@ function pageHome(){
     <div class="sec-head" data-reveal><h2 class="sec-title" id="feat-t">${t("featTitle")}</h2></div>
     <ul class="feat-grid">${feat.map((p,i)=>`
       <li class="feat-item feat-${i%2?"l":"r"}" data-reveal style="--n:${i+1}">
-        <a class="proj" href="#/projets/${p.slug}">${cover(p)}
+        <a class="proj" href="${u('/projets/'+p.slug+'/')}">${cover(p)}
           <div class="proj-meta"><span class="proj-name">${esc(p.name)}</span><span class="proj-year">${p.year}</span></div>${badges(p.tags)}
         </a>
       </li>`).join("")}
       <li class="feat-item feat-cta" data-reveal>
-        <a class="cta-card" href="#/projets">
+        <a class="cta-card" href="${u('/projets/')}">
           <h3>${t("moreHead")}</h3>
           <span class="stack-cta"><span class="btn btn-light fill">${t("moreBtn")}</span></span>
         </a>
@@ -984,7 +996,7 @@ function pageProjects(){
     </div>
     <ul class="proj-list">${PROJECTS.map(p=>`
       <li data-tags="${p.tags.join(" ")}" data-reveal>
-        <a class="proj" href="#/projets/${p.slug}">${cover(p)}
+        <a class="proj" href="${u('/projets/'+p.slug+'/')}">${cover(p)}
           <div class="proj-meta"><span class="proj-name">${esc(p.name)}</span><span class="proj-year">${p.year}</span></div>${badges(p.tags)}
         </a>
       </li>`).join("")}</ul>
@@ -1008,10 +1020,10 @@ function pageCase(p){
   var res=L(p.results);
   if(!p.noResults)chapters.push({id:"ch-results",title:p.resultsTitle?L(p.resultsTitle):t("chResults"),html:statsBlock(p)+`<div class="ch-text">${res?res.map(x=>`<p>${esc(x)}</p>`).join(""):""}</div>`});
   var d=L(p.description);
-  var back=SHOW_BACK_LINK?`<a class="back" href="#/projets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg><span class="ul">${t("allProjects")}</span></a>`:"";
+  var back=SHOW_BACK_LINK?`<a class="back" href="${u('/projets/')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg><span class="ul">${t("allProjects")}</span></a>`:"";
   return `<div class="read-progress" aria-hidden="true"></div>
   <div class="wrap">
-    ${p.cover?`<div class="case-hero${IMG[p.cover].box?" is-mk":""}" style="--c:${p.color}"${IMG[p.cover].box?` data-mk="${p.cover}"`:""}><img src="${IMG[p.cover].src}" alt=""></div>`:""}
+    ${p.cover?`<div class="case-hero${IMG[p.cover].box?" is-mk":""}" style="--c:${p.color}"${IMG[p.cover].box?` data-mk="${p.cover}"`:""}><img src="${IMG[p.cover].src}" alt="${esc(t("heroAlt")+" "+p.name)}"></div>`:""}
     <div class="case-body">
       ${back}
       <header class="case-head" data-reveal><h1>${esc(p.name)}</h1>${badges(p.tags)}</header>
@@ -1049,7 +1061,7 @@ function pageAbout(){
     <div data-reveal>
       <h1>${t("aboutHi")}</h1>
       <p class="lead">${t("aboutLead")}</p>
-      <div class="btn-row"><a class="btn btn-ink fill" href="#/contact">${t("footBtn")}</a></div>
+      <div class="btn-row"><a class="btn btn-ink fill" href="${u('/contact/')}">${t("footBtn")}</a></div>
     </div>
   </section>
 
@@ -1197,7 +1209,7 @@ function flipCards(root){
 
 /* ===== Logos (LogoLoop, React Bits) — porté en JS natif =====
    Pour mettre les vrais logos : renseigner src:"data:image/..." ou une URL ; sans src, le nom s'affiche en texte. */
-var LOGOS=[{"name": "Groupe APB", "src": "images/logos/groupe-apb.png", "h": 33}, {"name": "Alan Allman Associates", "src": "images/logos/alan-allman-associates.png", "h": 42}, {"name": "GRPF", "src": "images/logos/grpf.png", "h": 30}, {"name": "ITED", "src": "images/logos/ited.png", "h": 30}, {"name": "Groupe APB Pro", "src": "images/logos/groupe-apb-pro.png", "h": 35}, {"name": "2M Energie", "src": "images/logos/2m-energie.png", "h": 42}, {"name": "NYRO", "src": "images/logos/nyro.png", "h": 35}];
+var LOGOS=[{"name": "Groupe APB", "src": "/images/logos/groupe-apb.png", "h": 33}, {"name": "Alan Allman Associates", "src": "/images/logos/alan-allman-associates.png", "h": 42}, {"name": "GRPF", "src": "/images/logos/grpf.png", "h": 30}, {"name": "ITED", "src": "/images/logos/ited.png", "h": 30}, {"name": "Groupe APB Pro", "src": "/images/logos/groupe-apb-pro.png", "h": 35}, {"name": "2M Energie", "src": "/images/logos/2m-energie.png", "h": 42}, {"name": "NYRO", "src": "/images/logos/nyro.png", "h": 35}];
 var LL={speed:40,hoverSpeed:12,logoHeight:30,gap:88};
 function logoLoop(){
   var item=l=>`<li class="ll-item">${l.src?`<img src="${l.src}" alt="${esc(l.name)}" draggable="false" style="height:${l.h||LL.logoHeight}px">`:`<span class="ll-word">${esc(l.name)}</span>`}</li>`;
@@ -1253,7 +1265,7 @@ function layoutMk(root){
     im.style.left=g.left+"px";im.style.top=g.top+"px";im.style.width=g.width+"px";im.style.height=g.height+"px";im.style.transformOrigin=(-g.left+r.width/2)+"px "+(-g.top+r.height/2)+"px"});
 }
 window.addEventListener("resize",function(){layoutMk(app)});
-function pageNotFound(){return `<section class="notfound wrap"><h1>${t("nfTitle")}</h1><p><a class="ul" href="#/">${t("nfLink")}</a></p></section>`}
+function pageNotFound(){return `<section class="notfound wrap"><h1>${t("nfTitle")}</h1><p><a class="ul" href="${u('/')}">${t("nfLink")}</a></p></section>`}
 
 /* Libellé EN/FR : l'ancienne langue monte et sort, la nouvelle arrive par le bas */
 function rollLabel(el,txt){
@@ -1270,6 +1282,7 @@ function applyStatic(){
   document.documentElement.lang=LANG;
   document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=t(el.getAttribute("data-i18n"))});
   document.querySelectorAll("[data-i18n-aria]").forEach(el=>{el.setAttribute("aria-label",t(el.getAttribute("data-i18n-aria")))});
+  document.querySelectorAll("[data-path]").forEach(el=>{el.setAttribute("href",u(el.getAttribute("data-path")))});
   document.querySelectorAll(".js-behance").forEach(a=>{if(BEHANCE_URL)a.href=BEHANCE_URL});
   document.querySelectorAll(".js-linkedin").forEach(a=>{if(LINKEDIN_URL)a.href=LINKEDIN_URL});
   document.querySelectorAll(".lang-btn").forEach(lb=>{rollLabel(lb,t("langSwitch"));lb.setAttribute("aria-label",t("langAria"));lb.setAttribute("lang",LANG==="fr"?"en":"fr")});
@@ -1506,7 +1519,7 @@ function initStack(root){
 var SKC={cardWidth:230,rotation:0,inactiveScale:.9,perspective:950,borderRadius:8,titleBlur:1.5,speed:1.3,loop:true,autoplay:true,autoplayDelay:3000};
 function skewedCarousel(list,title){
   var slide=(p,clone)=>`
-        <a class="skc-slide" href="#/projets/${p.slug}"${clone?' aria-hidden="true" tabindex="-1"':` aria-label="${esc(p.name)}"`}>
+        <a class="skc-slide" href="${u('/projets/'+p.slug+'/')}"${clone?' aria-hidden="true" tabindex="-1"':` aria-label="${esc(p.name)}"`}>
           <span class="skc-card${p.cover&&IMG[p.cover].box?" is-mk":""}" style="--c:${p.color}"${p.cover&&IMG[p.cover].box?` data-mk="${p.cover}"`:""}>${p.cover?`<img src="${IMG[p.cover].src}" alt="" draggable="false">`:""}</span>
           <span class="skc-title">${esc(p.name)}</span>
         </a>`;
@@ -1515,7 +1528,7 @@ function skewedCarousel(list,title){
     <div class="skc" role="region" aria-label="${t("carAria")}">
       <div class="skc-track"><div class="skc-set">${list.map(p=>slide(p)).join("")}</div></div>
     </div>
-    <div class="skc-all" data-reveal><a class="btn btn-outline fill" href="#/projets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>${t("backProjects")}</a></div>
+    <div class="skc-all" data-reveal><a class="btn btn-outline fill" href="${u('/projets/')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>${t("backProjects")}</a></div>
   </section>`;
 }
 /* fond de carte = couleur du bord de l'image (images en « contain »), pour un logo sans bandeau */
@@ -1767,19 +1780,45 @@ window.addEventListener("resize",function(){sizeCta();onScroll()});
 
 /* ============ ROUTEUR ============ */
 var app=document.getElementById("app");
-function route(keepScroll){
-  var h=(location.hash||"#/").replace(/^#/,"");
+/* Chemin de la page courante, sans le préfixe de langue : "/", "/projets/nyro/"… */
+function curPath(){
+  var h=PATH_MODE?location.pathname.replace(/^\/en(?=\/|$)/,"").replace(/index\.html$/,""):(location.hash||"#/").replace(/^#/,"");
   if(h.charAt(0)!=="/")h="/";
-  var parts=h.split("/").filter(Boolean),html,title=t("title"),nav="home";
+  return h;
+}
+/* Titre et description de chaque page (balises title et meta description) */
+function clip(x,n){x=String(x||"").replace(/\s+/g," ").trim();if(x.length<=n)return x;x=x.slice(0,n-1);return x.slice(0,x.lastIndexOf(" ")).replace(/[,;.\s]+$/,"")+"\u2026"}
+function pageMeta(parts,p){
+  var who=t("metaWho"),d;
+  if(parts.length===0)return {title:who+" | CD Projects",desc:t("metaHome")};
+  if(parts[0]==="projets"&&parts.length===1)return {title:t("tProjects")+" | "+who,desc:t("metaProjects")};
+  if(p){d=L(p.description);var c=L(p.category||CAT);return {title:p.name+", "+c.charAt(0).toLowerCase()+c.slice(1)+" | Clara Debarle",desc:clip(Array.isArray(d)?d[0]:d,158)}}
+  if(parts[0]==="a-propos")return {title:t("tAbout")+" | "+who,desc:clip(t("aboutLead"),158)};
+  if(parts[0]==="contact")return {title:t("tContact")+" | "+who,desc:t("metaContact")};
+  return {title:t("nfTitle")+" | CD Projects",desc:t("metaHome")};
+}
+/* Contenu d'une page à partir de son chemin */
+function resolve(path){
+  var parts=path.split("/").filter(Boolean),html,nav="home",p=null;
   if(parts.length===0){html=pageHome()}
-  else if(parts[0]==="projets"&&parts.length===1){html=pageProjects();title=t("tProjects")+" | CD Projects";nav="projets"}
+  else if(parts[0]==="projets"&&parts.length===1){html=pageProjects();nav="projets"}
   else if(parts[0]==="projets"&&parts[1]){
-    var p=PROJECTS.find(x=>x.slug===parts[1]);
-    if(p){html=pageCase(p);title=p.name+" | CD Projects";nav="projets"}else{html=pageNotFound();nav=""}
+    p=PROJECTS.find(x=>x.slug===parts[1]);
+    if(p){html=pageCase(p);nav="projets"}else{html=pageNotFound();nav=""}
   }
-  else if(parts[0]==="contact"){html=pageContact();title=t("tContact")+" | CD Projects";nav="contact"}
-  else if(parts[0]==="a-propos"){html=pageAbout();title=t("tAbout")+" | CD Projects";nav="a-propos"}
+  else if(parts[0]==="contact"){html=pageContact();nav="contact"}
+  else if(parts[0]==="a-propos"){html=pageAbout();nav="a-propos"}
   else{html=pageNotFound();nav=""}
+  var m=pageMeta(nav===""?["404"]:parts,p);
+  return {parts:parts,html:html,nav:nav,title:m.title,desc:m.desc};
+}
+function go(href){
+  if(!PATH_MODE){location.hash=href;return}
+  history.pushState(null,"",href);route();
+}
+function route(keepScroll){
+  var r=resolve(curPath()),parts=r.parts,html=r.html,nav=r.nav,title=r.title;
+  var md=document.querySelector('meta[name="description"]');if(md)md.setAttribute("content",r.desc);
   app.innerHTML=html;app.classList.remove("leaving");
   document.title=title;
   document.body.classList.toggle("on-contact",nav==="contact");document.body.classList.toggle("pg-home",parts.length===0);document.body.classList.toggle("pg-about",parts[0]==="a-propos");
@@ -1811,8 +1850,10 @@ document.addEventListener("click",function(e){
   }
   if(e.target.closest(".to-top"))window.scrollTo({top:0,behavior:reduce?"auto":"smooth"});
   if(e.target.closest(".lang-btn")){
+    var here=curPath();
     LANG=LANG==="fr"?"en":"fr";
     try{localStorage.setItem("cd-lang",LANG)}catch(err){}
+    if(PATH_MODE)history.pushState(null,"",u(here));
     applyStatic();route(true);
   }
 });
@@ -1837,7 +1878,7 @@ document.addEventListener("click",function(e){
   if(mkG&&img)Object.assign(img.style,{position:"absolute",maxWidth:"none",margin:"0",objectFit:"fill",left:mkG.left+"px",top:mkG.top+"px",width:mkG.width+"px",height:mkG.height+"px"});
   pendingFlip={mk:cv.classList.contains("is-mk")?cv.dataset.mk:null,g0:mkG,clone:clone,from:r,fit:img&&img.naturalWidth&&getComputedStyle(cv.querySelector("img")).objectFit==="contain"?img.naturalWidth/img.naturalHeight:0};
   var href=a.getAttribute("href");
-  setTimeout(function(){location.hash=href},240);
+  setTimeout(function(){go(href)},240);
 },true);
 function runFlip(){
   var f=pendingFlip;pendingFlip=null;
@@ -1862,7 +1903,21 @@ function runFlip(){
   anim.onfinish=function(){hero.style.visibility="visible";f.clone.remove();
     setTimeout(function(){app.classList.remove("flip-in");hero.style.visibility=""},700)};
 }
-window.addEventListener("hashchange",route);
+if(PATH_MODE){
+  window.addEventListener("popstate",function(){LANG=/^\/en(\/|$)/.test(location.pathname)?"en":"fr";applyStatic();route()});
+  /* liens internes : navigation sans rechargement */
+  document.addEventListener("click",function(e){
+    if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+    var a=e.target.closest("a[href]");if(!a||a.target==="_blank")return;
+    var h=a.getAttribute("href");if(h.charAt(0)!=="/"||h.charAt(1)==="/")return;
+    e.preventDefault();
+    if(h===location.pathname){window.scrollTo({top:0,behavior:reduce?"auto":"smooth"});return}
+    go(h);
+  });
+  /* anciens liens en #/… : redirection vers la vraie adresse */
+  if(/^#\//.test(location.hash)){var oh=location.hash.slice(1);if(!/\/$/.test(oh))oh+="/";history.replaceState(null,"",u(oh))}
+}
+else window.addEventListener("hashchange",route);
 
 /* ============ MENU « STAGGERED » (port JavaScript du composant React Bits, avec GSAP) ============ */
 (function(){
@@ -1960,6 +2015,7 @@ document.addEventListener("pointerleave",fillOrigin,true);
 
 applyStatic();
 route();
+window.__prerender=function(path){var r=resolve(path);return {html:r.html,title:r.title,desc:r.desc,lang:LANG}};
 
 /* ===== Décors : motifs et formes en parallaxe pour animer le scroll ===== */
 /* [sélecteur, type, couleur, position CSS, taille, vitesse de parallaxe, rotation au scroll] */
@@ -1978,7 +2034,7 @@ route();
     probe(e.target)},{passive:true});
   /* au scroll (souris immobile) ou après un changement de page, on revérifie ce qu'il y a sous le curseur */
   var pq=0;function reprobe(){if(!shown||pq)return;pq=requestAnimationFrame(function(){pq=0;probe(document.elementFromPoint(tx,ty))})}
-  window.addEventListener("scroll",reprobe,{passive:true});window.addEventListener("hashchange",function(){setTimeout(reprobe,300)});
+  window.addEventListener("scroll",reprobe,{passive:true});window.addEventListener(PATH_MODE?"popstate":"hashchange",function(){setTimeout(reprobe,300)});document.addEventListener("click",function(){setTimeout(reprobe,300)});
   document.addEventListener("pointerleave",()=>{shown=false;c.classList.remove("on")});
   window.addEventListener("blur",()=>{shown=false;c.classList.remove("on")});
   document.addEventListener("pointerdown",()=>c.classList.add("down"));document.addEventListener("pointerup",()=>c.classList.remove("down"));

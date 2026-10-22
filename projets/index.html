@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Projets | Clara Debarle, UI/UX &amp; Brand Designer</title>
+<meta name="description" content="Projets de Clara Debarle en identité de marque, UI et UX design, de la refonte de site web à la création d’identité visuelle.">
+<link rel="canonical" href="https://clrdbrl.github.io/projets/">
+<link rel="alternate" hreflang="fr" href="https://clrdbrl.github.io/projets/">
+<link rel="alternate" hreflang="en" href="https://clrdbrl.github.io/en/projets/">
+<link rel="alternate" hreflang="x-default" href="https://clrdbrl.github.io/projets/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CD Projects">
+<meta property="og:url" content="https://clrdbrl.github.io/projets/">
+<meta property="og:title" content="Projets | Clara Debarle, UI/UX &amp; Brand Designer">
+<meta property="og:description" content="Projets de Clara Debarle en identité de marque, UI et UX design, de la refonte de site web à la création d’identité visuelle.">
+<meta property="og:image" content="https://clrdbrl.github.io/images/partage/clara-debarle.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFEFC">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("anim")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script src="/assets/js/gsap.min.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav-shell" id="nav-shell">
+      <div class="bar">
+        <a class="brand" href="/" data-path="/" data-i18n-aria="brandAria" aria-label="CD Projects, accueil">
+          <span class="brand-name">CD Projects</span>
+        </a>
+        <div class="bar-end">
+          <button class="lang-btn fill" type="button" lang="en" aria-label="Switch to English">EN</button>
+          <button class="sm-toggle fill" type="button" aria-expanded="false" aria-controls="sm-panel" aria-label="Ouvrir le menu">
+            <span class="sm-toggle-textWrap" aria-hidden="true"><span class="sm-toggle-textInner"><span class="sm-toggle-line">Menu</span></span></span>
+            <span class="sm-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sm-icon" aria-hidden="true"><span class="sm-icon-line"></span><span class="sm-icon-line sm-icon-line-v"></span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- StaggeredMenu (React Bits) adapté en JavaScript : couches décalées + panneau -->
+<div class="sm-prelayers" aria-hidden="true">
+  <div class="sm-prelayer" style="background:var(--c-blue-light)"></div>
+  <div class="sm-prelayer" style="background:var(--c-blue)"></div>
+</div>
+<aside id="sm-panel" class="sm-panel" aria-hidden="true" inert="" data-i18n-aria="navAria" aria-label="Navigation principale">
+  <div class="sm-panel-inner">
+    <ul class="sm-panel-list">
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/" data-path="/" data-nav="home"><span class="sm-panel-itemLabel" data-i18n="navHome">Accueil</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/projets/" data-path="/projets/" data-nav="projets"><span class="sm-panel-itemLabel" data-i18n="navProjects">Projets</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/a-propos/" data-path="/a-propos/" data-nav="a-propos"><span class="sm-panel-itemLabel" data-i18n="navAbout">À propos</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/contact/" data-path="/contact/" data-nav="contact"><span class="sm-panel-itemLabel" data-i18n="navContact">Contact</span></a></li>
+    </ul>
+    <div class="sm-socials">
+      <h3 class="sm-socials-title" data-i18n="socials">Réseaux sociaux</h3>
+      <ul class="sm-socials-list">
+        <li><a class="sm-socials-link js-behance" href="https://www.behance.net/claradbrl" target="_blank" rel="noopener">Behance<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+        <li><a class="sm-socials-link js-linkedin" href="https://www.linkedin.com/in/clara-d-51b2a6208" target="_blank" rel="noopener">LinkedIn<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+<main id="app" tabindex="-1"><section class="page-head wrap" data-reveal><h1>Projets</h1></section>
+  <section class="wrap">
+    <div class="filters">
+      <div class="rseg-scroll"><div class="rseg" role="radiogroup" aria-label="Filtrer les projets">
+        <button class="rseg-item" type="button" role="radio" data-filter="" aria-checked="true" tabindex="0">Tous</button><button class="rseg-item" type="button" role="radio" data-filter="UX" aria-checked="false" tabindex="-1">UX</button><button class="rseg-item" type="button" role="radio" data-filter="UI" aria-checked="false" tabindex="-1">UI</button><button class="rseg-item" type="button" role="radio" data-filter="Branding" aria-checked="false" tabindex="-1">Branding</button>
+        <div class="rseg-thumb" aria-hidden="true"><span class="rseg-item rseg-copy">Tous</span><span class="rseg-item rseg-copy">UX</span><span class="rseg-item rseg-copy">UI</span><span class="rseg-item rseg-copy">Branding</span></div>
+      </div></div>
+      <div class="gsel">
+    <button class="gsel-trigger" type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="gsel-list" aria-label="Filtrer les projets"><span class="gsel-label">Tous</span><span class="gsel-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></button>
+    <div class="gsel-menu" data-state="closed" data-side="bottom" hidden>
+      <div class="gsel-list" id="gsel-list" role="listbox" aria-label="Filtrer les projets"><span class="gsel-pill" aria-hidden="true"></span>
+        <div class="gsel-opt" role="option" id="gsel-0" data-index="0" data-value="" aria-selected="true"><span class="gsel-name">Tous</span><span class="gsel-tag">5</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-1" data-index="1" data-value="UX" aria-selected="false"><span class="gsel-name">UX</span><span class="gsel-tag">3</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-2" data-index="2" data-value="UI" aria-selected="false"><span class="gsel-name">UI</span><span class="gsel-tag">5</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-3" data-index="3" data-value="Branding" aria-selected="false"><span class="gsel-name">Branding</span><span class="gsel-tag">5</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+      </div>
+    </div>
+  </div>
+      <span class="count" aria-live="polite">5 projets</span>
+    </div>
+    <ul class="proj-list">
+      <li data-tags="Branding UX UI" data-reveal>
+        <a class="proj" href="/projets/grpf/"><div class="proj-cover is-mk" style="--c:#FF6A55" data-mk="mk_grpf"><img src="/images/projets/grpf/grpf-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">GRPF</span><span class="proj-year">2026</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+        </a>
+      </li>
+      <li data-tags="Branding UX UI" data-reveal>
+        <a class="proj" href="/projets/groupe-apb/"><div class="proj-cover is-mk" style="--c:#1E49CA" data-mk="mk_apb"><img src="/images/projets/groupe-apb/groupe-apb-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">Groupe APB</span><span class="proj-year">2026</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+        </a>
+      </li>
+      <li data-tags="Branding UI" data-reveal>
+        <a class="proj" href="/projets/nyro/"><div class="proj-cover is-mk" style="--c:#F1EEFF" data-mk="mk_nyro"><img src="/images/projets/nyro/nyro-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">NYRO</span><span class="proj-year">2025</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UI</li></ul>
+        </a>
+      </li>
+      <li data-tags="Branding UX UI" data-reveal>
+        <a class="proj" href="/projets/groupe-apb-pro/"><div class="proj-cover is-mk" style="--c:#02113E" data-mk="mk_apbpro"><img src="/images/projets/groupe-apb-pro/groupe-apb-pro-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">Groupe APB Pro</span><span class="proj-year">2025</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+        </a>
+      </li>
+      <li data-tags="Branding UI" data-reveal>
+        <a class="proj" href="/projets/2m-energie/"><div class="proj-cover is-mk" style="--c:#F1FAEC" data-mk="mk_m2"><img src="/images/projets/2m-energie/2m-energie-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">2M Energie</span><span class="proj-year">2025</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UI</li></ul>
+        </a>
+      </li></ul>
+  </section></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-card">
+      <h2 data-i18n="footTitle">Un projet en tête&nbsp;?</h2>
+      <a class="btn btn-light fill" href="/contact/" data-path="/contact/" data-i18n="footBtn">Me contacter</a>
+      <div class="footer-bottom">
+        <div class="socials foot-socials">
+              <span class="soc-label" data-i18n="socials">Réseaux sociaux</span>
+              <ul data-i18n-aria="socialsAria" aria-label="Réseaux sociaux">
+                <li><a class="ul js-behance" href="https://www.behance.net/claradbrl" target="_blank" rel="noopener">Behance<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+                <li><a class="ul js-linkedin" href="https://www.linkedin.com/in/clara-d-51b2a6208" target="_blank" rel="noopener">LinkedIn<span class="sr" data-i18n="newTab"> (nouvel onglet)</span></a></li>
+              </ul>
+            </div>
+        <div class="socials foot-socials foot-portfolio">
+              <span class="soc-label" data-i18n="footPortfolio">Portfolio</span>
+              <ul><li><a class="ul" href="/projets/" data-path="/projets/" data-i18n="footProjects">Découvrir les projets</a></li></ul>
+            </div>
+        <hr class="divider">
+        <button class="to-top" type="button">
+          <span data-i18n="toTop">Revenir en haut de page</span>
+          <span class="circle fill" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

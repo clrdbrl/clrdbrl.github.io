@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clrdbrl.github.io/sitemap.xml

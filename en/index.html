@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Clara Debarle, UI/UX &amp; Brand Designer | CD Projects</title>
+<meta name="description" content="Portfolio of Clara Debarle, UI/UX and brand identity designer. Websites, interfaces and visual identities crafted for memorable brands.">
+<link rel="canonical" href="https://clrdbrl.github.io/en/">
+<link rel="alternate" hreflang="fr" href="https://clrdbrl.github.io/">
+<link rel="alternate" hreflang="en" href="https://clrdbrl.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://clrdbrl.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CD Projects">
+<meta property="og:url" content="https://clrdbrl.github.io/en/">
+<meta property="og:title" content="Clara Debarle, UI/UX &amp; Brand Designer | CD Projects">
+<meta property="og:description" content="Portfolio of Clara Debarle, UI/UX and brand identity designer. Websites, interfaces and visual identities crafted for memorable brands.">
+<meta property="og:image" content="https://clrdbrl.github.io/images/partage/clara-debarle.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFEFC">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://clrdbrl.github.io/#clara", "name": "Clara Debarle", "jobTitle": "UI/UX & Brand Designer", "url": "https://clrdbrl.github.io/", "email": "mailto:cdprojectspro@gmail.com", "sameAs": ["https://www.linkedin.com/in/clara-d-51b2a6208", "https://www.behance.net/claradbrl"], "knowsAbout": ["UI Design", "UX Design", "Branding", "Identité visuelle", "Webdesign"]}, {"@type": "WebSite", "@id": "https://clrdbrl.github.io/#site", "name": "CD Projects", "url": "https://clrdbrl.github.io/", "inLanguage": ["fr", "en"], "author": {"@id": "https://clrdbrl.github.io/#clara"}}]}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("anim")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script src="/assets/js/gsap.min.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav-shell" id="nav-shell">
+      <div class="bar">
+        <a class="brand" href="/en/" data-path="/" data-i18n-aria="brandAria" aria-label="CD Projects, home">
+          <span class="brand-name">CD Projects</span>
+        </a>
+        <div class="bar-end">
+          <button class="lang-btn fill" type="button" lang="fr" aria-label="Passer en français">FR</button>
+          <button class="sm-toggle fill" type="button" aria-expanded="false" aria-controls="sm-panel" aria-label="Open menu">
+            <span class="sm-toggle-textWrap" aria-hidden="true"><span class="sm-toggle-textInner"><span class="sm-toggle-line">Menu</span></span></span>
+            <span class="sm-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sm-icon" aria-hidden="true"><span class="sm-icon-line"></span><span class="sm-icon-line sm-icon-line-v"></span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- StaggeredMenu (React Bits) adapté en JavaScript : couches décalées + panneau -->
+<div class="sm-prelayers" aria-hidden="true">
+  <div class="sm-prelayer" style="background:var(--c-blue-light)"></div>
+  <div class="sm-prelayer" style="background:var(--c-blue)"></div>
+</div>
+<aside id="sm-panel" class="sm-panel" aria-hidden="true" inert="" data-i18n-aria="navAria" aria-label="Main navigation">
+  <div class="sm-panel-inner">
+    <ul class="sm-panel-list">
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/en/" data-path="/" data-nav="home"><span class="sm-panel-itemLabel" data-i18n="navHome">Home</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/en/projets/" data-path="/projets/" data-nav="projets"><span class="sm-panel-itemLabel" data-i18n="navProjects">Projects</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/en/a-propos/" data-path="/a-propos/" data-nav="a-propos"><span class="sm-panel-itemLabel" data-i18n="navAbout">About</span></a></li>
+      <li class="sm-panel-itemWrap"><a class="sm-panel-item" href="/en/contact/" data-path="/contact/" data-nav="contact"><span class="sm-panel-itemLabel" data-i18n="navContact">Contact</span></a></li>
+    </ul>
+    <div class="sm-socials">
+      <h3 class="sm-socials-title" data-i18n="socials">Social media</h3>
+      <ul class="sm-socials-list">
+        <li><a class="sm-socials-link js-behance" href="https://www.behance.net/claradbrl" target="_blank" rel="noopener">Behance<span class="sr" data-i18n="newTab"> (opens in a new tab)</span></a></li>
+        <li><a class="sm-socials-link js-linkedin" href="https://www.linkedin.com/in/clara-d-51b2a6208" target="_blank" rel="noopener">LinkedIn<span class="sr" data-i18n="newTab"> (opens in a new tab)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+<main id="app" tabindex="-1">
+  <section class="hero wrap">
+    <p class="status"><span class="dot" aria-hidden="true"></span>Open to new opportunities</p>
+    <p class="hero-name">Clara Debarle</p>
+    <h1><span class="sr">Clara Debarle, </span><span class="line"><span>Digital</span></span><span class="line"><span>Designer</span></span></h1>
+    <p class="hero-lead">As a UI/UX & Brand designer, I help brands shape their strategy, from visual identity to interface.</p>
+    <div class="btn-row">
+      <a class="btn btn-ink fill" href="/en/projets/">See my projects</a>
+      <a class="btn btn-outline fill" href="/en/contact/">Get in touch</a>
+    </div>
+  </section>
+
+
+  <section class="section wrap" id="home-projets" aria-labelledby="feat-t">
+    <div class="sec-head" data-reveal><h2 class="sec-title" id="feat-t">Projects</h2></div>
+    <ul class="feat-grid">
+      <li class="feat-item feat-r" data-reveal style="--n:1">
+        <a class="proj" href="/en/projets/grpf/"><div class="proj-cover is-mk" style="--c:#FF6A55" data-mk="mk_grpf"><img src="/images/projets/grpf/grpf-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">GRPF</span><span class="proj-year">2026</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+        </a>
+      </li>
+      <li class="feat-item feat-l" data-reveal style="--n:2">
+        <a class="proj" href="/en/projets/groupe-apb/"><div class="proj-cover is-mk" style="--c:#1E49CA" data-mk="mk_apb"><img src="/images/projets/groupe-apb/groupe-apb-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">Groupe APB</span><span class="proj-year">2026</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+        </a>
+      </li>
+      <li class="feat-item feat-r" data-reveal style="--n:3">
+        <a class="proj" href="/en/projets/nyro/"><div class="proj-cover is-mk" style="--c:#F1EEFF" data-mk="mk_nyro"><img src="/images/projets/nyro/nyro-banniere.webp" alt=""></div>
+          <div class="proj-meta"><span class="proj-name">NYRO</span><span class="proj-year">2025</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UI</li></ul>
+        </a>
+      </li>
+      <li class="feat-item feat-cta" data-reveal>
+        <a class="cta-card" href="/en/projets/">
+          <h3>See more<br>projects</h3>
+          <span class="stack-cta"><span class="btn btn-light fill">Discover</span></span>
+        </a>
+      </li></ul>
+  </section>
+
+  <section class="wrap section home-method"><div class="method">
+    <div class="sec-head" data-reveal><h2 class="sec-title">My approach</h2></div>
+    <ol class="ap-list">
+      <li class="ap-row" data-reveal>
+        <div class="ap-head">
+          <p class="ap-count">Step 1 of 4</p>
+          <h3 class="ap-h">Discover</h3>
+          <p class="ap-tag">Immersion and scoping</p>
+          <button class="ap-toggle" type="button" aria-expanded="false" aria-controls="ap-p1"><span class="ul">See details</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </div>
+        <div class="ap-body" id="ap-p1"><div class="ap-inner">
+          <p class="ap-tag ap-tag-m">Immersion and scoping</p>
+          <p class="ap-text">Definition of goals, audiences and positioning during a scoping workshop. Competitive analysis and audit of existing assets to identify the challenges and set the project priorities.</p>
+          <div class="ap-outs"><span class="ap-outs-l">Deliverables :</span><ul class="badges"><li class="badge">Creative brief</li><li class="badge">Competitive benchmark</li><li class="badge">Brand & UX audit</li><li class="badge">Personas</li></ul></div>
+        </div></div>
+      </li>
+      <li class="ap-row" data-reveal>
+        <div class="ap-head">
+          <p class="ap-count">Step 2 of 4</p>
+          <h3 class="ap-h">Define</h3>
+          <p class="ap-tag">Strategy and structure</p>
+          <button class="ap-toggle" type="button" aria-expanded="false" aria-controls="ap-p2"><span class="ul">See details</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </div>
+        <div class="ap-body" id="ap-p2"><div class="ap-inner">
+          <p class="ap-tag ap-tag-m">Strategy and structure</p>
+          <p class="ap-text">Definition of the brand platform and key messages, then development of the content architecture and user journeys. Design of zoning and wireframes to structure every touchpoint and validate the project foundations before creation.</p>
+          <div class="ap-outs"><span class="ap-outs-l">Deliverables :</span><ul class="badges"><li class="badge">Brand platform</li><li class="badge">Site map</li><li class="badge">User flows</li><li class="badge">Wireframes</li></ul></div>
+        </div></div>
+      </li>
+      <li class="ap-row" data-reveal>
+        <div class="ap-head">
+          <p class="ap-count">Step 3 of 4</p>
+          <h3 class="ap-h">Design</h3>
+          <p class="ap-tag">Creation and iteration</p>
+          <button class="ap-toggle" type="button" aria-expanded="false" aria-controls="ap-p3"><span class="ul">See details</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </div>
+        <div class="ap-body" id="ap-p3"><div class="ap-inner">
+          <p class="ap-tag ap-tag-m">Creation and iteration</p>
+          <p class="ap-text">Exploration of several creative routes and definition of an art direction. The chosen route is rolled out into a visual identity and desktop and mobile mock-ups, followed by an interactive prototype put through user testing.</p>
+          <div class="ap-outs"><span class="ap-outs-l">Deliverables :</span><ul class="badges"><li class="badge">Moodboard</li><li class="badge">Visual identity</li><li class="badge">UI mock-ups</li><li class="badge">Interactive prototype</li></ul></div>
+        </div></div>
+      </li>
+      <li class="ap-row" data-reveal>
+        <div class="ap-head">
+          <p class="ap-count">Step 4 of 4</p>
+          <h3 class="ap-h">Deliver</h3>
+          <p class="ap-tag">Roll-out and handover</p>
+          <button class="ap-toggle" type="button" aria-expanded="false" aria-controls="ap-p4"><span class="ul">See details</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </div>
+        <div class="ap-body" id="ap-p4"><div class="ap-inner">
+          <p class="ap-tag ap-tag-m">Roll-out and handover</p>
+          <p class="ap-text">Finalisation of the brand guidelines, design system and ready-to-use source files. Support through production and development up to launch, followed by a final quality check.</p>
+          <div class="ap-outs"><span class="ap-outs-l">Deliverables :</span><ul class="badges"><li class="badge">Brand guidelines</li><li class="badge">Design system</li><li class="badge">Asset kit</li><li class="badge">Developer handoff</li></ul></div>
+        </div></div>
+      </li></ol>
+    <div class="ap-cta" data-reveal><a class="btn btn-ink fill" href="/en/contact/">Discuss your project</a></div>
+  </div></section>
+
+
+  <section class="statements wrap" aria-label="My design vision">
+    <div class="stmt" data-fill data-reveal><h2 data-words>Interfaces that make sense at first glance.</h2></div><div class="stmt" data-fill data-reveal><h2 data-words>Brands people remember.</h2></div><div class="stmt" data-fill data-reveal><h2 data-words>Experiences that are felt.</h2></div>
+  </section>
+
+  <section class="ll-sec wrap" aria-label="Companies and brands I worked with">
+    <div class="ll" data-reveal style="--ll-h:30px;--ll-gap:88px"><div class="ll-track"><ul class="ll-list"><li class="ll-item"><img src="/images/logos/groupe-apb.png" alt="Groupe APB" draggable="false" style="height:33px"></li><li class="ll-item"><img src="/images/logos/alan-allman-associates.png" alt="Alan Allman Associates" draggable="false" style="height:42px"></li><li class="ll-item"><img src="/images/logos/grpf.png" alt="GRPF" draggable="false" style="height:30px"></li><li class="ll-item"><img src="/images/logos/ited.png" alt="ITED" draggable="false" style="height:30px"></li><li class="ll-item"><img src="/images/logos/groupe-apb-pro.png" alt="Groupe APB Pro" draggable="false" style="height:35px"></li><li class="ll-item"><img src="/images/logos/2m-energie.png" alt="2M Energie" draggable="false" style="height:42px"></li><li class="ll-item"><img src="/images/logos/nyro.png" alt="NYRO" draggable="false" style="height:35px"></li></ul></div></div>
+  </section>
+  <section class="section wrap" aria-labelledby="life-t">
+    <div class="sec-head" data-reveal><h2 class="sec-title" id="life-t">Away from screens</h2></div>
+    <div class="bc-wrap" data-reveal><div class="bounce-cards" style="width:820px;height:340px;--bc-size:200px">
+    <div class="bc-card" style="z-index:1" tabindex="0" role="img" aria-label="Travel">
+      <div class="bc-art" style="--bg:#2E6CF6;--fg:#FFFFFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
+      <span class="bc-label">Travel</span>
+    </div>
+    <div class="bc-card" style="z-index:2" tabindex="0" role="img" aria-label="Visual art">
+      <div class="bc-art" style="--bg:#76A2FF;--fg:#FFFFFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.9 1.8-1.8 0-1.3-1-1.6-1-2.7 0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4C21 6.6 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.1"/><circle cx="10.5" cy="7" r="1.1"/><circle cx="15" cy="7.5" r="1.1"/></svg></div>
+      <span class="bc-label">Visual art</span>
+    </div>
+    <div class="bc-card" style="z-index:3" tabindex="0" role="img" aria-label="Photography">
+      <div class="bc-art" style="--bg:#1A1A1A;--fg:#FFFFFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4z"/><circle cx="12" cy="13.2" r="3.6"/></svg></div>
+      <span class="bc-label">Photography</span>
+    </div>
+    <div class="bc-card" style="z-index:4" tabindex="0" role="img" aria-label="Sport">
+      <div class="bc-art" style="--bg:#D7F241;--fg:#1A1A1A"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11"/></svg></div>
+      <span class="bc-label">Sport</span>
+    </div>
+    <div class="bc-card" style="z-index:5" tabindex="0" role="img" aria-label="Nutrition">
+      <div class="bc-art" style="--bg:#EEF3FF;--fg:#2E6CF6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-3.5-2-8 0-7.5 5 .4 4.4 3.4 8.4 6 8 .6-.1 1-.4 1.5-.4s.9.3 1.5.4c2.6.4 5.6-3.6 6-8 .5-5-4-7-7.5-5z"/><path d="M12 7c0-2 1-3.5 3-4"/></svg></div>
+      <span class="bc-label">Nutrition</span>
+    </div></div></div>
+    <div class="stk-wrap" data-reveal>
+    <div class="stk" tabindex="0" role="group" aria-label="My interests, as a stack of cards">
+      <div class="stk-card" data-i="0" aria-label="Travel"><div class="stk-face"><div class="bc-art" style="--bg:#2E6CF6;--fg:#FFFFFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div><span class="bc-label">Travel</span><span class="stk-shade"></span></div></div>
+      <div class="stk-card" data-i="1" aria-label="Visual art"><div class="stk-face"><div class="bc-art" style="--bg:#76A2FF;--fg:#FFFFFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.9 1.8-1.8 0-1.3-1-1.6-1-2.7 0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4C21 6.6 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.1"/><circle cx="10.5" cy="7" r="1.1"/><circle cx="15" cy="7.5" r="1.1"/></svg></div><span class="bc-label">Visual art</span><span class="stk-shade"></span></div></div>
+      <div class="stk-card" data-i="2" aria-label="Photography"><div class="stk-face"><div class="bc-art" style="--bg:#1A1A1A;--fg:#FFFFFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4z"/><circle cx="12" cy="13.2" r="3.6"/></svg></div><span class="bc-label">Photography</span><span class="stk-shade"></span></div></div>
+      <div class="stk-card" data-i="3" aria-label="Sport"><div class="stk-face"><div class="bc-art" style="--bg:#D7F241;--fg:#1A1A1A"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11"/></svg></div><span class="bc-label">Sport</span><span class="stk-shade"></span></div></div>
+      <div class="stk-card" data-i="4" aria-label="Nutrition"><div class="stk-face"><div class="bc-art" style="--bg:#EEF3FF;--fg:#2E6CF6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-3.5-2-8 0-7.5 5 .4 4.4 3.4 8.4 6 8 .6-.1 1-.4 1.5-.4s.9.3 1.5.4c2.6.4 5.6-3.6 6-8 .5-5-4-7-7.5-5z"/><path d="M12 7c0-2 1-3.5 3-4"/></svg></div><span class="bc-label">Nutrition</span><span class="stk-shade"></span></div></div></div>
+    <p class="stk-hint">Swipe the card to see the next one</p>
+  </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-card">
+      <h2 data-i18n="footTitle">Have a project in mind?</h2>
+      <a class="btn btn-light fill" href="/en/contact/" data-path="/contact/" data-i18n="footBtn">Get in touch</a>
+      <div class="footer-bottom">
+        <div class="socials foot-socials">
+              <span class="soc-label" data-i18n="socials">Social media</span>
+              <ul data-i18n-aria="socialsAria" aria-label="Social media">
+                <li><a class="ul js-behance" href="https://www.behance.net/claradbrl" target="_blank" rel="noopener">Behance<span class="sr" data-i18n="newTab"> (opens in a new tab)</span></a></li>
+                <li><a class="ul js-linkedin" href="https://www.linkedin.com/in/clara-d-51b2a6208" target="_blank" rel="noopener">LinkedIn<span class="sr" data-i18n="newTab"> (opens in a new tab)</span></a></li>
+              </ul>
+            </div>
+        <div class="socials foot-socials foot-portfolio">
+              <span class="soc-label" data-i18n="footPortfolio">Portfolio</span>
+              <ul><li><a class="ul" href="/en/projets/" data-path="/projets/" data-i18n="footProjects">Discover the projects</a></li></ul>
+            </div>
+        <hr class="divider">
+        <button class="to-top" type="button">
+          <span data-i18n="toTop">Back to top</span>
+          <span class="circle fill" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
