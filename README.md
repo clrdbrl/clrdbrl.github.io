@@ -7,7 +7,10 @@ Site en ligne : https://clrdbrl.github.io
 ## Structure
 
 ```
-index.html            Structure de la page
+index.html, projets/, a-propos/, contact/   Pages en français (pré-rendues)
+en/                   Pages en anglais
+404.html              Page introuvable
+sitemap.xml, robots.txt  Référencement
 assets/css/style.css  Styles (couleurs, typographies, mises en page, animations)
 assets/js/main.js     Contenus FR/EN, navigation et interactions
 assets/js/gsap.min.js Bibliothèque d'animation GSAP
