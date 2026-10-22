@@ -523,7 +523,12 @@ var LANG="fr";
 if(PATH_MODE){if(/^\/en(\/|$)/.test(location.pathname))LANG="en"}
 else{try{var saved=localStorage.getItem("cd-lang");if(saved==="en"||saved==="fr")LANG=saved}catch(e){}}
 /* Adresse d'une page dans la langue courante */
-function u(p){return PATH_MODE?(LANG==="en"?"/en":"")+p:"#"+p}
+var EN_SEG={"projets":"projects","a-propos":"about"};
+function u(p){
+  if(!PATH_MODE)return "#"+p;
+  if(LANG!=="en")return p;
+  return "/en"+p.replace(/^\/([^\/]+)/,function(m,x){return "/"+(EN_SEG[x]||x)});
+}
 function L(v){return v&&typeof v==="object"&&!Array.isArray(v)&&("fr" in v)?v[LANG]:v}
 function t(k){return T[LANG][k]}
 
@@ -1784,7 +1789,8 @@ var app=document.getElementById("app");
 function curPath(){
   var h=PATH_MODE?location.pathname.replace(/^\/en(?=\/|$)/,"").replace(/index\.html$/,""):(location.hash||"#/").replace(/^#/,"");
   if(h.charAt(0)!=="/")h="/";
-  return h;
+  /* segments anglais -> chemins internes */
+  return h.replace(/^\/(projects|about)(?=\/|$)/,function(m,x){return x==="projects"?"/projets":"/a-propos"});
 }
 /* Titre et description de chaque page (balises title et meta description) */
 function clip(x,n){x=String(x||"").replace(/\s+/g," ").trim();if(x.length<=n)return x;x=x.slice(0,n-1);return x.slice(0,x.lastIndexOf(" ")).replace(/[,;.\s]+$/,"")+"\u2026"}
@@ -1916,6 +1922,7 @@ if(PATH_MODE){
   });
   /* anciens liens en #/… : redirection vers la vraie adresse */
   if(/^#\//.test(location.hash)){var oh=location.hash.slice(1);if(!/\/$/.test(oh))oh+="/";history.replaceState(null,"",u(oh))}
+  else{var cp=curPath();if(/\/$/.test(cp)&&location.pathname!==u(cp))history.replaceState(null,"",u(cp))}
 }
 else window.addEventListener("hashchange",route);
 
