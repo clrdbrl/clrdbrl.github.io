@@ -740,10 +740,7 @@ var PROJECTS=[
           {to:5,label:{fr:"univers d\u2019offres structurés, isolation, chauffage, solaire, ventilation et menuiserie.",en:"offer categories structured, insulation, heating, solar, ventilation and joinery."}}],
    description:{fr:["Groupe APB est une entreprise française certifiée RGE, spécialisée dans la rénovation énergétique des particuliers, de l’isolation au chauffage, en passant par les panneaux solaires, la ventilation et la menuiserie.", "Le projet consistait à refondre l’identité de marque pour renforcer sa notoriété et harmoniser sa présence sur l’ensemble des canaux, du site web aux réseaux sociaux et campagnes marketing. L’objectif était également de simplifier la gestion des offres, d’améliorer l’expérience utilisateur et d’optimiser le parcours client, de l’acquisition à la fidélisation, tout en assurant une continuité entre les points de contact physiques et digitaux."],
                 en:["Groupe APB is a French RGE-certified company specialising in energy renovation for homeowners, from insulation and heating to solar panels, ventilation and joinery.", "The project involved redesigning the brand identity to strengthen its awareness and harmonise its presence across every channel, from the website to social media and marketing campaigns. The goal was also to simplify offer management, improve the user experience and optimise the customer journey, from acquisition to loyalty, while ensuring continuity between physical and digital touchpoints."]},
-   context:{fr:["J'ai contribué à la refonte complète de l'identité de marque de l'entreprise, afin de renforcer sa notoriété et garantir une cohérence visuelle sur le site web.",
-                "L'objectif était de simplifier la mise à jour des offres, améliorer l'expérience utilisateur et optimiser le parcours client, de l'acquisition à la fidélisation, tout en assurant une transition harmonieuse entre les points de contact hors ligne et en ligne."],
-            en:["I contributed to the complete redesign of the company’s brand identity, to strengthen its awareness and ensure visual consistency across the website.",
-                "The goal was to make offer updates easier, improve the user experience and optimise the customer journey, from acquisition to loyalty, while ensuring a smooth transition between offline and online touchpoints."]},
+   
    chapters:[
      {key:"identity",rows:[{type:"row",items:["logo"]},{type:"row",items:["browser","house"]},{type:"row",items:["typo","palette"]},{type:"row",items:["apb_icons"]}]},
      {key:"applications",rows:[{type:"stack",left:["sign","slogan"],right:"tote"}]},
@@ -755,10 +752,7 @@ var PROJECTS=[
                     "L\u2019identité visuelle traduit cette exigence dans un univers épuré et lumineux. Le blanc et le bleu inspirent confiance, le violet évoque la douceur du soin et le rouge apporte de la chaleur. À la croisée de la rigueur médicale et de la sensibilité, elle incarne une vision inclusive de la beauté naturelle."],
                 en:["NYRO was born from a simple belief, beauty should be revealed, not masked. The project brings to life a natural skincare brand, healthy and effective, suited to every skin type and tone, with formulas grounded in dermatological research and clinically proven efficacy.",
                     "The visual identity expresses this standard through a clean, luminous universe. White and blue inspire trust, violet evokes the gentleness of care and red adds warmth. At the crossroads of medical rigour and sensitivity, it embodies an inclusive vision of natural beauty."]},
-   context:{fr:["Chaque formule s\u2019appuie sur les dernières avancées de la recherche dermatologique et son efficacité est validée par des études cliniques. Pour porter cette exigence, l\u2019identité adopte un univers rigoureux et rassurant, le blanc et le bleu pour la confiance, le violet pour la douceur du soin, et une touche de rouge pour la chaleur.",
-                "Le résultat est une identité épurée et lumineuse, entre exigence médicale et sensibilité, qui reste inclusive et célèbre chaque peau telle qu\u2019elle est."],
-            en:["Every formula builds on the latest dermatological research, and its efficacy is backed by clinical studies. To carry this standard, the identity takes on a rigorous, reassuring world, white and blue for trust, violet for the gentleness of care, and a touch of red for warmth.",
-                "The result is a clean, luminous identity balancing medical standards and sensitivity, one that stays inclusive and celebrates every skin as it is."]},
+   
    chapters:(function(c){c[1].rows.push({type:"row",items:["nyro_prod"]},{type:"row",items:["nyro_schema"],framed:true});return c})(std("nyro",[{key:"onepage",rows:[{type:"row",items:["nyro_site"],framed:true},{type:"row",items:["nyro_pages"],framed:true}]}]))},
   {slug:"groupe-apb-pro", noResults:true, name:"Groupe APB Pro", year:"2025", color:"#02113E", cover:"mk_apbpro", category:CAT, tags:["Branding","UX","UI"],
    description:{fr:["Groupe APB Pro est la branche professionnelle de Groupe APB, proposant des solutions de rénovation énergétique adaptées aux copropriétés, à l’industrie, au secteur tertiaire, au monde agricole et aux collectivités.", "Le projet a porté sur la refonte de l’identité de marque et du site web afin d’adapter la communication aux différents profils professionnels et aux enjeux propres à chaque secteur. L’objectif était de faciliter l’identification des solutions adaptées à chaque activité, tout en renforçant la clarté de l’offre, la crédibilité de la marque et l’expérience utilisateur."],
@@ -769,11 +763,7 @@ var PROJECTS=[
                 en:["2M Energie is a French company specialising in energy renovation for homeowners, offering solutions such as solar panel and heat pump installation.", "The project covered the creation of the visual identity and the design of the website mock-ups, with the aim of building a modern, accessible image that reflects the brand’s expertise. The design sets out to inspire trust, highlight innovation and showcase personalised support for homeowners throughout their energy renovation projects."]},
    chapters:std("m2",[
      {key:"onepages",rows:[{type:"row",items:["m2_home","m2_lp"],framed:true,keep:true}]},
-     {key:"campaign",rows:[{type:"row",items:["m2_billboard"]}]}])},
-  {slug:"ited", name:"ITED", year:"2024", role:{fr:"Chargée de communication et marketing digital",en:"Communication & Digital Marketing Manager"}, color:"#1A086B", cover:"mk_ited", category:CAT, tags:["UX"],
-   description:{fr:"ited accompagne les entreprises sur leur informatique, des serveurs au câblage et à l’infrastructure, avec un seul interlocuteur.",
-                en:"ited supports businesses with their IT, from servers to cabling and infrastructure, with a single point of contact."},
-   chapters:std("ited",[{key:"universe",rows:[{type:"row",items:["ited_visual"]}]}])}
+     {key:"campaign",rows:[{type:"row",items:["m2_billboard"]}]}])}
 ];
 /* Entreprise dans laquelle chaque projet a été réalisé */
 var COMPANY={
@@ -781,10 +771,9 @@ var COMPANY={
   "groupe-apb":{fr:"Groupe APB",en:"Groupe APB"},
   "groupe-apb-pro":{fr:"Groupe APB",en:"Groupe APB"},
   "2m-energie":{fr:"Groupe APB",en:"Groupe APB"},
-  "ited":{fr:"Alan Allman Associates",en:"Alan Allman Associates"},
+  
   "nyro":{fr:"Projet personnel (marque fictive)",en:"Personal project (fictional brand)"}
 };
-PROJECTS=PROJECTS.filter(p=>p.slug!=="ited");
 PROJECTS.forEach(p=>{p.company=COMPANY[p.slug]});
 /* Outils utilisés sur chaque projet (affichés en hashtags) */
 var PTOOLS={
@@ -792,8 +781,7 @@ var PTOOLS={
   "groupe-apb":["Figma","FigJam","Photoshop","WordPress","Elementor"],
   "nyro":["Figma","Illustrator","Photoshop","ChatGPT"],
   "groupe-apb-pro":["Figma","FigJam","Photoshop","WordPress","Elementor"],
-  "2m-energie":["Illustrator","Figma"],
-  "ited":["FigJam","WordPress","Elementor"]
+  "2m-energie":["Illustrator","Figma"]
 };
 PROJECTS.forEach(p=>{p.toolList=PTOOLS[p.slug]});
 /* Template des chiffres clés (section Résultats) — remplacé par p.stats quand un projet a ses vrais chiffres.
@@ -834,16 +822,14 @@ var PALETTES={
   nyro_palette:[[{fr:"Blanc froid",en:"Cold White"},"#FFFFFF",0],[{fr:"Bleu crème",en:"Cream Blue"},"#F1EFFF",0],[{fr:"Bleu profond",en:"Deep Blue"},"#140087",1],[{fr:"Rouge coquelicot",en:"Poppy Red"},"#E34A2F",1],[{fr:"Noir doux",en:"Calm Black"},"#303030",1]],
   apbpro_palette:[[{fr:"Blanc",en:"White"},"#FFFFFF",0],[{fr:"Gris acier",en:"Steel Grey"},"#CCCCCC",0],[{fr:"Bleu APB",en:"APB Blue"},"#0449D0",1],[{fr:"Bleu marine",en:"Navy Blue"},"#000F3E",1]],
   apbpro_palette2:[[{fr:"Canard industriel",en:"Industrial Teal"},"#365D70",1],[{fr:"Bordeaux tertiaire",en:"Tertiary Burgundy"},"#870031",1],[{fr:"Vert agricole",en:"Agricultural Green"},"#008739",1],[{fr:"Orange public",en:"Public Orange"},"#E7730A",1],[{fr:"Bleu copropriété",en:"Co-ownership Blue"},"#3F7EFB",1]],
-  m2_palette:[[{fr:"Clair",en:"Light"},"#FFFFFF",0],[{fr:"Sauge",en:"Sage"},"#F2FAEB",0],[{fr:"Avocat",en:"Avocado"},"#CEF17B",0],[{fr:"Forêt",en:"Forest"},"#085014",1],[{fr:"Sombre",en:"Dark"},"#000000",1]],
-  ited_palette:[[{fr:"Blanc crème",en:"Creamy White"},"#FFFFFF",0],[{fr:"Vert électrique",en:"Electric Green"},"#7AE5C6",0],[{fr:"Bleu futur",en:"Future Blue"},"#1B086B",1]]};
+  m2_palette:[[{fr:"Clair",en:"Light"},"#FFFFFF",0],[{fr:"Sauge",en:"Sage"},"#F2FAEB",0],[{fr:"Avocat",en:"Avocado"},"#CEF17B",0],[{fr:"Forêt",en:"Forest"},"#085014",1],[{fr:"Sombre",en:"Dark"},"#000000",1]]};
 /* Typographies : nom, graisse, fond, couleur des libellés, glyphe « Aa » détouré */
 var TYPOS={
   typo:{n:"Mazzard",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#FFFFFF",lc:"#747474"},
   grpf_typo:{n:"Caldina",w:{fr:"Medium",en:"Medium"},bg:"#F7F5ED",lc:"#6B6A63"},
   nyro_typo:{n:"Manrope",w:{fr:"Bold",en:"Bold"},bg:"#FFFFFF",lc:"#6E6E6E"},
   apbpro_typo:{n:"Mazzard",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#FFFFFF",lc:"#6E6E6E"},
-  m2_typo:{n:"Neulis Neue",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#CEF17B",lc:"#4B6624"},
-  ited_typo:{n:"Aptos",w:{fr:"Extra Bold",en:"Extra Bold"},bg:"#FCFBFC",lc:"#6E6E6E"}};
+  m2_typo:{n:"Neulis Neue",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#CEF17B",lc:"#4B6624"}};
 var GLYPHS={"typo": "/images/typo/groupe-apb-aa.png", "grpf_typo": "/images/typo/grpf-aa.png", "nyro_typo": "/images/typo/nyro-aa.png", "apbpro_typo": "/images/typo/groupe-apb-pro-aa.png", "m2_typo": "/images/typo/2m-energie-aa.png", "ited_typo": ""};
 function tile(k,cls){var ty=TYPOS[k];if(ty&&GLYPHS[k]){var i1=IMG[k];return `<figure class="tile typ" style="--ar:${i1.w}/${i1.h};background:${ty.bg};--lc:${ty.lc}" role="img" aria-label="${esc(LANG==="en"?i1.alt_en:i1.alt)}"><span class="typ-n">${ty.n}</span><img class="typ-g" src="${GLYPHS[k]}" alt=""><span class="typ-w">${L(ty.w)}</span></figure>`}var pl=PALETTES[k];if(pl){var i0=IMG[k];return `<figure class="tile pal" style="--ar:${i0.w}/${i0.h}" role="img" aria-label="${esc(LANG==="en"?i0.alt_en:i0.alt)}">${pl.map(c=>`<div class="pal-sw${c[2]?" dark":""}" style="background:${c[1]}"><span class="pal-n">${L(c[0])}</span><span class="pal-h">${c[1]}</span></div>`).join("")}</figure>`}var i=IMG[k];if(i.video)return `<figure class="tile vid" style="--ar:${i.w}/${i.h};background:${i.bg||"transparent"}" role="img" aria-label="${esc(LANG==="en"&&i.alt_en?i.alt_en:i.alt)}"><video autoplay muted loop playsinline preload="auto" aria-hidden="true">${i.webm?`<source src="${i.webm}" type="video/webm">`:""}<source src="${i.src}" type="video/mp4"></video></figure>`;return `<figure class="tile${cls?" "+cls:""}" style="--ar:${i.w}/${i.h}"><img src="${i.src}" loading="lazy" decoding="async" alt="${esc(LANG==="en"&&i.alt_en?i.alt_en:i.alt)}" width="${i.w}" height="${i.h}"></figure>`}
 function cover(p){var m=p.cover&&IMG[p.cover];return `<div class="proj-cover${m&&m.box?" is-mk":""}" style="--c:${p.color}"${m&&m.box?` data-mk="${p.cover}"`:""}>${m?`<img src="${m.src}" alt="">`:""}</div>`}
