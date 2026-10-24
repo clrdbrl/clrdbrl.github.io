@@ -7,21 +7,21 @@ var FEATURED       = ["grpf","groupe-apb","nyro"]; // les 3 projets mis en avant
 
 var IMG = {
  "logo": {
-  "src": "/images/projets/groupe-apb/groupe-apb-logo-anime.gif",
+  "src": "/images/projets/groupe-apb/groupe-apb-logo-anime.gif?v=3dda31f9",
   "w": 1920,
   "h": 956,
   "alt": "Logo Groupe APB en blanc sur fond bleu",
   "alt_en": "White Groupe APB logo on a blue background"
  },
  "browser": {
-  "src": "/images/projets/groupe-apb/groupe-apb-navigateur.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-navigateur.webp?v=1ca58856",
   "w": 733,
   "h": 490,
   "alt": "Onglet de navigateur avec le favicon Groupe APB",
   "alt_en": "Browser tab with the Groupe APB favicon"
  },
  "house": {
-  "src": "/images/projets/groupe-apb/groupe-apb-maison.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-maison.webp?v=2aaab180",
   "w": 779,
   "h": 376,
   "alt": "Maison équipée de panneaux solaires avec le pictogramme Groupe APB",
@@ -42,77 +42,77 @@ var IMG = {
   "alt_en": "Colour palette: orange, white, light grey, APB blue and navy blue"
  },
  "sign": {
-  "src": "/images/projets/groupe-apb/groupe-apb-ordinateur.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-ordinateur.webp?v=1c649bfc",
   "w": 1600,
   "h": 1104,
   "alt": "Site Groupe APB affiché sur un ordinateur portable",
   "alt_en": "Groupe APB website on a laptop"
  },
  "slogan": {
-  "src": "/images/projets/groupe-apb/groupe-apb-slogan.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-slogan.webp?v=a50304ae",
   "w": 682,
   "h": 471,
   "alt": "Carte avec le slogan Rénovez aujourd'hui, économisez demain",
   "alt_en": "Card with the slogan “Rénovez aujourd’hui, économisez demain”"
  },
  "tote": {
-  "src": "/images/projets/groupe-apb/groupe-apb-tote-bag.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-tote-bag.webp?v=82eebd9c",
   "w": 659,
   "h": 998,
   "alt": "Tote bag au logo Groupe APB",
   "alt_en": "Groupe APB logo tote bag"
  },
  "site": {
-  "src": "/images/projets/groupe-apb/groupe-apb-site-accueil.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-site-accueil.webp?v=466178db",
   "w": 1395,
   "h": 919,
   "alt": "Page d'accueil du site Groupe APB",
   "alt_en": "Groupe APB website homepage"
  },
  "pages": {
-  "src": "/images/projets/groupe-apb/groupe-apb-site-pages.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-site-pages.webp?v=a7429aa3",
   "w": 1205,
   "h": 537,
   "alt": "Six pages du site Groupe APB",
   "alt_en": "Six pages of the Groupe APB website"
  },
  "hand": {
-  "src": "/images/projets/groupe-apb/groupe-apb-mobile-main.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-mobile-main.webp?v=2f78a51f",
   "w": 580,
   "h": 976,
   "alt": "Site Groupe APB affiché sur un smartphone",
   "alt_en": "Groupe APB website on a smartphone"
  },
  "phones": {
-  "src": "/images/projets/groupe-apb/groupe-apb-mobile-ecrans.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-mobile-ecrans.webp?v=ca88f6dd",
   "w": 761,
   "h": 975,
   "alt": "Six écrans mobiles du site Groupe APB",
   "alt_en": "Six mobile screens of the Groupe APB website"
  },
  "apbpro_browser": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-navigateur.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-navigateur.webp?v=73982a6f",
   "w": 628,
   "h": 419,
   "alt": "Onglet de navigateur avec le favicon Groupe APB Pro",
   "alt_en": "Browser tab with the Groupe APB Pro favicon"
  },
  "apbpro_deco1": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-declinaison.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-declinaison.webp?v=7d5e6f40",
   "w": 720,
   "h": 495,
   "alt": "Techniciens portant la veste Groupe APB",
   "alt_en": "Technicians wearing the Groupe APB jacket"
  },
  "apbpro_logo": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-logo-anime.gif",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-logo-anime.gif?v=de3be699",
   "w": 1920,
   "h": 956,
   "alt": "Logo Groupe APB Pro",
   "alt_en": "Groupe APB Pro logo"
  },
  "apbpro_pages": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-pages.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-pages.webp?v=0969a749",
   "w": 1475,
   "h": 735,
   "alt": "Pages du site Groupe APB Pro",
@@ -126,28 +126,28 @@ var IMG = {
   "alt_en": "Groupe APB Pro colour palette"
  },
  "apbpro_photo": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-photo.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-photo.webp?v=7c8234d4",
   "w": 822,
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme Groupe APB Pro",
   "alt_en": "Lifestyle photo with the Groupe APB Pro symbol"
  },
  "apbpro_site": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-accueil.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-accueil.webp?v=51c07e37",
   "w": 1474,
   "h": 970,
   "alt": "Page d’accueil du site Groupe APB Pro",
   "alt_en": "Groupe APB Pro website homepage"
  },
  "apbpro_slogan": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-slogan.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-slogan.webp?v=3c51fd7f",
   "w": 722,
   "h": 497,
   "alt": "Carte au slogan de Groupe APB Pro",
   "alt_en": "Groupe APB Pro slogan card"
  },
  "apbpro_tall": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-declinaison-verticale.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-declinaison-verticale.webp?v=f4e2b7c5",
   "w": 694,
   "h": 1053,
   "alt": "Catalogue professionnel Groupe APB Pro",
@@ -161,35 +161,35 @@ var IMG = {
   "alt_en": "Groupe APB Pro brand typography"
  },
  "grpf_browser": {
-  "src": "/images/projets/grpf/grpf-navigateur.webp",
+  "src": "/images/projets/grpf/grpf-navigateur.webp?v=140cabe7",
   "w": 594,
   "h": 395,
   "alt": "Onglet de navigateur avec le favicon GRPF",
   "alt_en": "Browser tab with the GRPF favicon"
  },
  "grpf_deco1": {
-  "src": "/images/projets/grpf/grpf-declinaison.webp",
+  "src": "/images/projets/grpf/grpf-declinaison.webp?v=6c569bd2",
   "w": 722,
   "h": 497,
   "alt": "Carte de visite GRPF",
   "alt_en": "GRPF business card"
  },
  "grpf_hand": {
-  "src": "/images/projets/grpf/grpf-mobile-main.webp",
+  "src": "/images/projets/grpf/grpf-mobile-main.webp?v=5eb4aa7f",
   "w": 612,
   "h": 1030,
   "alt": "Site GRPF affiché sur un smartphone",
   "alt_en": "GRPF website on a smartphone"
  },
  "grpf_logo": {
-  "src": "/images/projets/grpf/grpf-logo-anime.gif",
+  "src": "/images/projets/grpf/grpf-logo-anime.gif?v=e4b9b491",
   "w": 1920,
   "h": 956,
   "alt": "Logo GRPF",
   "alt_en": "GRPF logo"
  },
  "grpf_pages": {
-  "src": "/images/projets/grpf/grpf-site-pages.webp",
+  "src": "/images/projets/grpf/grpf-site-pages.webp?v=d6e5b1f4",
   "w": 1476,
   "h": 735,
   "alt": "Pages du site GRPF",
@@ -203,35 +203,35 @@ var IMG = {
   "alt_en": "GRPF colour palette"
  },
  "grpf_phones": {
-  "src": "/images/projets/grpf/grpf-mobile-ecrans.webp",
+  "src": "/images/projets/grpf/grpf-mobile-ecrans.webp?v=399ef4ef",
   "w": 803,
   "h": 1030,
   "alt": "Écrans mobiles du site GRPF",
   "alt_en": "GRPF mobile screens"
  },
  "grpf_photo": {
-  "src": "/images/projets/grpf/grpf-photo.webp",
+  "src": "/images/projets/grpf/grpf-photo.webp?v=889871d7",
   "w": 823,
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme GRPF",
   "alt_en": "Lifestyle photo with the GRPF symbol"
  },
  "grpf_site": {
-  "src": "/images/projets/grpf/grpf-site-accueil.webp",
+  "src": "/images/projets/grpf/grpf-site-accueil.webp?v=b89ddf96",
   "w": 1474,
   "h": 970,
   "alt": "Page d’accueil du site GRPF",
   "alt_en": "GRPF website homepage"
  },
  "grpf_slogan": {
-  "src": "/images/projets/grpf/grpf-slogan.webp",
+  "src": "/images/projets/grpf/grpf-slogan.webp?v=0b3ddb93",
   "w": 722,
   "h": 497,
   "alt": "Carte au slogan de GRPF",
   "alt_en": "GRPF slogan card"
  },
  "grpf_tall": {
-  "src": "/images/projets/grpf/grpf-declinaison-verticale.webp",
+  "src": "/images/projets/grpf/grpf-declinaison-verticale.webp?v=e46123f8",
   "w": 694,
   "h": 1053,
   "alt": "Mug au logo GRPF",
@@ -245,28 +245,28 @@ var IMG = {
   "alt_en": "GRPF brand typography"
  },
  "nyro_browser": {
-  "src": "/images/projets/nyro/nyro-navigateur.webp",
+  "src": "/images/projets/nyro/nyro-navigateur.webp?v=d6f2e34a",
   "w": 594,
   "h": 396,
   "alt": "Onglet de navigateur avec le favicon NYRO",
   "alt_en": "Browser tab with the NYRO favicon"
  },
  "nyro_deco1": {
-  "src": "/images/projets/nyro/nyro-declinaison.webp",
+  "src": "/images/projets/nyro/nyro-declinaison.webp?v=36ce7567",
   "w": 722,
   "h": 497,
   "alt": "Savon NYRO tenu contre l’épaule",
   "alt_en": "NYRO soap held against the shoulder"
  },
  "nyro_logo": {
-  "src": "/images/projets/nyro/nyro-logo-anime.gif",
+  "src": "/images/projets/nyro/nyro-logo-anime.gif?v=1297ef55",
   "w": 1920,
   "h": 956,
   "alt": "Logo NYRO",
   "alt_en": "NYRO logo"
  },
  "nyro_pages": {
-  "src": "/images/projets/nyro/nyro-site-pages.webp",
+  "src": "/images/projets/nyro/nyro-site-pages.webp?v=7201e787",
   "w": 1475,
   "h": 433,
   "alt": "Pages du site NYRO",
@@ -280,28 +280,28 @@ var IMG = {
   "alt_en": "NYRO colour palette"
  },
  "nyro_photo": {
-  "src": "/images/projets/nyro/nyro-photo.webp",
+  "src": "/images/projets/nyro/nyro-photo.webp?v=296d99a5",
   "w": 823,
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme NYRO",
   "alt_en": "Lifestyle photo with the NYRO symbol"
  },
  "nyro_site": {
-  "src": "/images/projets/nyro/nyro-site-accueil.webp",
+  "src": "/images/projets/nyro/nyro-site-accueil.webp?v=bf3a41c6",
   "w": 1474,
   "h": 970,
   "alt": "Page d’accueil du site NYRO",
   "alt_en": "NYRO website homepage"
  },
  "nyro_slogan": {
-  "src": "/images/projets/nyro/nyro-slogan.webp",
+  "src": "/images/projets/nyro/nyro-slogan.webp?v=29860c23",
   "w": 722,
   "h": 497,
   "alt": "Carte au slogan de NYRO",
   "alt_en": "NYRO slogan card"
  },
  "nyro_tall": {
-  "src": "/images/projets/nyro/nyro-declinaison-verticale.webp",
+  "src": "/images/projets/nyro/nyro-declinaison-verticale.webp?v=869a9bd4",
   "w": 694,
   "h": 1053,
   "alt": "Flacon de sérum NYRO",
@@ -315,21 +315,21 @@ var IMG = {
   "alt_en": "NYRO brand typography"
  },
  "m2_logo": {
-  "src": "/images/projets/2m-energie/2m-energie-logo-anime.gif",
+  "src": "/images/projets/2m-energie/2m-energie-logo-anime.gif?v=54a33aa8",
   "w": 1920,
   "h": 956,
   "alt": "Logo 2M Energie",
   "alt_en": "2M Energie logo"
  },
  "m2_browser": {
-  "src": "/images/projets/2m-energie/2m-energie-navigateur.webp",
+  "src": "/images/projets/2m-energie/2m-energie-navigateur.webp?v=da3c9d39",
   "w": 593,
   "h": 395,
   "alt": "Onglet de navigateur avec le favicon 2M Energie",
   "alt_en": "Browser tab with the 2M Energie favicon"
  },
  "m2_photo": {
-  "src": "/images/projets/2m-energie/2m-energie-photo.webp",
+  "src": "/images/projets/2m-energie/2m-energie-photo.webp?v=74f86b73",
   "w": 822,
   "h": 395,
   "alt": "Couple consultant le site 2M Energie sur un smartphone",
@@ -350,35 +350,35 @@ var IMG = {
   "alt_en": "2M Energie palette: Light, Sage, Avocado, Forest and Dark"
  },
  "m2_deco1": {
-  "src": "/images/projets/2m-energie/2m-energie-declinaison.webp",
+  "src": "/images/projets/2m-energie/2m-energie-declinaison.webp?v=ec93848c",
   "w": 721,
   "h": 496,
   "alt": "Cartes de visite 2M Energie",
   "alt_en": "2M Energie business cards"
  },
  "m2_tall": {
-  "src": "/images/projets/2m-energie/2m-energie-declinaison-verticale.webp",
+  "src": "/images/projets/2m-energie/2m-energie-declinaison-verticale.webp?v=388b77e8",
   "w": 695,
   "h": 1054,
   "alt": "Casquette au logo 2M Energie",
   "alt_en": "2M Energie logo cap"
  },
  "m2_slogan": {
-  "src": "/images/projets/2m-energie/2m-energie-slogan.webp",
+  "src": "/images/projets/2m-energie/2m-energie-slogan.webp?v=6b01bd77",
   "w": 719,
   "h": 495,
   "alt": "Carte au slogan La rénovation globale pour les particuliers",
   "alt_en": "Card with the slogan “La rénovation globale pour les particuliers”"
  },
  "m2_billboard": {
-  "src": "/images/projets/2m-energie/2m-energie-panneau.webp",
+  "src": "/images/projets/2m-energie/2m-energie-panneau.webp?v=a2c93e3b",
   "w": 1476,
   "h": 593,
   "alt": "Panneau d'affichage 2M Energie sur la pompe à chaleur et le solaire",
   "alt_en": "2M Energie billboard about heat pumps and solar panels"
  },
  "mk_grpf": {
-  "src": "/images/projets/grpf/grpf-banniere.webp",
+  "src": "/images/projets/grpf/grpf-banniere.webp?v=43e4706b",
   "w": 2400,
   "h": 1490,
   "alt": "",
@@ -397,7 +397,7 @@ var IMG = {
   ]
  },
  "mk_m2": {
-  "src": "/images/projets/2m-energie/2m-energie-banniere.webp",
+  "src": "/images/projets/2m-energie/2m-energie-banniere.webp?v=fc35bd17",
   "w": 2400,
   "h": 1340,
   "alt": "",
@@ -414,7 +414,7 @@ var IMG = {
   ]
  },
  "mk_apbpro": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-banniere.webp",
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-banniere.webp?v=fddf93bb",
   "w": 2400,
   "h": 1382,
   "alt": "",
@@ -433,7 +433,7 @@ var IMG = {
   ]
  },
  "mk_apb": {
-  "src": "/images/projets/groupe-apb/groupe-apb-banniere.webp",
+  "src": "/images/projets/groupe-apb/groupe-apb-banniere.webp?v=19febd8c",
   "w": 2400,
   "h": 1644,
   "alt": "",
@@ -452,7 +452,7 @@ var IMG = {
   ]
  },
  "mk_nyro": {
-  "src": "/images/projets/nyro/nyro-banniere.webp",
+  "src": "/images/projets/nyro/nyro-banniere.webp?v=0bf293c4",
   "w": 2400,
   "h": 1676,
   "alt": "",
@@ -471,14 +471,14 @@ var IMG = {
   ]
  },
  "nyro_prod": {
-  "src": "/images/projets/nyro/nyro-produit.webp",
+  "src": "/images/projets/nyro/nyro-produit.webp?v=cc58c9ff",
   "w": 1672,
   "h": 941,
   "alt": "Gamme de soins NYRO",
   "alt_en": "NYRO skincare range"
  },
  "nyro_schema": {
-  "src": "/images/projets/nyro/nyro-schemas.webp",
+  "src": "/images/projets/nyro/nyro-schemas.webp?v=c7fdb986",
   "w": 2400,
   "h": 1073,
   "alt": "Schémas des packagings NYRO",
@@ -492,24 +492,24 @@ var IMG = {
   "alt_en": "Groupe APB Pro secondary sector colours"
  },
  "apb_icons": {
-  "src": "/images/projets/groupe-apb/groupe-apb-pictos.mp4",
+  "src": "/images/projets/groupe-apb/groupe-apb-pictos.mp4?v=067f4a87",
   "w": 2000,
   "h": 300,
   "video": 1,
   "bg": "#0247CE",
   "alt": "Animation de l'iconographie de Groupe APB",
   "alt_en": "Groupe APB iconography animation",
-  "webm": "/images/projets/groupe-apb/groupe-apb-pictos.webm"
+  "webm": "/images/projets/groupe-apb/groupe-apb-pictos.webm?v=3280b195"
  },
  "m2_lp": {
-  "src": "/images/projets/2m-energie/2m-energie-onepage-pompe-a-chaleur.webp",
+  "src": "/images/projets/2m-energie/2m-energie-onepage-pompe-a-chaleur.webp?v=a88386d6",
   "w": 1200,
   "h": 4297,
   "alt": "One-page de 2M Energie dédiée à la pompe à chaleur",
   "alt_en": "2M Energie heat pump one-page"
  },
  "m2_home": {
-  "src": "/images/projets/2m-energie/2m-energie-onepage-accueil.webp",
+  "src": "/images/projets/2m-energie/2m-energie-onepage-accueil.webp?v=2bb179dc",
   "w": 1200,
   "h": 4832,
   "alt": "One-page d’accueil de 2M Energie",
@@ -830,7 +830,7 @@ var TYPOS={
   nyro_typo:{n:"Manrope",w:{fr:"Bold",en:"Bold"},bg:"#FFFFFF",lc:"#6E6E6E"},
   apbpro_typo:{n:"Mazzard",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#FFFFFF",lc:"#6E6E6E"},
   m2_typo:{n:"Neulis Neue",w:{fr:"Semi Bold",en:"Semi Bold"},bg:"#CEF17B",lc:"#4B6624"}};
-var GLYPHS={"typo": "/images/typo/groupe-apb-aa.png", "grpf_typo": "/images/typo/grpf-aa.png", "nyro_typo": "/images/typo/nyro-aa.png", "apbpro_typo": "/images/typo/groupe-apb-pro-aa.png", "m2_typo": "/images/typo/2m-energie-aa.png", "ited_typo": ""};
+var GLYPHS={"typo": "/images/typo/groupe-apb-aa.png?v=da34e07e", "grpf_typo": "/images/typo/grpf-aa.png?v=90ab2c7a", "nyro_typo": "/images/typo/nyro-aa.png?v=b3861308", "apbpro_typo": "/images/typo/groupe-apb-pro-aa.png?v=62f6d6dd", "m2_typo": "/images/typo/2m-energie-aa.png?v=bab412ad", "ited_typo": ""};
 function tile(k,cls){var ty=TYPOS[k];if(ty&&GLYPHS[k]){var i1=IMG[k];return `<figure class="tile typ" style="--ar:${i1.w}/${i1.h};background:${ty.bg};--lc:${ty.lc}" role="img" aria-label="${esc(LANG==="en"?i1.alt_en:i1.alt)}"><span class="typ-n">${ty.n}</span><img class="typ-g" src="${GLYPHS[k]}" alt=""><span class="typ-w">${L(ty.w)}</span></figure>`}var pl=PALETTES[k];if(pl){var i0=IMG[k];return `<figure class="tile pal" style="--ar:${i0.w}/${i0.h}" role="img" aria-label="${esc(LANG==="en"?i0.alt_en:i0.alt)}">${pl.map(c=>`<div class="pal-sw${c[2]?" dark":""}" style="background:${c[1]}"><span class="pal-n">${L(c[0])}</span><span class="pal-h">${c[1]}</span></div>`).join("")}</figure>`}var i=IMG[k];if(i.video)return `<figure class="tile vid" style="--ar:${i.w}/${i.h};background:${i.bg||"transparent"}" role="img" aria-label="${esc(LANG==="en"&&i.alt_en?i.alt_en:i.alt)}"><video autoplay muted loop playsinline preload="auto" aria-hidden="true">${i.webm?`<source src="${i.webm}" type="video/webm">`:""}<source src="${i.src}" type="video/mp4"></video></figure>`;return `<figure class="tile${cls?" "+cls:""}" style="--ar:${i.w}/${i.h}"><img src="${i.src}" loading="lazy" decoding="async" alt="${esc(LANG==="en"&&i.alt_en?i.alt_en:i.alt)}" width="${i.w}" height="${i.h}"></figure>`}
 function cover(p){var m=p.cover&&IMG[p.cover];return `<div class="proj-cover${m&&m.box?" is-mk":""}" style="--c:${p.color}"${m&&m.box?` data-mk="${p.cover}"`:""}>${m?`<img src="${m.src}" alt="">`:""}</div>`}
 var ARROW_DOWN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
@@ -1200,7 +1200,7 @@ function flipCards(root){
 
 /* ===== Logos (LogoLoop, React Bits) — porté en JS natif =====
    Pour mettre les vrais logos : renseigner src:"data:image/..." ou une URL ; sans src, le nom s'affiche en texte. */
-var LOGOS=[{"name": "Groupe APB", "src": "/images/logos/groupe-apb.png", "h": 33}, {"name": "Alan Allman Associates", "src": "/images/logos/alan-allman-associates.png", "h": 42}, {"name": "GRPF", "src": "/images/logos/grpf.png", "h": 30}, {"name": "ITED", "src": "/images/logos/ited.png", "h": 30}, {"name": "Groupe APB Pro", "src": "/images/logos/groupe-apb-pro.png", "h": 35}, {"name": "2M Energie", "src": "/images/logos/2m-energie.png", "h": 42}, {"name": "NYRO", "src": "/images/logos/nyro.png", "h": 35}];
+var LOGOS=[{"name": "Groupe APB", "src": "/images/logos/groupe-apb.png?v=487e8c86", "h": 33}, {"name": "Alan Allman Associates", "src": "/images/logos/alan-allman-associates.png?v=b451b331", "h": 42}, {"name": "GRPF", "src": "/images/logos/grpf.png?v=f5273b95", "h": 30}, {"name": "ITED", "src": "/images/logos/ited.png?v=42644b75", "h": 30}, {"name": "Groupe APB Pro", "src": "/images/logos/groupe-apb-pro.png?v=75e4b289", "h": 35}, {"name": "2M Energie", "src": "/images/logos/2m-energie.png?v=0a0dc06c", "h": 42}, {"name": "NYRO", "src": "/images/logos/nyro.png?v=19e4be0f", "h": 35}];
 var LL={speed:40,hoverSpeed:12,logoHeight:30,gap:88};
 function logoLoop(){
   var item=l=>`<li class="ll-item">${l.src?`<img src="${l.src}" alt="${esc(l.name)}" draggable="false" style="height:${l.h||LL.logoHeight}px">`:`<span class="ll-word">${esc(l.name)}</span>`}</li>`;
