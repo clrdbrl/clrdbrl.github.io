@@ -2,7 +2,7 @@
 
 Portfolio de Clara Debarle, UI/UX & Brand Designer.
 
-Site en ligne : https://clrdbrl.github.io
+Site en ligne : https://cd-projects.com
 
 ## Structure
 
