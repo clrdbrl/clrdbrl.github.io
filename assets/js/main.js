@@ -452,22 +452,22 @@ var IMG = {
   ]
  },
  "mk_nyro": {
-  "src": "/images/projets/nyro/nyro-banniere.webp?v=0bf293c4",
+  "src": "/images/projets/nyro/nyro-banniere.webp?v=fb595250",
   "w": 2400,
-  "h": 1676,
+  "h": 1019,
   "alt": "",
   "alt_en": "",
   "box": [
-   0.36,
-   0.25,
-   0.64,
-   0.76
+   0.38,
+   0.2,
+   0.63,
+   0.75
   ],
   "focus": [
-   0.25,
-   0.145,
-   0.75,
-   0.861
+   0.29,
+   0,
+   0.72,
+   1
   ]
  },
  "nyro_prod": {
@@ -1844,6 +1844,7 @@ function route(keepScroll){
   app.classList.remove("flip-in");
   initPage();
   if(pendingFlip)runFlip();
+  else document.querySelectorAll(".flip-clone").forEach(function(c){if(!c.getAnimations().length)c.remove()});
   if(route.started)app.focus({preventScroll:true});
   route.started=true;
 }
@@ -1881,6 +1882,8 @@ document.addEventListener("click",function(e){
   if(!a||reduce||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
   var cv=a.querySelector(".proj-cover, .skc-card");if(!cv)return;
   e.preventDefault();
+  /* une transition est déjà en cours (double clic) : on ignore le clic suivant */
+  if(pendingFlip||document.querySelector(".flip-clone")){e.stopPropagation();return}
   var r=cv.getBoundingClientRect();
   var clone=cv.cloneNode(true);
   clone.className="flip-clone";
@@ -1899,6 +1902,7 @@ document.addEventListener("click",function(e){
 function runFlip(){
   var f=pendingFlip;pendingFlip=null;
   var hero=app.querySelector(".case-hero");
+  document.querySelectorAll(".flip-clone").forEach(function(c){if(c!==f.clone)c.remove()});
   if(!hero){f.clone.remove();return}
   app.classList.add("flip-in");
   var to=hero.getBoundingClientRect(),fr=f.from;
