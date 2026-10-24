@@ -2462,6 +2462,14 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   .fill:active {
     color: var(--c-ink);
   }
+  .fill.tap::before {
+    clip-path: circle(150% at 50% 50%);
+    transition-duration: .3s;
+  }
+  .fill.tap {
+    color: var(--c-ink);
+    border-color: var(--c-accent);
+  }
 }
 
 .to-top .circle svg {
@@ -2484,7 +2492,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 .anim .hero h1 .line>span {
   animation: lineUp 1.1s var(--ease-out) both;
 }
-.anim .hero h1 .line:nth-child(2)>span {
+.anim .hero h1 .line~.line>span {
   animation-delay: .12s;
 }
 .anim .hero .status, .anim .hero-lead, .anim .hero .btn-row {
@@ -3812,13 +3820,10 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 }
 /* v105 : nom, logos, chips contact */
 .hero-name {
-  margin: clamp(24px,3vw,32px) 0 0;
+  margin: 48px 0 0;
   font: 600 clamp(1rem,1.3vw,1.25rem)/1.2 var(--f-display);
   letter-spacing: .01em;
   color: var(--c-ink);
-}
-.hero-name+h1 {
-  margin-top: clamp(8px,1vw,14px);
 }
 .anim .hero .hero-name {
   animation: fadeUp .9s var(--ease-out) both;
@@ -3948,7 +3953,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 }
 
 .hero-name+h1 {
-  margin-top: clamp(18px,2vw,28px);
+  margin-top: 32px;
 }
 .ll {
   --ll-gap: 96px;
@@ -3992,12 +3997,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 }
 
 @media (min-width:1024px) {
-  .hero .hero-name {
-    margin-top: 76px;
-  }
-  .hero .hero-name+h1 {
-    margin-top: 68px;
-  }
   .hero .hero-lead {
     margin-top: 80px;
   }

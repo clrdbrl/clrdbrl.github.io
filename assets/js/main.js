@@ -454,20 +454,20 @@ var IMG = {
  "mk_nyro": {
   "src": "/images/projets/nyro/nyro-banniere.webp",
   "w": 2400,
-  "h": 1497,
+  "h": 1676,
   "alt": "",
   "alt_en": "",
   "box": [
-   0.3,
-   0.2,
-   0.7,
-   0.86
+   0.36,
+   0.25,
+   0.64,
+   0.76
   ],
   "focus": [
-   0.19,
-   0,
-   0.815,
-   1
+   0.25,
+   0.145,
+   0.75,
+   0.861
   ]
  },
  "nyro_prod": {
@@ -727,17 +727,17 @@ var PROJECTS=[
   {slug:"grpf", name:"GRPF", year:"2026", color:"#FF6A55", cover:"mk_grpf", category:CAT, tags:["Branding","UX","UI"],
    description:{fr:["Groupe Rénovation Performance France (GRPF) accompagne les particuliers dans leurs projets de rénovation énergétique, des travaux jusqu’à l’obtention des aides et subventions.", "Le projet a porté sur la refonte complète du site web afin de renforcer la notoriété et la crédibilité de la marque, de clarifier ses domaines d’expertise et d’améliorer l’expérience utilisateur. L’objectif était de guider les propriétaires vers la prise de contact tout en structurant des contenus évolutifs, conçus pour renforcer la visibilité sur les moteurs de recherche (SEO)."],
                 en:["Groupe Rénovation Performance France (GRPF) supports homeowners through their energy renovation projects, from the works to securing grants and subsidies.", "The project focused on a complete website redesign to strengthen the brand’s awareness and credibility, clarify its areas of expertise and improve the user experience. The goal was to guide homeowners towards getting in touch while structuring scalable content designed to boost visibility on search engines (SEO)."]},
-   stats:[{to:10,suffix:"+",label:{fr:"pages stratégiques conçues, de l\u2019accueil au devis en passant par les aides et les réalisations.",en:"strategic pages designed, from the homepage to quotes, grants and case studies."}},
-          {to:30,suffix:"+",label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients, FAQ\u2026",en:"UI components built, cards, CTAs, forms, testimonials, FAQ\u2026"}},
+   stats:[{to:10,prefix:"+",label:{fr:"pages stratégiques conçues, de l\u2019accueil au devis en passant par les aides et les réalisations.",en:"strategic pages designed, from the homepage to quotes, grants and case studies."}},
+          {to:30,prefix:"+",label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients, FAQ\u2026",en:"UI components built, cards, CTAs, forms, testimonials, FAQ\u2026"}},
           {to:8,label:{fr:"points d\u2019entrée vers la conversion, du contact aux pages services et au guide des aides financières.",en:"conversion entry points, from contact to service pages and financial aid guidance."}}],
    chapters:std("grpf",[
      {key:"website",rows:[{type:"row",items:["grpf_site"],framed:true},{type:"row",items:["grpf_pages"],framed:true}]},
      {key:"mobile",rows:[{type:"row",items:["grpf_hand","grpf_phones"],framed:true}]}])},
   {slug:"groupe-apb", name:"Groupe APB", year:"2026", color:"#1E49CA", cover:"mk_apb", category:CAT, tags:["Branding","UX","UI"],
    role:{fr:"Brand et UI/UX Designer",en:"Brand and UI/UX Designer"},
-   stats:[{to:70,prefix:"+",suffix:"%",label:{fr:"de leads par mois depuis le lancement de la nouvelle identité.",en:"more leads per month since the new identity launched."}},
-          {to:60,suffix:"+",label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients\u2026",en:"UI components built, cards, CTAs, forms, testimonials\u2026"}},
-          {to:5,label:{fr:"univers d\u2019offres structurés, isolation, chauffage, solaire, ventilation et menuiserie.",en:"offer categories structured, insulation, heating, solar, ventilation and joinery."}}],
+   stats:[{to:5,label:{fr:"univers d\u2019offres structurés, isolation, chauffage, solaire, ventilation et menuiserie.",en:"offer categories structured, insulation, heating, solar, ventilation and joinery."}},
+          {to:60,prefix:"+",label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients\u2026",en:"UI components built, cards, CTAs, forms, testimonials\u2026"}},
+          {to:1200,label:{fr:"leads générés en moyenne chaque mois depuis le lancement de la nouvelle identité.",en:"leads generated on average every month since the new identity launched."}}],
    description:{fr:["Groupe APB est une entreprise française certifiée RGE, spécialisée dans la rénovation énergétique des particuliers, de l’isolation au chauffage, en passant par les panneaux solaires, la ventilation et la menuiserie.", "Le projet consistait à refondre l’identité de marque pour renforcer sa notoriété et harmoniser sa présence sur l’ensemble des canaux, du site web aux réseaux sociaux et campagnes marketing. L’objectif était également de simplifier la gestion des offres, d’améliorer l’expérience utilisateur et d’optimiser le parcours client, de l’acquisition à la fidélisation, tout en assurant une continuité entre les points de contact physiques et digitaux."],
                 en:["Groupe APB is a French RGE-certified company specialising in energy renovation for homeowners, from insulation and heating to solar panels, ventilation and joinery.", "The project involved redesigning the brand identity to strengthen its awareness and harmonise its presence across every channel, from the website to social media and marketing campaigns. The goal was also to simplify offer management, improve the user experience and optimise the customer journey, from acquisition to loyalty, while ensuring continuity between physical and digital touchpoints."]},
    
@@ -791,7 +791,7 @@ var STATS_TEMPLATE=[
   {to:80,label:{fr:"supports créés, du print au web en passant par les réseaux sociaux",en:"assets created, from print to web and social media"}},
   {to:1200,label:{fr:"visiteurs le premier mois sur la nouvelle landing page",en:"visitors in the first month on the new landing page"}}
 ];
-function fmtNum(n){return LANG==="fr"?String(n).replace(/\B(?=(\d{3})+(?!\d))/g,"\u202F"):String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",")}
+function fmtNum(n){return LANG==="fr"?String(n).replace(/\B(?=(\d{3})+(?!\d))/g,"\u00A0"):String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",")}
 function statsBlock(p){
   var s=p.stats||STATS_TEMPLATE,sample=!p.stats;
   var suf=x=>x.suffix?(LANG==="fr"&&x.suffix==="%"?"\u202F%":x.suffix):"";
@@ -1296,7 +1296,13 @@ function initPage(){
     el.innerHTML=el.textContent.trim().split(/\s+/).map(w=>`<span class="w">${esc(w)}</span>`).join(" ");
   });
   /* apparitions */
+  /* grille de la page Projets : toutes les cartes apparaissent en cascade dès l'arrivée sur la page */
+  app.querySelectorAll(".proj-list>li[data-reveal]").forEach(function(el,i){
+    el.style.setProperty("--d",Math.min(i,6));
+    requestAnimationFrame(function(){requestAnimationFrame(function(){el.classList.add("in")})});
+  });
   app.querySelectorAll("[data-reveal]").forEach(function(el){
+    if(el.closest(".proj-list"))return;
     if(reduce||!revealIO){el.classList.add("in");return}
     revealIO.observe(el);
   });
@@ -1769,6 +1775,22 @@ function sizeCta(){
 }
 window.addEventListener("resize",function(){sizeCta();onScroll()});
 
+/* ============ EFFET DE REMPLISSAGE AU TOUCHER (mobile) ============
+   Même retour visuel sur tous les boutons ronds et pilules : le remplissage citron
+   reste visible au moins 450 ms, même pour un toucher très court. */
+(function(){
+  var cur=null,t0=0,timer=null;
+  function off(){if(!cur)return;var el=cur;var wait=Math.max(0,450-(Date.now()-t0));clearTimeout(timer);timer=setTimeout(function(){el.classList.remove("tap")},wait);cur=null}
+  document.addEventListener("pointerdown",function(e){
+    if(e.pointerType==="mouse")return;
+    var b=e.target.closest(".fill");if(!b){var tt=e.target.closest(".to-top");if(tt)b=tt.querySelector(".fill")}
+    if(!b||b.closest(".cta-card,.mc"))return;
+    clearTimeout(timer);if(cur&&cur!==b)cur.classList.remove("tap");
+    cur=b;t0=Date.now();b.classList.add("tap");
+  },{passive:true});
+  ["pointerup","pointercancel"].forEach(function(n){document.addEventListener(n,off,{passive:true})});
+})();
+
 /* ============ ROUTEUR ============ */
 var app=document.getElementById("app");
 /* Chemin de la page courante, sans le préfixe de langue : "/", "/projets/nyro/"… */
@@ -1809,6 +1831,8 @@ function go(href){
   history.pushState(null,"",href);route();
 }
 function route(keepScroll){
+  var wait=(window.__navAfter||0)-Date.now();
+  if(keepScroll!==true&&wait>0){clearTimeout(route._t);route._t=setTimeout(route,wait);return}
   var r=resolve(curPath()),parts=r.parts,html=r.html,nav=r.nav,title=r.title;
   var md=document.querySelector('meta[name="description"]');if(md)md.setAttribute("content",r.desc);
   app.innerHTML=html;app.classList.remove("leaving");
@@ -1986,7 +2010,8 @@ else window.addEventListener("hashchange",route);
     wrap.style.setProperty("--sm-toggle-width",w+"px");
   };
   btn.addEventListener("click",function(){setOpen(!open)});
-  panel.addEventListener("click",function(e){if(e.target.closest(".sm-panel-item"))setOpen(false)});
+  /* clic sur un lien du menu : le panneau se referme d'abord, la nouvelle page s'affiche ensuite (évite les saccades) */
+  panel.addEventListener("click",function(e){if(e.target.closest(".sm-panel-item")){window.__navAfter=Date.now()+(reduce?0:340);setOpen(false)}});
   document.addEventListener("mousedown",function(e){if(open&&!panel.contains(e.target)&&!btn.contains(e.target))setOpen(false)});
   document.addEventListener("keydown",function(e){if(e.key==="Escape"&&open){setOpen(false);btn.focus()}});
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(window.smRelabel);
