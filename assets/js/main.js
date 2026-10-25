@@ -676,7 +676,7 @@ var CAREER=[
          en:"Marketing strategies, SEO, social media content management, brand promotion in the press and on the radio, internal marketing and event organisation."}}
 ];
 var EDUCATION=[
-  {date:{fr:"2025 – 2027 (en cours)",en:"2025 – 2027 (in progress)"}, role:{fr:"Mastère Direction Artistique et Numérique",en:"Master\u2019s in Digital Art Direction"}, org:{fr:"LISAA, Paris",en:"LISAA, Paris"}},
+  {date:{fr:"2025 – 2027 (en cours)",en:"2025 – 2027 (in progress)"}, role:{fr:"Mastère Direction Artistique et Numérique",en:"Master\u2019s in Digital Art Direction"}, org:{fr:"LISAA, Paris (formation à distance)",en:"LISAA, Paris (distance learning)"}},
   {date:{fr:"2024",en:"2024"}, role:{fr:"MBA Stratégie Digitale",en:"MBA in Digital Strategy"}, org:{fr:"MBA ESG, Paris",en:"MBA ESG, Paris"}},
   {date:{fr:"2022",en:"2022"}, role:{fr:"Licence Japonais et Commerce International",en:"Bachelor\u2019s in Japanese and International Trade"}, org:{fr:"INALCO, Paris",en:"INALCO, Paris"}}
 ];
@@ -727,8 +727,8 @@ var PROJECTS=[
   {slug:"grpf", name:"GRPF", year:"2026", color:"#FF6A55", cover:"mk_grpf", category:CAT, tags:["Branding","UX","UI"],
    description:{fr:["Groupe Rénovation Performance France (GRPF) accompagne les particuliers dans leurs projets de rénovation énergétique, des travaux jusqu’à l’obtention des aides et subventions.", "Le projet a porté sur la refonte complète du site web afin de renforcer la notoriété et la crédibilité de la marque, de clarifier ses domaines d’expertise et d’améliorer l’expérience utilisateur. L’objectif était de guider les propriétaires vers la prise de contact tout en structurant des contenus évolutifs, conçus pour renforcer la visibilité sur les moteurs de recherche (SEO)."],
                 en:["Groupe Rénovation Performance France (GRPF) supports homeowners through their energy renovation projects, from the works to securing grants and subsidies.", "The project focused on a complete website redesign to strengthen the brand’s awareness and credibility, clarify its areas of expertise and improve the user experience. The goal was to guide homeowners towards getting in touch while structuring scalable content designed to boost visibility on search engines (SEO)."]},
-   stats:[{to:10,prefix:"+",label:{fr:"pages stratégiques conçues, de l\u2019accueil au devis en passant par les aides et les réalisations.",en:"strategic pages designed, from the homepage to quotes, grants and case studies."}},
-          {to:30,prefix:"+",label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients, FAQ\u2026",en:"UI components built, cards, CTAs, forms, testimonials, FAQ\u2026"}},
+   stats:[{to:10,plus:true,label:{fr:"pages stratégiques conçues, de l\u2019accueil au devis en passant par les aides et les réalisations.",en:"strategic pages designed, from the homepage to quotes, grants and case studies."}},
+          {to:30,plus:true,label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients, FAQ\u2026",en:"UI components built, cards, CTAs, forms, testimonials, FAQ\u2026"}},
           {to:8,label:{fr:"points d\u2019entrée vers la conversion, du contact aux pages services et au guide des aides financières.",en:"conversion entry points, from contact to service pages and financial aid guidance."}}],
    chapters:std("grpf",[
      {key:"website",rows:[{type:"row",items:["grpf_site"],framed:true},{type:"row",items:["grpf_pages"],framed:true}]},
@@ -736,7 +736,7 @@ var PROJECTS=[
   {slug:"groupe-apb", name:"Groupe APB", year:"2026", color:"#1E49CA", cover:"mk_apb", category:CAT, tags:["Branding","UX","UI"],
    role:{fr:"Brand et UI/UX Designer",en:"Brand and UI/UX Designer"},
    stats:[{to:5,label:{fr:"univers d\u2019offres structurés, isolation, chauffage, solaire, ventilation et menuiserie.",en:"offer categories structured, insulation, heating, solar, ventilation and joinery."}},
-          {to:60,prefix:"+",label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients\u2026",en:"UI components built, cards, CTAs, forms, testimonials\u2026"}},
+          {to:60,plus:true,label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients\u2026",en:"UI components built, cards, CTAs, forms, testimonials\u2026"}},
           {to:1200,label:{fr:"leads générés en moyenne chaque mois depuis le lancement de la nouvelle identité.",en:"leads generated on average every month since the new identity launched."}}],
    description:{fr:["Groupe APB est une entreprise française certifiée RGE, spécialisée dans la rénovation énergétique des particuliers, de l’isolation au chauffage, en passant par les panneaux solaires, la ventilation et la menuiserie.", "Le projet consistait à refondre l’identité de marque pour renforcer sa notoriété et harmoniser sa présence sur l’ensemble des canaux, du site web aux réseaux sociaux et campagnes marketing. L’objectif était également de simplifier la gestion des offres, d’améliorer l’expérience utilisateur et d’optimiser le parcours client, de l’acquisition à la fidélisation, tout en assurant une continuité entre les points de contact physiques et digitaux."],
                 en:["Groupe APB is a French RGE-certified company specialising in energy renovation for homeowners, from insulation and heating to solar panels, ventilation and joinery.", "The project involved redesigning the brand identity to strengthen its awareness and harmonise its presence across every channel, from the website to social media and marketing campaigns. The goal was also to simplify offer management, improve the user experience and optimise the customer journey, from acquisition to loyalty, while ensuring continuity between physical and digital touchpoints."]},
@@ -794,10 +794,12 @@ var STATS_TEMPLATE=[
 function fmtNum(n){return LANG==="fr"?String(n).replace(/\B(?=(\d{3})+(?!\d))/g,"\u00A0"):String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",")}
 function statsBlock(p){
   var s=p.stats||STATS_TEMPLATE,sample=!p.stats;
-  var suf=x=>x.suffix?(LANG==="fr"&&x.suffix==="%"?"\u202F%":x.suffix):"";
+  /* plus:true : « 60+ » en français, « +60 » en anglais */
+  var pre=x=>(x.prefix||"")+(x.plus&&LANG==="en"?"+":"");
+  var suf=x=>(x.suffix?(LANG==="fr"&&x.suffix==="%"?"\u202F%":x.suffix):"")+(x.plus&&LANG!=="en"?"+":"");
   return `<div class="stats">${s.map((x,i)=>`
     <div class="stat" data-reveal style="--d:${i}">
-      <p class="stat-num" aria-label="${(x.prefix||"")+fmtNum(x.to)+suf(x)}"><span aria-hidden="true">${x.prefix||""}<span class="stat-val" data-to="${x.to}">${fmtNum(x.to)}</span>${suf(x)}</span></p>
+      <p class="stat-num" aria-label="${pre(x)+fmtNum(x.to)+suf(x)}"><span aria-hidden="true">${pre(x)}<span class="stat-val" data-to="${x.to}">${fmtNum(x.to)}</span>${suf(x)}</span></p>
       <p class="stat-label">${esc(L(x.label))}</p>
     </div>`).join("")}</div>`;
 }
