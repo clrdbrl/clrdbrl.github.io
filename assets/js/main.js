@@ -794,9 +794,9 @@ var STATS_TEMPLATE=[
 function fmtNum(n){return LANG==="fr"?String(n).replace(/\B(?=(\d{3})+(?!\d))/g,"\u00A0"):String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",")}
 function statsBlock(p){
   var s=p.stats||STATS_TEMPLATE,sample=!p.stats;
-  /* plus:true : « 60+ » en français, « +60 » en anglais */
-  var pre=x=>(x.prefix||"")+(x.plus&&LANG==="en"?"+":"");
-  var suf=x=>(x.suffix?(LANG==="fr"&&x.suffix==="%"?"\u202F%":x.suffix):"")+(x.plus&&LANG!=="en"?"+":"");
+  /* plus:true : « +60 » en français, « 60+ » en anglais */
+  var pre=x=>(x.prefix||"")+(x.plus&&LANG!=="en"?"+":"");
+  var suf=x=>(x.suffix?(LANG==="fr"&&x.suffix==="%"?"\u202F%":x.suffix):"")+(x.plus&&LANG==="en"?"+":"");
   return `<div class="stats">${s.map((x,i)=>`
     <div class="stat" data-reveal style="--d:${i}">
       <p class="stat-num" aria-label="${pre(x)+fmtNum(x.to)+suf(x)}"><span aria-hidden="true">${pre(x)}<span class="stat-val" data-to="${x.to}">${fmtNum(x.to)}</span>${suf(x)}</span></p>
