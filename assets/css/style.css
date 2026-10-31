@@ -249,10 +249,10 @@ img.logo-slot {
   height: 48px;
   min-width: 48px;
   padding: 0 20px;
-  background: var(--c-ink);
-  border: 0;
+  background: var(--c-card);
+  border: 1px solid var(--c-border);
   cursor: pointer;
-  color: var(--c-white);
+  color: var(--c-ink);
   font-family: var(--f-display);
   font-weight: 600;
   font-size: 1rem;
@@ -491,13 +491,36 @@ img.logo-slot {
   transform: rotate(-45deg);
 }
 
-@media (max-width:899px) {
+/* Mobile : le bouton garde son libellé « Menu », avec des dimensions un peu plus compactes */
+@media (max-width:599px) {
   .sm-toggle {
-    padding: 0;
-    width: 48px;
+    gap: 8px;
+    padding: 0 16px;
+    font-size: .9375rem;
   }
-  .sm-toggle-textWrap {
-    display: none;
+  .sm-burger {
+    width: 18px;
+  }
+}
+@media (max-width:374px) {
+  .site-header .brand {
+    padding: 0 14px;
+    font-size: 1rem;
+  }
+  .sm-toggle {
+    gap: 7px;
+    padding: 0 13px;
+  }
+  .bar-end .lang-btn {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+  .sm-toggle {
+    height: 44px;
+  }
+  .site-header .brand {
+    height: 44px;
   }
 }
 
@@ -2279,9 +2302,9 @@ img.logo-slot {
 }
 .ct-copied {
   position: absolute;
-  left: calc(100% + 10px);
-  top: 50%;
-  transform: translate(-4px,-50%);
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translate(-50%,4px);
   white-space: nowrap;
   font-size: .875rem;
   font-weight: 600;
@@ -2291,26 +2314,17 @@ img.logo-slot {
 }
 .ct-copy.is-copied .ct-copied {
   opacity: 1;
-  transform: translate(0,-50%);
-}
-
-@media (max-width:719px) {
-  .ct-copied {
-    left: 50%;
-    top: auto;
-    bottom: calc(100% + 8px);
-    transform: translate(-50%,4px);
-  }
-  .ct-copy.is-copied .ct-copied {
-    transform: translate(-50%,0);
-  }
+  transform: translate(-50%,0);
 }
 
 
-@media (hover:hover) {
-  .ct-copy:not(.is-copied):hover {
-    border-color: var(--c-ink);
-  }
+/* Bouton copier : même remplissage citron que les autres boutons, sans couper « Copiée » */
+.ct-copy.fill {
+  overflow: visible;
+}
+.ct-copy.fill::before {
+  inset: -1.5px;
+  border-radius: 50%;
 }
 
 .ct-copy:focus-visible {
@@ -3307,6 +3321,10 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     border-left: 1px solid var(--c-line);
     padding-left: clamp(24px,4vw,56px);
   }
+  /* la ligne s'arrête avec le contenu de l'étape (plus de marge sous le texte depuis le retrait des livrables) */
+  .ap-text {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -4174,4 +4192,123 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   .ct-mail .ct-address {
     font-size: clamp(.875rem,4.3vw,1.375rem);
   }
+}
+
+
+/* ================= ÉCRAN DE CHARGEMENT (première visite de la session) ================= */
+.loader {
+  display: none;
+}
+.is-loading .loader, .loader.leaving {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  pointer-events: none;
+}
+.is-loading {
+  overflow: hidden;
+}
+.loader-layer {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+.loader-l1 {
+  background: var(--c-blue-light);
+}
+.loader-l2 {
+  background: var(--c-blue);
+}
+.loader-l3 {
+  display: grid;
+  place-items: center;
+  background: var(--c-bg);
+}
+.loader-c {
+  display: grid;
+  justify-items: center;
+  gap: 28px;
+}
+.loader-name {
+  overflow: hidden;
+  padding-bottom: .08em;
+  font: 600 clamp(2.25rem,7vw,4.5rem)/1 var(--f-display);
+  letter-spacing: -.035em;
+  color: var(--c-ink);
+}
+.loader-name span {
+  display: block;
+  animation: lineUp 1s var(--ease-out) .1s both;
+}
+/* Jauge en pilule : remplissage bleu + pourcentage à droite (noir sur fond, blanc sur le bleu) */
+.loader-gauge {
+  --p: 0;
+  position: relative;
+  width: clamp(220px,34vw,320px);
+  height: 44px;
+  border-radius: var(--r-pill);
+  background: var(--c-card);
+  border: 1px solid var(--c-border);
+  opacity: 0;
+  animation: fadeUp .7s var(--ease-out) .25s both;
+}
+.lg-fill {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: max(34px,calc((100% - 8px) * var(--p) / 100));
+  border-radius: var(--r-pill);
+  background: var(--c-blue);
+}
+/* copie blanche du pourcentage, visible seulement là où la jauge est remplie */
+.lg-clip {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - 4px - max(34px,calc((100% - 8px) * var(--p) / 100))) 0 0);
+}
+.lg-pct {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  font: 600 .9375rem/1 var(--f-display);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .01em;
+  color: var(--c-ink);
+}
+.lg-clip .lg-pct {
+  color: var(--c-white);
+}
+.loader.leaving .loader-c {
+  opacity: 0;
+  transform: translateY(-16px);
+  transition: opacity .35s ease,transform .5s var(--ease);
+}
+.loader.leaving .loader-layer {
+  transform: translateY(-100%);
+  transition: transform .8s cubic-bezier(.76,0,.24,1);
+}
+.loader.leaving .loader-l3 {
+  transition-delay: .1s;
+}
+.loader.leaving .loader-l2 {
+  transition-delay: .2s;
+}
+.loader.leaving .loader-l1 {
+  transition-delay: .3s;
+}
+/* pendant le chargement, les animations de la page attendent */
+.is-loading.anim [data-reveal] {
+  opacity: 0 !important;
+  transform: translateY(40px) !important;
+}
+.is-loading .hero h1 .line>span, .is-loading .hero .status, .is-loading .hero-name, .is-loading .hero-lead, .is-loading .hero .btn-row {
+  animation-play-state: paused !important;
+}
+.toc button:focus:not(:focus-visible) {
+  outline: none;
 }

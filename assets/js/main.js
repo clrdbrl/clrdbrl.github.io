@@ -861,7 +861,6 @@ function methodBlock(){
         <div class="ap-body" id="ap-p${i+1}"><div class="ap-inner">
           <p class="ap-tag ap-tag-m">${L(s.tag)}</p>
           <p class="ap-text">${L(s.text)}</p>
-          <div class="ap-outs"><span class="ap-outs-l">${t("stepOut")}\u00a0:</span><ul class="badges">${L(s.outs).map(x=>`<li class="badge">${x}</li>`).join("")}</ul></div>
         </div></div>
       </li>`).join("")}</ol>
     <div class="ap-cta" data-reveal><a class="btn btn-ink fill" href="${u('/contact/')}">${t("stpDone")}</a></div>
@@ -1105,7 +1104,7 @@ function pageContact(){
       <div class="ct-mail-b">
         <div class="ct-addr-row">
           <p class="ct-address">${esc(CONTACT_EMAIL)}</p>
-          <button class="ct-copy" type="button" data-copy="${esc(CONTACT_EMAIL)}" data-copy-icon aria-label="${t("copy")}" title="${t("copy")}">${cp}<span class="ct-copied" aria-hidden="true">${t("ctCopied")}</span></button>
+          <button class="ct-copy fill" type="button" data-copy="${esc(CONTACT_EMAIL)}" data-copy-icon aria-label="${t("copy")}" title="${t("copy")}">${cp}<span class="ct-copied" aria-hidden="true">${t("ctCopied")}</span></button>
         </div>
         <a class="btn btn-ink fill ct-write" href="mailto:${esc(CONTACT_EMAIL)}?subject=${encodeURIComponent(t("ctSubject"))}" target="_top">${t("ctWrite")}</a>
         <p class="copy-status sr" role="status" aria-live="polite"></p>
@@ -1308,17 +1307,25 @@ function initPage(){
     if(reduce||!revealIO){el.classList.add("in");return}
     revealIO.observe(el);
   });
-  /* sommaire actif dans les pages projet */
-  if(tocIO){tocIO.disconnect();tocIO=null}
+  /* sommaire actif dans les pages projet : la section dont le haut a passé 40 % de l'écran ;
+     en bas de page, la dernière section (trop courte pour atteindre cette ligne) devient active */
+  if(tocIO){tocIO();tocIO=null}
   var tocBtns=app.querySelectorAll("[data-toc]");
-  if(tocBtns.length&&"IntersectionObserver" in window){
-    tocIO=new IntersectionObserver(function(es){
-      es.forEach(function(e){if(e.isIntersecting){
-        tocBtns.forEach(b=>b.classList.toggle("active",b.getAttribute("data-toc")===e.target.id));
-      }});
-    },{rootMargin:"-35% 0px -60% 0px"});
-    app.querySelectorAll(".chapter").forEach(c=>tocIO.observe(c));
-    tocBtns[0].classList.add("active");
+  if(tocBtns.length){
+    var chs=[].slice.call(app.querySelectorAll(".chapter")),tocLock=0,raf=0;
+    var setToc=function(id){tocBtns.forEach(b=>b.classList.toggle("active",b.getAttribute("data-toc")===id))};
+    var calc=function(){raf=0;if(Date.now()<tocLock||!chs[0].isConnected)return;
+      var line=innerHeight*.4,cur=chs[0].id;
+      chs.forEach(c=>{if(c.getBoundingClientRect().top<=line)cur=c.id});
+      var last=chs[chs.length-1],end=document.documentElement.scrollHeight-innerHeight-4;
+      if(scrollY>=end&&last.getBoundingClientRect().top<innerHeight)cur=last.id;
+      setToc(cur)};
+    var onS=function(){if(!raf)raf=requestAnimationFrame(calc)};
+    /* clic dans le sommaire : la rubrique choisie est soulignée tout de suite */
+    var onC=function(e){var b=e.target.closest("[data-toc]");if(!b)return;setToc(b.getAttribute("data-toc"));tocLock=Date.now()+1200;setTimeout(calc,1250)};
+    window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);app.addEventListener("click",onC);
+    tocIO=function(){window.removeEventListener("scroll",onS);window.removeEventListener("resize",onS);app.removeEventListener("click",onC)};
+    calc();
   }
   initSkewed(app);
   layoutMk(app);requestAnimationFrame(function(){layoutMk(app)});setTimeout(function(){layoutMk(app)},400);
@@ -2039,6 +2046,30 @@ document.addEventListener("pointerleave",fillOrigin,true);
 
 applyStatic();
 route();
+/* Écran de chargement : la jauge se remplit de 0 à 100 % (au moins 1,8 s, en attendant les polices), puis l'écran se retire vers le haut */
+(function(){
+  var d=document.documentElement,ld=document.querySelector(".loader");
+  if(!ld||!d.classList.contains("is-loading"))return;
+  var g=ld.querySelector(".loader-gauge"),pcts=ld.querySelectorAll(".lg-pct");
+  var t0=performance.now()+300,ready=false,done=false,p=0,MIN=1800,MAX=3200;
+  var fonts=document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve();
+  fonts.then(function(){ready=true});
+  function show(v){g.style.setProperty("--p",v.toFixed(2));var tx=Math.round(v)+"%";pcts.forEach(function(e){e.textContent=tx})}
+  function leave(){
+    if(done)return;done=true;
+    try{sessionStorage.setItem("cd-loaded","1")}catch(e){}
+    setTimeout(function(){ld.classList.add("leaving")},180);
+    setTimeout(function(){d.classList.remove("is-loading")},630);
+    setTimeout(function(){ld.remove()},1500);
+  }
+  (function tick(now){
+    var el=Math.max(0,now-t0),k=Math.min(1,el/MIN),target=100*(1-Math.pow(1-k,3));
+    if(!ready&&el<MAX)target=Math.min(target,90);
+    p+=(target-p)*.25;if(target>=100&&p>99.5)p=100;
+    show(p);
+    if(p>=100)leave();else requestAnimationFrame(tick);
+  })(t0);
+})();
 window.__prerender=function(path){var r=resolve(path);return {html:r.html,title:r.title,desc:r.desc,lang:LANG}};
 
 /* ===== Décors : motifs et formes en parallaxe pour animer le scroll ===== */
