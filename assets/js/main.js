@@ -559,7 +559,7 @@ fr:{
   cvTitle:"Mon parcours", cvLead:"Du marketing au design, un chemin qui m’a appris à penser à la fois à la marque, au message et à l’utilisateur.",
   expSub:"Expériences", eduSub:"Formations", 
   
-  filterAll:"Tous", filterAria:"Filtrer les projets", nProjects:function(n){return n+(n>1?" projets":" projet")},
+  loading:"Chargement…", viewGrid:"Grille", viewList:"Liste", viewGridA:"Afficher les projets en grille", viewListA:"Afficher les projets en liste", filterAll:"Tous les projets", filterAria:"Filtrer les projets", nProjects:function(n){return n+(n>1?" projets":" projet")},
   allProjects:"Tous les projets", role:"Rôle", company:"Entreprise", year:"Année", tools:"Outils", todo:"À compléter",
   descTodo:"Description de l’entreprise à compléter.", cursorCard:"Découvrir", cursorVisit:"Visiter", footTime:"Basée à Paris", moreTitle:"Autres projets", carAria:"Carrousel des autres projets", tocAria:"Sommaire du projet",
   chResults:"En quelques chiffres",
@@ -605,7 +605,7 @@ en:{
   cvTitle:"My journey", cvLead:"From marketing to design, a path that taught me to think about the brand, the message and the user at the same time.",
   expSub:"Experience", eduSub:"Education", 
   
-  filterAll:"All", filterAria:"Filter projects", nProjects:function(n){return n+(n>1?" projects":" project")},
+  loading:"Loading…", viewGrid:"Grid", viewList:"List", viewGridA:"Show projects as a grid", viewListA:"Show projects as a list", filterAll:"All projects", filterAria:"Filter projects", nProjects:function(n){return n+(n>1?" projects":" project")},
   allProjects:"All projects", role:"Role", company:"Company", year:"Year", tools:"Tools", todo:"To be completed",
   descTodo:"Company description to be completed.", cursorCard:"Discover", cursorVisit:"Visit", footTime:"Based in Paris", moreTitle:"Other projects", carAria:"Other projects carousel", tocAria:"Project contents",
   chResults:"In numbers",
@@ -975,21 +975,26 @@ function pageHome(){
 `;
 }
 
+var VIEW_ICON={grid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3.5" y="3.5" width="6.5" height="6.5" rx="2"/><rect x="14" y="3.5" width="6.5" height="6.5" rx="2"/><rect x="3.5" y="14" width="6.5" height="6.5" rx="2"/><rect x="14" y="14" width="6.5" height="6.5" rx="2"/></svg>',
+  list:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3.5" width="7" height="7" rx="2"/><rect x="3" y="13.5" width="7" height="7" rx="2"/><path d="M14 7h7M14 17h7"/></svg>'};
+/* extrait de la description (coupé à 2 lignes en vue liste) */
+function excerpt(p){var d=p.description&&L(p.description);if(!d)return "";return (Array.isArray(d)?d:[d]).join(" ")}
+/* libellés longs dans le filtre (les badges gardent « UX » et « UI ») */
+var FILTER_LABEL={UX:"UX Design",UI:"UI Design"};
 function pageProjects(){
   return `<section class="page-head wrap" data-reveal><h1>${t("tProjects")}</h1></section>
   <section class="wrap">
-    <div class="filters">
-      <div class="rseg-scroll"><div class="rseg" role="radiogroup" aria-label="${t("filterAria")}">
-        ${[["",t("filterAll")]].concat(TAGS.map(x=>[x,x])).map((x,i)=>`<button class="rseg-item" type="button" role="radio" data-filter="${x[0]}" aria-checked="${i===0}" tabindex="${i===0?0:-1}">${x[1]}</button>`).join("")}
-        <div class="rseg-thumb" aria-hidden="true">${[t("filterAll")].concat(TAGS).map(x=>`<span class="rseg-item rseg-copy">${x}</span>`).join("")}</div>
-      </div></div>
-      ${glideSelectHTML([["",t("filterAll")]].concat(TAGS.map(x=>[x,x])).map(x=>({value:x[0],label:x[1],tag:String(x[0]?PROJECTS.filter(p=>p.tags.indexOf(x[0])>-1).length:PROJECTS.length)})),t("filterAria"))}
-      <span class="count" aria-live="polite">${t("nProjects")(PROJECTS.length)}</span>
+    <div class="filters" data-reveal>
+      ${glideSelectHTML([["",t("filterAll")]].concat(TAGS.map(x=>[x,FILTER_LABEL[x]||x])).map(x=>({value:x[0],label:x[1],tag:t("nProjects")(x[0]?PROJECTS.filter(p=>p.tags.indexOf(x[0])>-1).length:PROJECTS.length)})),t("filterAria"))}
+      <div class="filters-end">
+        <span class="count sr" aria-live="polite">${t("nProjects")(PROJECTS.length)}</span>
+        <button class="vb" type="button" aria-pressed="false"><span class="lr" aria-hidden="true"></span><span class="sr vb-sr"></span></button>
+      </div>
     </div>
     <ul class="proj-list">${PROJECTS.map(p=>`
       <li data-tags="${p.tags.join(" ")}" data-reveal>
         <a class="proj" href="${u('/projets/'+p.slug+'/')}">${cover(p)}
-          <div class="proj-meta"><span class="proj-name">${esc(p.name)}</span><span class="proj-year">${p.year}</span></div>${badges(p.tags)}
+          <div class="proj-meta"><span class="proj-name">${esc(p.name)}</span><span class="proj-year">${p.year}</span></div>${excerpt(p)?`<p class="proj-ex">${esc(excerpt(p))}</p>`:""}${badges(p.tags)}
         </a>
       </li>`).join("")}</ul>
   </section>`;
@@ -1344,6 +1349,29 @@ function initPage(){
   if(seg)segCtl=rubberSegment(seg,function(f,i){applyFilter(f);if(gsCtl)gsCtl.set(i)});
   var gs=app.querySelector(".gsel");
   if(gs)gsCtl=glideSelect(gs,function(f,i){applyFilter(f);if(segCtl)segCtl.set(i)});
+  /* affichage en grille ou en liste : un seul bouton qui propose l'autre affichage, avec le libellé qui défile comme « Menu » */
+  var vb=app.querySelector(".vb"),plist=app.querySelector(".proj-list");
+  if(vb&&plist){
+    var cur="grid";
+    var roll=function(html){var w=vb.querySelector(".lr");
+      if(reduce||!w.firstChild){w.innerHTML='<span class="lr-i">'+html+'</span>';return}
+      w.querySelectorAll(".lr-i.out").forEach(x=>x.remove());var old=w.lastElementChild,nx=document.createElement("span");nx.className="lr-i in";nx.innerHTML=html;w.appendChild(nx);
+      old.classList.add("out");setTimeout(()=>old.remove(),560);setTimeout(()=>nx.classList.remove("in"),560)};
+    var setView=function(v,anim){
+      cur=v;var other=v==="grid"?"list":"grid",lab=t(other==="list"?"viewList":"viewGrid");
+      plist.classList.toggle("is-list",v==="list");vb.setAttribute("aria-pressed",String(v==="list"));
+      roll('<span class="vb-t">'+lab+'</span>'+VIEW_ICON[other]);vb.querySelector(".vb-sr").textContent=t(other==="list"?"viewListA":"viewGridA");
+      try{sessionStorage.setItem("cd-view",v)}catch(e){}
+      layoutMk(plist);requestAnimationFrame(function(){layoutMk(plist)});
+      if(anim&&!reduce){var n=0;plist.querySelectorAll(":scope>li:not([hidden])").forEach(function(li){li.style.setProperty("--d",Math.min(n++,6));li.style.transition="none";li.classList.remove("in");void li.offsetWidth;li.style.transition="";requestAnimationFrame(function(){requestAnimationFrame(function(){li.classList.add("in")})})})}
+    };
+    /* largeur fixe : celle du libellé le plus long (« Grille » / « Liste »), pour que le bouton ne bouge pas */
+    (function(){var w=vb.querySelector(".lr"),mx=0;["list","grid"].forEach(function(v){var m=document.createElement("span");m.className="lr-i";m.style.cssText="position:absolute;visibility:hidden";m.innerHTML='<span class="vb-t">'+t(v==="list"?"viewList":"viewGrid")+'</span>'+VIEW_ICON[v];w.appendChild(m);mx=Math.max(mx,m.getBoundingClientRect().width);m.remove()});if(mx)w.style.width=Math.ceil(mx)+"px"})();
+    /* grille par défaut à chaque nouvelle visite ; le choix « liste » est gardé tant que l'onglet reste ouvert */
+    var v0="grid";try{v0=sessionStorage.getItem("cd-view")||"grid"}catch(e){}
+    setView(v0==="list"?"list":"grid",false);
+    vb.addEventListener("click",function(){setView(cur==="grid"?"list":"grid",true)});
+  }
   function applyFilter(f){
     var n=0;
     app.querySelectorAll(".proj-list>li").forEach(function(li){
@@ -1594,7 +1622,7 @@ function glideSelectHTML(opts,label){
   var chev='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
   var tick='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
   return `<div class="gsel">
-    <button class="gsel-trigger" type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="gsel-list" aria-label="${esc(label)}"><span class="gsel-label">${esc(opts[0].label)}</span><span class="gsel-chev">${chev}</span></button>
+    <button class="gsel-trigger" type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="gsel-list" aria-label="${esc(label)}"><span class="gsel-label">${esc(opts[0].label)}</span><span class="gsel-end"><span class="gsel-cnt" aria-hidden="true">${esc(opts[0].tag)}</span><span class="gsel-chev">${chev}</span></span></button>
     <div class="gsel-menu" data-state="closed" data-side="bottom" hidden>
       <div class="gsel-list" id="gsel-list" role="listbox" aria-label="${esc(label)}"><span class="gsel-pill" aria-hidden="true"></span>
         ${opts.map((o,i)=>`<div class="gsel-opt" role="option" id="gsel-${i}" data-index="${i}" data-value="${esc(o.value)}" aria-selected="${i===0}"><span class="gsel-name">${esc(o.label)}</span><span class="gsel-tag">${esc(o.tag)}</span><span class="gsel-check">${tick}</span></div>`).join("")}
@@ -1605,7 +1633,7 @@ function glideSelectHTML(opts,label){
 function glideSelect(root,onChange){
   var trig=root.querySelector(".gsel-trigger"),menu=root.querySelector(".gsel-menu"),list=root.querySelector(".gsel-list"),pill=root.querySelector(".gsel-pill"),lab=root.querySelector(".gsel-label");
   var opts=[].slice.call(root.querySelectorAll(".gsel-opt")),n=opts.length,sel=0,active=null,isOpen=false,timer=0,scrub=null,instant=false;
-  var POP=180,POPOUT=120,GAP=2;
+  var POP=180,POPOUT=320,GAP=2;
   var step=()=>opts[0].offsetHeight+GAP;
   function paint(){
     opts.forEach((o,i)=>{o.toggleAttribute("data-active",i===active);o.setAttribute("aria-selected",i===sel)});
@@ -1631,11 +1659,19 @@ function glideSelect(root,onChange){
     /* la bulle reste en place pendant le fondu de fermeture, pour éviter tout clignotement */
     menu.dataset.state="closed";timer=setTimeout(()=>{menu.hidden=true;active=null;paint()},POPOUT+60);
   }
-  function setSel(i){sel=i;lab.textContent=opts[i].querySelector(".gsel-name").textContent;paint()}
+  var cnt=root.querySelector(".gsel-cnt");
+  /* libellé : largeur fixe (celle du filtre le plus long) et changement qui défile comme « Menu » ou « EN » */
+  (function(){var m=document.createElement("span");m.className="gsel-label";m.style.cssText="position:absolute;visibility:hidden;white-space:nowrap";trig.appendChild(m);
+    var w=0;opts.forEach(o=>{m.textContent=o.querySelector(".gsel-name").textContent;w=Math.max(w,m.getBoundingClientRect().width)});m.remove();
+    if(w)lab.style.width=Math.ceil(w)+"px";rollLabel(lab,lab.textContent);
+    if(cnt){rollLabel(cnt,cnt.textContent)}})();
+  function setSel(i){sel=i;rollLabel(lab,opts[i].querySelector(".gsel-name").textContent);if(cnt)rollLabel(cnt,opts[i].querySelector(".gsel-tag").textContent);paint()}
   function pick(i,viaKey){
     if(i==null){close(true);return}
-    if(i!==sel){setSel(i);onChange(opts[i].dataset.value,i);if(!viaKey){root.removeAttribute("data-swap");void root.offsetWidth;root.setAttribute("data-swap","")}}
-    close(false);trig.focus({preventScroll:true});
+    if(i!==sel){setSel(i);onChange(opts[i].dataset.value,i)}
+    /* au toucher : la bulle noire glisse d'abord sur le choix, puis le menu se referme en douceur */
+    if(viaKey){close(false);trig.focus({preventScroll:true});return}
+    setActive(i);clearTimeout(timer);timer=setTimeout(function(){close(false);trig.focus({preventScroll:true})},240);
   }
   var lastPD=0;
   trig.addEventListener("pointerdown",function(e){if(e.button!==0)return;lastPD=Date.now();e.preventDefault();trig.focus({preventScroll:true});isOpen?close(false):open(false)});

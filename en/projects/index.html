@@ -27,16 +27,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=02bf53c4">
+<link rel="stylesheet" href="/assets/css/style.css?v=7ed9aa1f">
 
 <script src="/assets/js/gsap.min.js?v=47da594c" defer></script>
-<script src="/assets/js/main.js?v=279a6fef" defer></script>
+<script src="/assets/js/main.js?v=1c26ee55" defer></script>
 </head>
 <body>
 <div class="loader" aria-hidden="true">
   <div class="loader-layer loader-l1"></div>
   <div class="loader-layer loader-l2"></div>
-  <div class="loader-layer loader-l3"><div class="loader-c"><div class="loader-name"><span>CD Projects</span></div><div class="loader-gauge"><div class="lg-fill"></div><span class="lg-pct">0%</span><div class="lg-clip"><span class="lg-pct">0%</span></div></div></div></div>
+  <div class="loader-layer loader-l3"><div class="loader-c"><div class="loader-name"><span>CD Projects</span></div><div class="loader-gauge"><div class="lg-fill"></div><span class="lg-lab" data-i18n="loading">Loading…</span><span class="lg-pct">0%</span><div class="lg-clip"><span class="lg-lab" data-i18n="loading">Loading…</span><span class="lg-pct">0%</span></div></div></div></div>
 </div>
 <header class="site-header">
   <div class="wrap">
@@ -87,45 +87,44 @@
 
 <main id="app" tabindex="-1"><section class="page-head wrap" data-reveal><h1>Projects</h1></section>
   <section class="wrap">
-    <div class="filters">
-      <div class="rseg-scroll"><div class="rseg" role="radiogroup" aria-label="Filter projects">
-        <button class="rseg-item" type="button" role="radio" data-filter="" aria-checked="true" tabindex="0">All</button><button class="rseg-item" type="button" role="radio" data-filter="UX" aria-checked="false" tabindex="-1">UX</button><button class="rseg-item" type="button" role="radio" data-filter="UI" aria-checked="false" tabindex="-1">UI</button><button class="rseg-item" type="button" role="radio" data-filter="Branding" aria-checked="false" tabindex="-1">Branding</button>
-        <div class="rseg-thumb" aria-hidden="true"><span class="rseg-item rseg-copy">All</span><span class="rseg-item rseg-copy">UX</span><span class="rseg-item rseg-copy">UI</span><span class="rseg-item rseg-copy">Branding</span></div>
-      </div></div>
+    <div class="filters" data-reveal>
       <div class="gsel">
-    <button class="gsel-trigger" type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="gsel-list" aria-label="Filter projects"><span class="gsel-label">All</span><span class="gsel-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></button>
+    <button class="gsel-trigger" type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="gsel-list" aria-label="Filter projects"><span class="gsel-label">All projects</span><span class="gsel-end"><span class="gsel-cnt" aria-hidden="true">5 projects</span><span class="gsel-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></span></button>
     <div class="gsel-menu" data-state="closed" data-side="bottom" hidden>
       <div class="gsel-list" id="gsel-list" role="listbox" aria-label="Filter projects"><span class="gsel-pill" aria-hidden="true"></span>
-        <div class="gsel-opt" role="option" id="gsel-0" data-index="0" data-value="" aria-selected="true"><span class="gsel-name">All</span><span class="gsel-tag">5</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-1" data-index="1" data-value="UX" aria-selected="false"><span class="gsel-name">UX</span><span class="gsel-tag">3</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-2" data-index="2" data-value="UI" aria-selected="false"><span class="gsel-name">UI</span><span class="gsel-tag">5</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-3" data-index="3" data-value="Branding" aria-selected="false"><span class="gsel-name">Branding</span><span class="gsel-tag">5</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+        <div class="gsel-opt" role="option" id="gsel-0" data-index="0" data-value="" aria-selected="true"><span class="gsel-name">All projects</span><span class="gsel-tag">5 projects</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-1" data-index="1" data-value="UX" aria-selected="false"><span class="gsel-name">UX Design</span><span class="gsel-tag">3 projects</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-2" data-index="2" data-value="UI" aria-selected="false"><span class="gsel-name">UI Design</span><span class="gsel-tag">5 projects</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div><div class="gsel-opt" role="option" id="gsel-3" data-index="3" data-value="Branding" aria-selected="false"><span class="gsel-name">Branding</span><span class="gsel-tag">5 projects</span><span class="gsel-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
       </div>
     </div>
   </div>
-      <span class="count" aria-live="polite">5 projects</span>
+      <div class="filters-end">
+        <span class="count sr" aria-live="polite">5 projects</span>
+        <button class="vb" type="button" aria-pressed="false"><span class="lr" aria-hidden="true"></span><span class="sr vb-sr"></span></button>
+      </div>
     </div>
     <ul class="proj-list">
       <li data-tags="Branding UX UI" data-reveal>
         <a class="proj" href="/en/projects/grpf/"><div class="proj-cover is-mk" style="--c:#FF6A55" data-mk="mk_grpf"><img src="/images/projets/grpf/grpf-banniere.webp?v=43e4706b" alt=""></div>
-          <div class="proj-meta"><span class="proj-name">GRPF</span><span class="proj-year">2026</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+          <div class="proj-meta"><span class="proj-name">GRPF</span><span class="proj-year">2026</span></div><p class="proj-ex">Groupe Rénovation Performance France (GRPF) supports homeowners through their energy renovation projects, from the works to securing grants and subsidies. The project focused on a complete website redesign to strengthen the brand’s awareness and credibility, clarify its areas of expertise and improve the user experience. The goal was to guide homeowners towards getting in touch while structuring scalable content designed to boost visibility on search engines (SEO).</p><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
         </a>
       </li>
       <li data-tags="Branding UX UI" data-reveal>
         <a class="proj" href="/en/projects/groupe-apb/"><div class="proj-cover is-mk" style="--c:#1E49CA" data-mk="mk_apb"><img src="/images/projets/groupe-apb/groupe-apb-banniere.webp?v=19febd8c" alt=""></div>
-          <div class="proj-meta"><span class="proj-name">Groupe APB</span><span class="proj-year">2026</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+          <div class="proj-meta"><span class="proj-name">Groupe APB</span><span class="proj-year">2026</span></div><p class="proj-ex">Groupe APB is a French RGE-certified company specialising in energy renovation for homeowners, from insulation and heating to solar panels, ventilation and joinery. The project involved redesigning the brand identity to strengthen its awareness and harmonise its presence across every channel, from the website to social media and marketing campaigns. The goal was also to simplify offer management, improve the user experience and optimise the customer journey, from acquisition to loyalty, while ensuring continuity between physical and digital touchpoints.</p><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
         </a>
       </li>
       <li data-tags="Branding UI" data-reveal>
         <a class="proj" href="/en/projects/nyro/"><div class="proj-cover is-mk" style="--c:#F1EEFF" data-mk="mk_nyro"><img src="/images/projets/nyro/nyro-banniere.webp?v=fb595250" alt=""></div>
-          <div class="proj-meta"><span class="proj-name">NYRO</span><span class="proj-year">2025</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UI</li></ul>
+          <div class="proj-meta"><span class="proj-name">NYRO</span><span class="proj-year">2025</span></div><p class="proj-ex">NYRO was born from a simple belief, beauty should be revealed, not masked. The project brings to life a natural skincare brand, healthy and effective, suited to every skin type and tone, with formulas grounded in dermatological research and clinically proven efficacy. The visual identity expresses this standard through a clean, luminous universe. White and blue inspire trust, violet evokes the gentleness of care and red adds warmth. At the crossroads of medical rigour and sensitivity, it embodies an inclusive vision of natural beauty.</p><ul class="badges"><li class="badge">Branding</li><li class="badge">UI</li></ul>
         </a>
       </li>
       <li data-tags="Branding UX UI" data-reveal>
         <a class="proj" href="/en/projects/groupe-apb-pro/"><div class="proj-cover is-mk" style="--c:#02113E" data-mk="mk_apbpro"><img src="/images/projets/groupe-apb-pro/groupe-apb-pro-banniere.webp?v=fddf93bb" alt=""></div>
-          <div class="proj-meta"><span class="proj-name">Groupe APB Pro</span><span class="proj-year">2025</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
+          <div class="proj-meta"><span class="proj-name">Groupe APB Pro</span><span class="proj-year">2025</span></div><p class="proj-ex">Groupe APB Pro is the professional branch of Groupe APB, offering energy renovation solutions tailored to co-ownership properties, industry, the service sector, agriculture and local authorities. The project covered the redesign of the brand identity and website to adapt communication to different professional profiles and to the specific challenges of each sector. The goal was to make it easier to identify the right solutions for each activity, while strengthening the clarity of the offer, brand credibility and the user experience.</p><ul class="badges"><li class="badge">Branding</li><li class="badge">UX</li><li class="badge">UI</li></ul>
         </a>
       </li>
       <li data-tags="Branding UI" data-reveal>
         <a class="proj" href="/en/projects/2m-energie/"><div class="proj-cover is-mk" style="--c:#F1FAEC" data-mk="mk_m2"><img src="/images/projets/2m-energie/2m-energie-banniere.webp?v=fc35bd17" alt=""></div>
-          <div class="proj-meta"><span class="proj-name">2M Energie</span><span class="proj-year">2025</span></div><ul class="badges"><li class="badge">Branding</li><li class="badge">UI</li></ul>
+          <div class="proj-meta"><span class="proj-name">2M Energie</span><span class="proj-year">2025</span></div><p class="proj-ex">2M Energie is a French company specialising in energy renovation for homeowners, offering solutions such as solar panel and heat pump installation. The project covered the creation of the visual identity and the design of the website mock-ups, with the aim of building a modern, accessible image that reflects the brand’s expertise. The design sets out to inspire trust, highlight innovation and showcase personalised support for homeowners throughout their energy renovation projects.</p><ul class="badges"><li class="badge">Branding</li><li class="badge">UI</li></ul>
         </a>
       </li></ul>
   </section></main>

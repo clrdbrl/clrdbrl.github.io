@@ -4231,6 +4231,307 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
+/* ================= PAGE PROJETS : choix grille / liste ================= */
+.filters-end {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  flex: none;
+}
+.filters-end .count {
+  margin-left: 0;
+}
+/* Bouton d'affichage : pilule blanche comme « Menu », libellé + picto qui défilent, remplissage citron au survol */
+.vb {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 18px 0 20px;
+  border-radius: var(--r-pill);
+  background: var(--c-ink);
+  border: 1px solid var(--c-ink);
+  color: var(--c-white);
+  cursor: pointer;
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+}
+.vb .lr {
+  position: relative;
+  display: inline-grid;
+  overflow: hidden;
+  padding-block: 2px;
+}
+.vb .lr-i {
+  grid-area: 1/1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  white-space: nowrap;
+  transition: transform .55s cubic-bezier(.65,0,.35,1),opacity .55s;
+}
+.vb .lr-i.in {
+  transform: translateY(110%);
+  opacity: 0;
+  animation: lrIn .55s cubic-bezier(.65,0,.35,1) forwards;
+}
+.vb .lr-i.out {
+  animation: lrOut .55s cubic-bezier(.65,0,.35,1) forwards;
+}
+.vb svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+.vb:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Liste : une ligne par projet, séparées par un trait gris */
+.proj-list.is-list {
+  grid-template-columns: 1fr;
+  row-gap: 0;
+}
+.proj-list.is-list>li {
+  border-top: 1px solid var(--c-line);
+}
+.proj-list.is-list>li:last-child {
+  border-bottom: 1px solid var(--c-line);
+}
+.proj-list.is-list .proj {
+  display: grid;
+  grid-template-columns: 168px minmax(0,1fr) auto;
+  grid-template-areas: "c n y" "c e y" "c b y";
+  align-items: center;
+  column-gap: clamp(20px,3vw,40px);
+  row-gap: 10px;
+  padding-block: 20px;
+}
+.proj-list.is-list .proj-cover {
+  grid-area: c;
+  width: 168px;
+  align-self: center;
+}
+.proj-list.is-list .proj-meta {
+  display: contents;
+}
+.proj-list.is-list .proj-name {
+  grid-area: n;
+  align-self: end;
+  margin-bottom: 2px;
+  font-size: clamp(1.5rem,2.6vw,2.25rem);
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  transition: color .3s;
+}
+/* extrait : visible seulement en liste, 2 lignes maximum puis « … » */
+.proj-ex {
+  display: none;
+}
+.proj-list.is-list .proj-ex {
+  grid-area: e;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  max-width: 64ch;
+  margin: 0;
+  color: var(--c-ink-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.proj-list.is-list .badges {
+  grid-area: b;
+  align-self: start;
+  margin-top: 0;
+}
+.proj-list.is-list .proj-year {
+  grid-area: y;
+  font-size: 1rem;
+  padding-left: 56px;
+}
+@media (hover:hover) {
+  .proj-list.is-list .proj:hover .proj-name {
+    color: var(--c-blue);
+  }
+}
+@media (max-width:719px) {
+  .vb {
+    height: 44px;
+    padding: 0 14px 0 16px;
+    font-size: .9375rem;
+  }
+  .vb svg {
+    width: 18px;
+    height: 18px;
+  }
+  .filters-end {
+    gap: 12px;
+  }
+  .proj-list.is-list .proj {
+    grid-template-columns: min(128px,36vw) minmax(0,1fr) auto;
+    column-gap: 16px;
+    row-gap: 8px;
+    padding-block: 16px;
+  }
+  .proj-list.is-list .proj-cover {
+    width: 72px;
+  }
+  .proj-list.is-list .proj-name {
+    font-size: 1.125rem;
+  }
+  /* liste mobile : titre et année en haut, extrait au milieu, badges en bas, alignés sur la hauteur du visuel */
+  .proj-list.is-list .proj {
+    grid-template-areas: "c n y" "c e e" "c b b";
+    grid-template-rows: auto 1fr auto;
+    row-gap: 6px;
+    align-items: start;
+  }
+  .proj-list.is-list .proj-ex {
+    display: -webkit-box;
+    align-self: center;
+    font-size: .875rem;
+    line-height: 1.45;
+    max-width: none;
+  }
+  .proj-list.is-list .badges {
+    align-self: end;
+  }
+  .proj-list.is-list .proj-year {
+    font-size: .875rem;
+    align-self: center;
+    padding-left: 12px;
+  }
+  .proj-list.is-list .proj-name {
+    align-self: center;
+    margin-bottom: 0;
+    font-size: 1.375rem;
+  }
+  .proj-list.is-list .proj-cover {
+    width: min(128px,36vw);
+  }
+}
+
+/* Filtre mobile : fermeture plus douce, flèche qui pivote lentement */
+.gsel-menu[data-state="closed"] {
+  transition: opacity .32s var(--ease-out),transform .32s var(--ease-out) !important;
+}
+.gsel-chev {
+  transition: transform .45s var(--ease) !important;
+}
+.gsel-label {
+  display: inline-block;
+  text-align: left;
+}
+/* nombre de projets dans la barre du filtre, en gris, à côté de la flèche */
+.gsel-end {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.gsel-cnt {
+  display: inline-block;
+  font-family: var(--f-body);
+  font-weight: 500;
+  font-size: .875rem;
+  color: rgba(255,255,255,.6);
+  white-space: nowrap;
+}
+.gsel-end {
+  margin-left: auto;
+}
+/* sur mobile la barre est trop étroite : le nombre reste visible dans le menu déroulant */
+@media (max-width:479px) {
+  .gsel-cnt {
+    display: none;
+  }
+}
+.gsel-cnt .lr, .gsel-label .lr {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  line-height: 1.2;
+}
+.gsel-cnt .lr-i, .gsel-label .lr-i {
+  grid-area: 1/1;
+  display: block;
+  white-space: nowrap;
+}
+.gsel-cnt .lr-i.in, .gsel-label .lr-i.in {
+  transform: translateY(110%);
+  opacity: 0;
+  animation: lrIn .55s cubic-bezier(.65,0,.35,1) forwards;
+}
+.gsel-cnt .lr-i.out, .gsel-label .lr-i.out {
+  animation: lrOut .55s cubic-bezier(.65,0,.35,1) forwards;
+}
+
+/* Filtre déroulant sur toutes les tailles d'écran (plus de segment sur ordinateur) */
+.gsel {
+  display: inline-block !important;
+}
+.filters .rseg-scroll {
+  display: none !important;
+}
+/* le bouton du filtre a la même largeur que son menu (280 px), et rétrécit sur mobile sans toucher le bouton Grille / Liste */
+.filters {
+  gap: 12px;
+}
+.filters .gsel {
+  flex: 0 1 280px;
+  min-width: 0;
+}
+.filters .gsel-trigger {
+  width: 100%;
+  justify-content: space-between;
+}
+.gsel-menu {
+  width: 100%;
+}
+@media (max-width:479px) {
+  .gsel-opt {
+    gap: 8px;
+    padding: 0 10px 0 14px;
+  }
+  .gsel-tag {
+    font-size: .75rem;
+  }
+}
+/* +4 px entre les projets, en grille et en liste */
+.proj-list {
+  column-gap: calc(clamp(12px,3vw,40px) + 4px);
+  row-gap: calc(clamp(28px,4vw,48px) + 4px);
+}
+.proj-list.is-list .proj {
+  padding-block: 24px;
+}
+@media (max-width:719px) {
+  .proj-list.is-list .proj {
+    padding-block: 20px;
+  }
+}
+.gsel-tag {
+  white-space: nowrap;
+}
+.vb:focus-visible {
+  outline: 2px solid var(--c-blue);
+  outline-offset: 3px;
+}
+
+/* Filtre mobile : bouton noir, comme le filtre actif sur ordinateur */
+.gsel-trigger, .gsel-trigger[aria-expanded="true"] {
+  background: var(--c-ink);
+  border-color: var(--c-ink);
+  color: var(--c-white);
+}
+.gsel-trigger .gsel-chev {
+  color: rgba(255,255,255,.7);
+}
+
 /* ================= ÉCRAN DE CHARGEMENT (première visite de la session) ================= */
 .loader {
   display: none;
@@ -4281,8 +4582,8 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 .loader-gauge {
   --p: 0;
   position: relative;
-  width: clamp(220px,34vw,320px);
-  height: 44px;
+  width: clamp(260px,40vw,440px);
+  height: 48px;
   border-radius: var(--r-pill);
   background: var(--c-card);
   border: 1px solid var(--c-border);
@@ -4316,8 +4617,22 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   letter-spacing: .01em;
   color: var(--c-ink);
 }
-.lg-clip .lg-pct {
+.lg-clip .lg-pct, .lg-clip .lg-lab {
   color: var(--c-white);
+}
+/* libellé « Chargement… » à gauche dans la jauge, même principe noir puis blanc */
+.lg-lab {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  font: 600 .875rem/1 var(--f-display);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  white-space: nowrap;
 }
 .loader.leaving .loader-c {
   opacity: 0;
