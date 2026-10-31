@@ -1278,6 +1278,7 @@ function applyStatic(){
   document.querySelectorAll(".js-behance").forEach(a=>{if(BEHANCE_URL)a.href=BEHANCE_URL});
   document.querySelectorAll(".js-linkedin").forEach(a=>{if(LINKEDIN_URL)a.href=LINKEDIN_URL});
   document.querySelectorAll(".lang-btn").forEach(lb=>{rollLabel(lb,t("langSwitch"));lb.setAttribute("aria-label",t("langAria"));lb.setAttribute("lang",LANG==="fr"?"en":"fr")});
+  if(window.__clockTick)window.__clockTick();
   var bu=document.querySelector(".sm-toggle");
   bu.setAttribute("aria-label",bu.getAttribute("aria-expanded")==="true"?t("menuClose"):t("menuOpen"));
   if(window.smRelabel)window.smRelabel();
@@ -2078,11 +2079,12 @@ window.__prerender=function(path){var r=resolve(path);return {html:r.html,title:
 /* ===== Heure de Paris dans le menu ouvert (heures:minutes, secondes en gris), mise à jour chaque seconde ===== */
 (function(){
   var el=document.querySelector(".js-clock"),sec=document.querySelector(".js-clock-s"),off=document.querySelector(".js-clock-off");if(!el||!window.Intl)return;
-  var fh,fo;try{fh=new Intl.DateTimeFormat("fr-FR",{timeZone:"Europe/Paris",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});fo=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Paris",timeZoneName:"shortOffset"})}catch(e){return}
-  function tick(){var d=new Date(),p=fh.formatToParts(d),g=k=>(p.find(x=>x.type===k)||{}).value||"00",hm=g("hour")+":"+g("minute");
-    el.textContent=hm;el.setAttribute("datetime",hm);if(sec)sec.textContent=":"+g("second");
+  /* français : 16:03:15 ; anglais : 4:03:15 PM */
+  var fh,fe,fo;try{fh=new Intl.DateTimeFormat("fr-FR",{timeZone:"Europe/Paris",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});fe=new Intl.DateTimeFormat("en-US",{timeZone:"Europe/Paris",hour:"numeric",minute:"2-digit",second:"2-digit",hour12:true});fo=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Paris",timeZoneName:"shortOffset"})}catch(e){return}
+  function tick(){var d=new Date(),en=LANG==="en",p=(en?fe:fh).formatToParts(d),g=k=>(p.find(x=>x.type===k)||{}).value||"",hm=g("hour")+":"+g("minute");
+    el.textContent=hm;el.setAttribute("datetime",(fh.formatToParts(d).find(x=>x.type==="hour")||{}).value+":"+g("minute"));if(sec)sec.textContent=":"+g("second")+(en?"\u00A0"+g("dayPeriod").toUpperCase():"");
     if(off){var z=fo.formatToParts(d).find(x=>x.type==="timeZoneName");off.textContent=z?z.value.replace("GMT","UTC"):""}}
-  tick();setInterval(tick,1000);
+  tick();setInterval(tick,1000);window.__clockTick=tick;
 })();
 /* ===== Curseur personnalisé (desktop) : bulle citron, rétrécit sur les boutons ronds, bulle « Découvrir » sur les projets ===== */
 (function(){
