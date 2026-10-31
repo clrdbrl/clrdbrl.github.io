@@ -557,11 +557,11 @@ fr:{
   moreTitle:function(n){return n+(n>1?" autres projets vous attendent":" autre projet vous attend")}, moreHead:"Voir plus<br>de projets", moreBtn:"Découvrir",
   methodTitle:"Mon approche", apMore:"Voir le détail", apLess:"Masquer", ctLead:"Alternance, mission freelance ou projet de marque, discutons de ce que nous pourrions construire.", llAria:"Entreprises et marques accompagnées", stpNext:"Suivant", stpDone:"Échanger sur votre projet", stepOut:"Livrables", stepOf:function(i,n){return "Étape "+i+" sur "+n},
   cvTitle:"Mon parcours", cvLead:"Du marketing au design, un chemin qui m’a appris à penser à la fois à la marque, au message et à l’utilisateur.",
-  expSub:"Expériences", eduSub:"Formation", 
+  expSub:"Expériences", eduSub:"Formations", 
   
   filterAll:"Tous", filterAria:"Filtrer les projets", nProjects:function(n){return n+(n>1?" projets":" projet")},
   allProjects:"Tous les projets", role:"Rôle", company:"Entreprise", year:"Année", tools:"Outils", todo:"À compléter",
-  descTodo:"Description de l’entreprise à compléter.", cursorCard:"Découvrir", moreTitle:"Autres projets", carAria:"Carrousel des autres projets", tocAria:"Sommaire du projet",
+  descTodo:"Description de l’entreprise à compléter.", cursorCard:"Découvrir", cursorVisit:"Visiter", footTime:"Basée à Paris", moreTitle:"Autres projets", carAria:"Carrousel des autres projets", tocAria:"Sommaire du projet",
   chResults:"En quelques chiffres",
   
   
@@ -607,7 +607,7 @@ en:{
   
   filterAll:"All", filterAria:"Filter projects", nProjects:function(n){return n+(n>1?" projects":" project")},
   allProjects:"All projects", role:"Role", company:"Company", year:"Year", tools:"Tools", todo:"To be completed",
-  descTodo:"Company description to be completed.", cursorCard:"Discover", moreTitle:"Other projects", carAria:"Other projects carousel", tocAria:"Project contents",
+  descTodo:"Company description to be completed.", cursorCard:"Discover", cursorVisit:"Visit", footTime:"Based in Paris", moreTitle:"Other projects", carAria:"Other projects carousel", tocAria:"Project contents",
   chResults:"In numbers",
   
   
@@ -808,8 +808,8 @@ function initStats(root){
   if(reduce||!window.IntersectionObserver)return;
   els.forEach(e=>e.textContent=fmtNum(0));
   var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;io.unobserve(en.target);
-    var el=en.target,to=+el.dataset.to,dur=1800,t0=performance.now();
-    (function f(now){var k=Math.min(1,(now-t0)/dur),e=k===1?1:1-Math.pow(2,-10*k);el.textContent=fmtNum(Math.round(to*e));if(k<1&&el.isConnected)requestAnimationFrame(f)})(t0);
+    var el=en.target,to=+el.dataset.to,dur=2000,t0=performance.now();
+    (function f(now){var k=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-k,3);el.textContent=fmtNum(Math.round(to*e));if(k<1&&el.isConnected)requestAnimationFrame(f)})(t0);
   })},{threshold:.6});
   els.forEach(e=>io.observe(e));
 }
@@ -2075,16 +2075,25 @@ window.__prerender=function(path){var r=resolve(path);return {html:r.html,title:
 /* ===== Décors : motifs et formes en parallaxe pour animer le scroll ===== */
 /* [sélecteur, type, couleur, position CSS, taille, vitesse de parallaxe, rotation au scroll] */
 
+/* ===== Heure de Paris dans le menu ouvert (heures:minutes, secondes en gris), mise à jour chaque seconde ===== */
+(function(){
+  var el=document.querySelector(".js-clock"),sec=document.querySelector(".js-clock-s"),off=document.querySelector(".js-clock-off");if(!el||!window.Intl)return;
+  var fh,fo;try{fh=new Intl.DateTimeFormat("fr-FR",{timeZone:"Europe/Paris",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});fo=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Paris",timeZoneName:"shortOffset"})}catch(e){return}
+  function tick(){var d=new Date(),p=fh.formatToParts(d),g=k=>(p.find(x=>x.type===k)||{}).value||"00",hm=g("hour")+":"+g("minute");
+    el.textContent=hm;el.setAttribute("datetime",hm);if(sec)sec.textContent=":"+g("second");
+    if(off){var z=fo.formatToParts(d).find(x=>x.type==="timeZoneName");off.textContent=z?z.value.replace("GMT","UTC"):""}}
+  tick();setInterval(tick,1000);
+})();
 /* ===== Curseur personnalisé (desktop) : bulle citron, rétrécit sur les boutons ronds, bulle « Découvrir » sur les projets ===== */
 (function(){
   if(!matchMedia("(hover:hover) and (pointer:fine)").matches)return;
   var c=document.createElement("div");c.className="cur";c.setAttribute("aria-hidden","true");c.innerHTML='<span class="cur-l"></span>';document.body.appendChild(c);
   document.documentElement.classList.add("has-cur");
   var lab=c.querySelector(".cur-l"),x=-100,y=-100,tx=-100,ty=-100,shown=false;
-  var BTN=".mc,.ct-chip,.fill,.brand,.rseg-item,.gsel-trigger,.skc-dot,.stp-bar,.chip,.ct-copy,.cta-card",CARD="a.proj,.skc-slide";
+  var BTN=".mc,.ct-chip,.fill,.brand,.rseg-item,.gsel-trigger,.skc-dot,.stp-bar,.chip,.ct-copy,.cta-card",CARD="a.proj,.skc-slide,.ct-soc";
   function probe(el){var hit=el&&el.closest&&el.closest(CARD+","+BTN),card=hit&&hit.matches(CARD),btn=hit&&!card;
     c.classList.toggle("is-card",!!card);c.classList.toggle("is-btn",!!btn);
-    if(card)lab.textContent=t("cursorCard")}
+    if(card)lab.textContent=hit.matches(".ct-soc")?t("cursorVisit"):t("cursorCard")}
   window.addEventListener("pointermove",function(e){if(e.pointerType!=="mouse")return;tx=e.clientX;ty=e.clientY;if(!shown){shown=true;x=tx;y=ty;c.classList.add("on")}
     probe(e.target)},{passive:true});
   /* au scroll (souris immobile) ou après un changement de page, on revérifie ce qu'il y a sous le curseur */
