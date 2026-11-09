@@ -535,12 +535,12 @@ function t(k){return T[LANG][k]}
 /* ============ TEXTES FIXES ============ */
 var T={
 fr:{
-  title:"Clara Debarle, UI/UX & Brand Designer | CD Projects", metaWho:"Clara Debarle, UI/UX & Brand Designer",
+  title:"Clara Debarle, UI/UX & Brand Designer | CD Pixel Studio", metaWho:"Clara Debarle, UI/UX & Brand Designer",
   metaHome:"Portfolio de Clara Debarle, designer UI/UX et identité de marque. Sites web, interfaces et identités visuelles pensés pour des marques qui se retiennent.",
   metaProjects:"Projets de Clara Debarle en identité de marque, UI et UX design, de la refonte de site web à la création d\u2019identité visuelle.",
   metaContact:"Alternance, mission freelance ou projet de marque, contactez Clara Debarle, designer UI/UX et identité de marque.",
   heroAlt:"Visuel du projet", tProjects:"Projets", tAbout:"À propos", tContact:"Contact",
-  brandAria:"CD Projects, accueil", navAria:"Navigation principale", 
+  brandAria:"CD Pixel Studio, accueil", navAria:"Navigation principale", 
   menuOpen:"Ouvrir le menu", menuClose:"Fermer le menu", langSwitch:"EN", langAria:"Switch to English",
   navHome:"Accueil", navProjects:"Projets", navAbout:"À propos", navContact:"Contact", smMenu:"Menu", smClose:"Fermer",
   socials:"Réseaux sociaux", socialsAria:"Réseaux sociaux", newTab:" (nouvel onglet)",
@@ -581,12 +581,12 @@ fr:{
   nfTitle:"Cette page n’existe pas", nfLink:"Revenir à l’accueil"
 },
 en:{
-  title:"Clara Debarle, UI/UX & Brand Designer | CD Projects", metaWho:"Clara Debarle, UI/UX & Brand Designer",
+  title:"Clara Debarle, UI/UX & Brand Designer | CD Pixel Studio", metaWho:"Clara Debarle, UI/UX & Brand Designer",
   metaHome:"Portfolio of Clara Debarle, UI/UX and brand identity designer. Websites, interfaces and visual identities crafted for memorable brands.",
   metaProjects:"Projects by Clara Debarle in brand identity, UI and UX design, from website redesigns to visual identity creation.",
   metaContact:"Work-study, freelance assignment or brand project, get in touch with Clara Debarle, UI/UX and brand identity designer.",
   heroAlt:"Project visual for", tProjects:"Projects", tAbout:"About", tContact:"Contact",
-  brandAria:"CD Projects, home", navAria:"Main navigation", 
+  brandAria:"CD Pixel Studio, home", navAria:"Main navigation", 
   menuOpen:"Open menu", menuClose:"Close menu", langSwitch:"FR", langAria:"Passer en français",
   navHome:"Home", navProjects:"Projects", navAbout:"About", navContact:"Contact", smMenu:"Menu", smClose:"Close",
   socials:"Social media", socialsAria:"Social media", newTab:" (opens in a new tab)",
@@ -935,7 +935,6 @@ function pageHome(){
   var tools=TOOLS.map(x=>`<li>${x}</li>`).join("");
   return `
   <section class="hero wrap">
-    <p class="status"><span class="dot" aria-hidden="true"></span>${t("status")}</p>
     <p class="hero-name">Clara Debarle</p>
     <h1><span class="sr">Clara Debarle, </span><span class="line"><span>${t("heroL1")}</span></span><span class="line"><span>${t("heroL2")}</span></span></h1>
     <p class="hero-lead">${t("heroP")}</p>
@@ -1258,10 +1257,14 @@ function mkCrop(m,Wc,Hc){
 }
 function layoutMk(root){
   (root||document).querySelectorAll(".is-mk").forEach(function(c){var m=IMG[c.dataset.mk],im=c.querySelector("img");if(!m||!im||c.closest(".flip-clone"))return;
-    var r=c.getBoundingClientRect();if(!r.width||!r.height)return;var g=mkCrop(m,r.width,r.height);
-    im.style.left=g.left+"px";im.style.top=g.top+"px";im.style.width=g.width+"px";im.style.height=g.height+"px";im.style.transformOrigin=(-g.left+r.width/2)+"px "+(-g.top+r.height/2)+"px"});
+    /* taille réelle du cadre (sans les effets d'apparition) ; recadrage en % pour rester juste quand le cadre change de taille (grille ↔ liste, écran) */
+    var W=c.clientWidth,H=c.clientHeight;if(!W||!H)return;var g=mkCrop(m,W,H),pc=v=>(v*100).toFixed(4)+"%";
+    im.style.left=pc(g.left/W);im.style.top=pc(g.top/H);im.style.width=pc(g.width/W);im.style.height=pc(g.height/H);
+    im.style.transformOrigin=pc((-g.left+W/2)/g.width)+" "+pc((-g.top+H/2)/g.height)});
 }
 window.addEventListener("resize",function(){layoutMk(app)});
+/* recadrage aussi quand un cadre change de taille sans redimensionner la fenêtre (changement d'affichage, chargement des polices) */
+var mkRO="ResizeObserver" in window?new ResizeObserver(function(es){es.forEach(function(e){layoutMk(e.target.parentNode||app)})}):null;
 function pageNotFound(){return `<section class="notfound wrap"><h1>${t("nfTitle")}</h1><p><a class="ul" href="${u('/')}">${t("nfLink")}</a></p></section>`}
 
 /* Libellé EN/FR : l'ancienne langue monte et sort, la nouvelle arrive par le bas */
@@ -1335,6 +1338,7 @@ function initPage(){
   }
   initSkewed(app);
   layoutMk(app);requestAnimationFrame(function(){layoutMk(app)});setTimeout(function(){layoutMk(app)},400);
+  if(mkRO){mkRO.disconnect();app.querySelectorAll(".is-mk").forEach(function(c){mkRO.observe(c)})}
   initContact(app);flipCards(app);initLogoLoop(app);
   initStepper(app);initApproach(app);
   initBounce(app);
@@ -1850,12 +1854,12 @@ function curPath(){
 function clip(x,n){x=String(x||"").replace(/\s+/g," ").trim();if(x.length<=n)return x;x=x.slice(0,n-1);return x.slice(0,x.lastIndexOf(" ")).replace(/[,;.\s]+$/,"")+"\u2026"}
 function pageMeta(parts,p){
   var who=t("metaWho"),d;
-  if(parts.length===0)return {title:who+" | CD Projects",desc:t("metaHome")};
+  if(parts.length===0)return {title:who+" | CD Pixel Studio",desc:t("metaHome")};
   if(parts[0]==="projets"&&parts.length===1)return {title:t("tProjects")+" | "+who,desc:t("metaProjects")};
   if(p){d=L(p.description);var c=L(p.category||CAT);return {title:p.name+", "+c.charAt(0).toLowerCase()+c.slice(1)+" | Clara Debarle",desc:clip(Array.isArray(d)?d[0]:d,158)}}
   if(parts[0]==="a-propos")return {title:t("tAbout")+" | "+who,desc:clip(t("aboutLead"),158)};
   if(parts[0]==="contact")return {title:t("tContact")+" | "+who,desc:t("metaContact")};
-  return {title:t("nfTitle")+" | CD Projects",desc:t("metaHome")};
+  return {title:t("nfTitle")+" | CD Pixel Studio",desc:t("metaHome")};
 }
 /* Contenu d'une page à partir de son chemin */
 function resolve(path){
@@ -2128,7 +2132,7 @@ window.__prerender=function(path){var r=resolve(path);return {html:r.html,title:
   var c=document.createElement("div");c.className="cur";c.setAttribute("aria-hidden","true");c.innerHTML='<span class="cur-l"></span>';document.body.appendChild(c);
   document.documentElement.classList.add("has-cur");
   var lab=c.querySelector(".cur-l"),x=-100,y=-100,tx=-100,ty=-100,shown=false;
-  var BTN=".mc,.ct-chip,.fill,.brand,.rseg-item,.gsel-trigger,.skc-dot,.stp-bar,.chip,.ct-copy,.cta-card",CARD="a.proj,.skc-slide,.ct-soc";
+  var BTN=".mc,.ct-chip,.fill,.brand,.rseg-item,.gsel-trigger,.vb,.skc-dot,.stp-bar,.chip,.ct-copy,.cta-card",CARD="a.proj,.skc-slide,.ct-soc";
   function probe(el){var hit=el&&el.closest&&el.closest(CARD+","+BTN),card=hit&&hit.matches(CARD),btn=hit&&!card;
     c.classList.toggle("is-card",!!card);c.classList.toggle("is-btn",!!btn);
     if(card)lab.textContent=hit.matches(".ct-soc")?t("cursorVisit"):t("cursorCard")}

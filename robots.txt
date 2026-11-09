@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cd-projects.com/sitemap.xml
+Sitemap: https://cdpixelstudio.com/sitemap.xml
