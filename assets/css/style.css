@@ -4541,9 +4541,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 @media (max-width:359px) {
   .site-header .brand {
     padding: 0 11px;
-  }
-  .site-header .brand .brand-logo {
-    height: 26px;
+    font-size: .875rem;
   }
   .site-header .bar-end {
     gap: 6px;
@@ -4552,32 +4550,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     padding: 0 11px;
     gap: 6px;
   }
-}
-
-/* Logo CD Pixel Studio (SVG en ligne : signe bleu, texte à la couleur de l'encre) */
-.logo {
-  display: block;
-  height: auto;
-  color: var(--c-ink);
-}
-/* logo dans la pilule blanche (lisible au défilement) ; « CD PIXEL » à peu près à la taille du texte des boutons */
-.site-header .brand {
-  padding: 0 18px;
-}
-.site-header .brand-logo {
-  width: auto;
-  height: 34px;
-}
-@media (max-width:599px) {
-  .site-header .brand {
-    padding: 0 14px;
-  }
-  .site-header .brand-logo {
-    height: 31px;
-  }
-}
-.loader-logo {
-  width: clamp(220px,34vw,400px);
 }
 
 /* ================= ÉCRAN DE CHARGEMENT (première visite de la session) ================= */
