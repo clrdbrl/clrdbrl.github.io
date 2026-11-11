@@ -935,7 +935,6 @@ function pageHome(){
   var tools=TOOLS.map(x=>`<li>${x}</li>`).join("");
   return `
   <section class="hero wrap">
-    <p class="hero-name">Clara Debarle</p>
     <h1><span class="sr">Clara Debarle, </span><span class="line"><span>${t("heroL1")}</span></span><span class="line"><span>${t("heroL2")}</span></span></h1>
     <p class="hero-lead">${t("heroP")}</p>
     <div class="btn-row">

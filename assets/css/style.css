@@ -4536,6 +4536,9 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 .hero>.hero-name:first-child {
   margin-top: 0;
 }
+.hero>h1:first-child {
+  margin-top: 0;
+}
 
 /* très petits écrans : « CD Pixel Studio » plus long que l'ancien nom, on resserre le header */
 @media (max-width:359px) {
