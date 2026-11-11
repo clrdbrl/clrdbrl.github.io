@@ -666,7 +666,7 @@ var CAREER=[
    org:{fr:"Groupe APB",en:"Groupe APB"}, tags:["UX","UI","Branding"],
    text:{fr:"Identité de marque, zoning, wireframing, prototypage, intégration web, objets promotionnels, print, direction de contenus UGC et vidéo, motion design, campagnes de communication et marketing (réseaux sociaux, mailing).",
          en:"Brand identity, zoning, wireframing, prototyping, web integration, promotional items, print content, UGC and video direction, motion design, communication and marketing campaigns (social media, mailing)."}},
-  {date:{fr:"2023 – 2025",en:"2023 – 2025"}, role:{fr:"Chargée de communication et marketing digital",en:"Communication & Digital Marketing Officer"},
+  {date:{fr:"2023 – 2025",en:"2023 – 2025"}, role:{fr:"Chargée de communication et marketing digital",en:"Digital Marketing & Communication Officer"},
    org:{fr:"Alan Allman Associates",en:"Alan Allman Associates"}, tags:["Marketing","Communication","UX"],
    text:{fr:"Stratégies B2B de génération de leads, refonte de l\u2019identité visuelle et du site web, gestion de contenus (réseaux sociaux, mailing, SEO, interviews, podcasts, webinars).",
          en:"B2B lead generation strategies, visual identity and website redesign, content management (social media, mailing, SEO, interviews, podcasts, webinars)."}},
