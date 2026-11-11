@@ -667,7 +667,7 @@ var CAREER=[
    text:{fr:"Identité de marque, zoning, wireframing, prototypage, intégration web, objets promotionnels, print, direction de contenus UGC et vidéo, motion design, campagnes de communication et marketing (réseaux sociaux, mailing).",
          en:"Brand identity, zoning, wireframing, prototyping, web integration, promotional items, print content, UGC and video direction, motion design, communication and marketing campaigns (social media, mailing)."}},
   {date:{fr:"2023 – 2025",en:"2023 – 2025"}, role:{fr:"Chargée de communication et marketing digital",en:"Communication & Digital Marketing Officer"},
-   org:{fr:"Alan Allman Associates / Ited",en:"Alan Allman Associates / Ited"}, tags:["Marketing","Communication","UX"],
+   org:{fr:"Alan Allman Associates",en:"Alan Allman Associates"}, tags:["Marketing","Communication","UX"],
    text:{fr:"Stratégies B2B de génération de leads, refonte de l\u2019identité visuelle et du site web, gestion de contenus (réseaux sociaux, mailing, SEO, interviews, podcasts, webinars).",
          en:"B2B lead generation strategies, visual identity and website redesign, content management (social media, mailing, SEO, interviews, podcasts, webinars)."}},
   {date:{fr:"2022 – 2023",en:"2022 – 2023"}, role:{fr:"Responsable marketing et communication",en:"Communication & Marketing Manager"},
@@ -678,7 +678,7 @@ var CAREER=[
 var EDUCATION=[
   {date:{fr:"2025 – 2027 (en cours)",en:"2025 – 2027 (in progress)"}, role:{fr:"Mastère Direction Artistique et Numérique",en:"Master\u2019s in Digital Art Direction"}, org:{fr:"LISAA, Paris (formation à distance)",en:"LISAA, Paris (distance learning)"}},
   {date:{fr:"2024",en:"2024"}, role:{fr:"MBA Stratégie Digitale",en:"MBA in Digital Strategy"}, org:{fr:"MBA ESG, Paris",en:"MBA ESG, Paris"}},
-  {date:{fr:"2022",en:"2022"}, role:{fr:"Licence Japonais et Commerce International",en:"Bachelor\u2019s in Japanese and International Trade"}, org:{fr:"INALCO, Paris",en:"INALCO, Paris"}}
+  {date:{fr:"2022",en:"2022"}, role:{fr:"Licence Japonais et Commerce International",en:"Bachelor\u2019s in Japanese & International Business"}, org:{fr:"INALCO, Paris",en:"INALCO, Paris"}}
 ];
 
 var TOOLS=["Figma","Framer","Photoshop","Illustrator","InDesign","Premiere Pro","WordPress","Elementor"];
