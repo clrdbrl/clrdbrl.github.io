@@ -535,10 +535,10 @@ function t(k){return T[LANG][k]}
 /* ============ TEXTES FIXES ============ */
 var T={
 fr:{
-  title:"Clara Debarle, UI/UX & Brand Designer | CD Pixel Studio", metaWho:"Clara Debarle, UI/UX & Brand Designer",
-  metaHome:"Portfolio de Clara Debarle, designer UI/UX et identité de marque. Sites web, interfaces et identités visuelles pensés pour des marques qui se retiennent.",
-  metaProjects:"Projets de Clara Debarle en identité de marque, UI et UX design, de la refonte de site web à la création d\u2019identité visuelle.",
-  metaContact:"Alternance, mission freelance ou projet de marque, contactez Clara Debarle, designer UI/UX et identité de marque.",
+  title:"CD Pixel Studio, UI/UX & Brand Designer", metaWho:"CD Pixel Studio, UI/UX & Brand Designer",
+  metaHome:"Portfolio CD Pixel Studio, design UI/UX et identité de marque. Sites web, interfaces et identités visuelles pensés pour des marques qui se retiennent.",
+  metaProjects:"Projets CD Pixel Studio en identité de marque, UI et UX design, de la refonte de site web à la création d\u2019identité visuelle.",
+  metaContact:"Alternance, mission freelance ou projet de marque, contactez CD Pixel Studio, design UI/UX et identité de marque.",
   heroAlt:"Visuel du projet", tProjects:"Projets", tAbout:"À propos", tContact:"Contact",
   brandAria:"CD Pixel Studio, accueil", navAria:"Navigation principale", 
   menuOpen:"Ouvrir le menu", menuClose:"Fermer le menu", langSwitch:"EN", langAria:"Switch to English",
@@ -581,10 +581,10 @@ fr:{
   nfTitle:"Cette page n’existe pas", nfLink:"Revenir à l’accueil"
 },
 en:{
-  title:"Clara Debarle, UI/UX & Brand Designer | CD Pixel Studio", metaWho:"Clara Debarle, UI/UX & Brand Designer",
-  metaHome:"Portfolio of Clara Debarle, UI/UX and brand identity designer. Websites, interfaces and visual identities crafted for memorable brands.",
-  metaProjects:"Projects by Clara Debarle in brand identity, UI and UX design, from website redesigns to visual identity creation.",
-  metaContact:"Work-study, freelance assignment or brand project, get in touch with Clara Debarle, UI/UX and brand identity designer.",
+  title:"CD Pixel Studio, UI/UX & Brand Designer", metaWho:"CD Pixel Studio, UI/UX & Brand Designer",
+  metaHome:"CD Pixel Studio portfolio, UI/UX and brand identity design. Websites, interfaces and visual identities crafted for memorable brands.",
+  metaProjects:"CD Pixel Studio projects in brand identity, UI and UX design, from website redesigns to visual identity creation.",
+  metaContact:"Work-study, freelance assignment or brand project, get in touch with CD Pixel Studio, UI/UX and brand identity design.",
   heroAlt:"Project visual for", tProjects:"Projects", tAbout:"About", tContact:"Contact",
   brandAria:"CD Pixel Studio, home", navAria:"Main navigation", 
   menuOpen:"Open menu", menuClose:"Close menu", langSwitch:"FR", langAria:"Passer en français",
@@ -935,7 +935,8 @@ function pageHome(){
   var tools=TOOLS.map(x=>`<li>${x}</li>`).join("");
   return `
   <section class="hero wrap">
-    <h1><span class="sr">Clara Debarle, </span><span class="line"><span>${t("heroL1")}</span></span><span class="line"><span>${t("heroL2")}</span></span></h1>
+    <p class="status"><span class="dot" aria-hidden="true"></span>${t("status")}</p>
+    <h1><span class="sr">CD Pixel Studio, </span><span class="line"><span>${t("heroL1")}</span></span><span class="line"><span>${t("heroL2")}</span></span></h1>
     <p class="hero-lead">${t("heroP")}</p>
     <div class="btn-row">
       <a class="btn btn-ink fill" href="${u('/projets/')}">${t("ctaProjects")}</a>
@@ -1853,9 +1854,9 @@ function curPath(){
 function clip(x,n){x=String(x||"").replace(/\s+/g," ").trim();if(x.length<=n)return x;x=x.slice(0,n-1);return x.slice(0,x.lastIndexOf(" ")).replace(/[,;.\s]+$/,"")+"\u2026"}
 function pageMeta(parts,p){
   var who=t("metaWho"),d;
-  if(parts.length===0)return {title:who+" | CD Pixel Studio",desc:t("metaHome")};
+  if(parts.length===0)return {title:"CD Pixel Studio | UI/UX & Brand Designer",desc:t("metaHome")};
   if(parts[0]==="projets"&&parts.length===1)return {title:t("tProjects")+" | "+who,desc:t("metaProjects")};
-  if(p){d=L(p.description);var c=L(p.category||CAT);return {title:p.name+", "+c.charAt(0).toLowerCase()+c.slice(1)+" | Clara Debarle",desc:clip(Array.isArray(d)?d[0]:d,158)}}
+  if(p){d=L(p.description);var c=L(p.category||CAT);return {title:p.name+", "+c.charAt(0).toLowerCase()+c.slice(1)+" | CD Pixel Studio",desc:clip(Array.isArray(d)?d[0]:d,158)}}
   if(parts[0]==="a-propos")return {title:t("tAbout")+" | "+who,desc:clip(t("aboutLead"),158)};
   if(parts[0]==="contact")return {title:t("tContact")+" | "+who,desc:t("metaContact")};
   return {title:t("nfTitle")+" | CD Pixel Studio",desc:t("metaHome")};
