@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>GRPF, identité de marque et site web | CD Pixel Studio</title>
 <meta name="description" content="Groupe Rénovation Performance France (GRPF) accompagne les particuliers dans leurs projets de rénovation énergétique, des travaux jusqu’à l’obtention des…">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-yodyPOzb+V2PpLlAkPZa+U2fEwZ/dkhZlyx7dXZlQLk='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-YN5niJuR0ROJzN4IhBDDy5Gw1KqwDLoRhT2/2zZHn/k='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://cdpixelstudio.com/projets/grpf/">
 <link rel="alternate" hreflang="fr" href="https://cdpixelstudio.com/projets/grpf/">
@@ -23,14 +23,14 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFFEFC">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>(function(d){var r=matchMedia("(prefers-reduced-motion: reduce)").matches;if(!r)d.classList.add("anim");var s=0;try{s=sessionStorage.getItem("cd-loaded")}catch(e){}if(!r&&!s){d.classList.add("is-loading");setTimeout(function(){d.classList.remove("is-loading")},5000)}})(document.documentElement)</script>
+<script>(function(d){try{if(localStorage.getItem("cd-theme")==="dark")d.setAttribute("data-theme","dark")}catch(e){}var r=matchMedia("(prefers-reduced-motion: reduce)").matches;if(!r)d.classList.add("anim");var s=0;try{s=sessionStorage.getItem("cd-loaded")}catch(e){}if(!r&&!s){d.classList.add("is-loading");setTimeout(function(){d.classList.remove("is-loading")},5000)}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=448c99f6">
+<link rel="stylesheet" href="/assets/css/style.css?v=34f11fc5">
 
 <script src="/assets/js/gsap.min.js?v=47da594c" defer></script>
-<script src="/assets/js/main.js?v=9fc74d2e" defer></script>
+<script src="/assets/js/main.js?v=6756af01" defer></script>
 </head>
 <body>
 <div class="loader" aria-hidden="true">
@@ -43,9 +43,10 @@
     <div class="nav-shell" id="nav-shell">
       <div class="bar">
         <a class="brand" href="/" data-path="/" data-i18n-aria="brandAria" aria-label="CD Pixel Studio, accueil">
-          <span class="brand-name">CD Pixel Studio</span>
+          <span class="brand-name">CD Pixel<span class="brand-x"> Studio</span></span>
         </a>
         <div class="bar-end">
+          <button class="theme-btn fill" type="button" aria-pressed="false" aria-label="Passer en mode sombre"><span class="lr" aria-hidden="true"></span></button>
           <button class="lang-btn fill" type="button" lang="en" aria-label="Switch to English">EN</button>
           <button class="sm-toggle fill" type="button" aria-expanded="false" aria-controls="sm-panel" aria-label="Ouvrir le menu">
             <span class="sm-toggle-textWrap" aria-hidden="true"><span class="sm-toggle-textInner"><span class="sm-toggle-line">Menu</span></span></span>
@@ -100,7 +101,7 @@
         </dl>
       </div>
       <div class="story">
-        <nav class="toc" aria-label="Sommaire du projet"><ol><li><button type="button" data-scroll="ch-identity" data-toc="ch-identity"><span class="ul">Identité de marque</span></button></li><li><button type="button" data-scroll="ch-applications" data-toc="ch-applications"><span class="ul">Déclinaisons</span></button></li><li><button type="button" data-scroll="ch-website" data-toc="ch-website"><span class="ul">Site web</span></button></li><li><button type="button" data-scroll="ch-mobile" data-toc="ch-mobile"><span class="ul">Version mobile</span></button></li><li><button type="button" data-scroll="ch-results" data-toc="ch-results"><span class="ul">En quelques chiffres</span></button></li></ol></nav>
+        <nav class="toc" aria-label="Sommaire du projet"><ol><li><button type="button" data-scroll="ch-identity" data-toc="ch-identity"><span class="ul">Identité de marque</span></button></li><li><button type="button" data-scroll="ch-applications" data-toc="ch-applications"><span class="ul">Déclinaisons</span></button></li><li><button type="button" data-scroll="ch-website" data-toc="ch-website"><span class="ul">Site web</span></button></li><li><button type="button" data-scroll="ch-results" data-toc="ch-results"><span class="ul">En chiffres</span></button></li></ol></nav>
         <div class="chapters">
           <section class="chapter" id="ch-identity">
             <div class="ch-head" data-reveal><h2>Identité de marque</h2></div>
@@ -112,14 +113,10 @@
           </section>
           <section class="chapter" id="ch-website">
             <div class="ch-head" data-reveal><h2>Site web</h2></div>
-            <div class="bento"><div data-reveal><div class="row" style="--cols:1.520fr"><figure class="tile framed" style="--ar:1474/970"><img src="/images/projets/grpf/grpf-site-accueil.webp?v=b89ddf96" loading="lazy" decoding="async" alt="Page d’accueil du site GRPF" width="1474" height="970"></figure></div></div><div data-reveal><div class="row" style="--cols:2.008fr"><figure class="tile framed" style="--ar:1476/735"><img src="/images/projets/grpf/grpf-site-pages.webp?v=d6e5b1f4" loading="lazy" decoding="async" alt="Pages du site GRPF" width="1476" height="735"></figure></div></div></div>
-          </section>
-          <section class="chapter" id="ch-mobile">
-            <div class="ch-head" data-reveal><h2>Version mobile</h2></div>
-            <div class="bento"><div data-reveal><div class="row" style="--cols:0.594fr 0.780fr"><figure class="tile framed" style="--ar:612/1030"><img src="/images/projets/grpf/grpf-mobile-main.webp?v=5eb4aa7f" loading="lazy" decoding="async" alt="Site GRPF affiché sur un smartphone" width="612" height="1030"></figure><figure class="tile framed" style="--ar:803/1030"><img src="/images/projets/grpf/grpf-mobile-ecrans.webp?v=399ef4ef" loading="lazy" decoding="async" alt="Écrans mobiles du site GRPF" width="803" height="1030"></figure></div></div></div>
+            <div class="bento"><div data-reveal><div class="row" style="--cols:1.520fr"><figure class="tile framed" style="--ar:1474/970"><img src="/images/projets/grpf/grpf-site-accueil.webp?v=b89ddf96" loading="lazy" decoding="async" alt="Page d’accueil du site GRPF" width="1474" height="970"></figure></div></div><h3 class="ch-sub" data-reveal>Version desktop</h3><div data-reveal><div class="row" style="--cols:1.514fr 1.514fr"><figure class="tile shot" style="--ar:1600/1057"><img src="/images/projets/grpf/grpf-d1.webp?v=99772963" loading="lazy" decoding="async" alt="Maquette desktop du site GRPF, page Accueil" width="1600" height="1057"></figure><figure class="tile shot" style="--ar:1600/1057"><img src="/images/projets/grpf/grpf-d2.webp?v=363a0867" loading="lazy" decoding="async" alt="Maquette desktop du site GRPF, page Offre du moment" width="1600" height="1057"></figure></div></div><div data-reveal><div class="row" style="--cols:1.514fr 1.509fr"><figure class="tile shot" style="--ar:1600/1057"><img src="/images/projets/grpf/grpf-d3.webp?v=b8a76a0a" loading="lazy" decoding="async" alt="Maquette desktop du site GRPF, page Solutions" width="1600" height="1057"></figure><figure class="tile shot" style="--ar:1600/1060"><img src="/images/projets/grpf/grpf-d4.webp?v=58954e8a" loading="lazy" decoding="async" alt="Maquette desktop du site GRPF, page Produits ITE" width="1600" height="1060"></figure></div></div><div data-reveal><div class="row" style="--cols:1.509fr 1.509fr"><figure class="tile shot" style="--ar:1600/1060"><img src="/images/projets/grpf/grpf-d5.webp?v=9501bbe9" loading="lazy" decoding="async" alt="Maquette desktop du site GRPF, page À propos" width="1600" height="1060"></figure><figure class="tile shot" style="--ar:1600/1060"><img src="/images/projets/grpf/grpf-d6.webp?v=63eb0572" loading="lazy" decoding="async" alt="Maquette desktop du site GRPF, page Aides" width="1600" height="1060"></figure></div></div><h3 class="ch-sub" data-reveal>Version mobile</h3><div data-reveal><div class="row keep" style="--cols:0.464fr 0.464fr 0.464fr 0.464fr 0.464fr 0.464fr"><figure class="tile shot" style="--ar:640/1380"><img src="/images/projets/grpf/grpf-m1.webp?v=ac1a5b12" loading="lazy" decoding="async" alt="Maquette mobile du site GRPF, écran 1" width="640" height="1380"></figure><figure class="tile shot" style="--ar:640/1380"><img src="/images/projets/grpf/grpf-m2.webp?v=fdd30bc5" loading="lazy" decoding="async" alt="Maquette mobile du site GRPF, écran 2" width="640" height="1380"></figure><figure class="tile shot" style="--ar:640/1380"><img src="/images/projets/grpf/grpf-m3.webp?v=c5409523" loading="lazy" decoding="async" alt="Maquette mobile du site GRPF, écran 3" width="640" height="1380"></figure><figure class="tile shot" style="--ar:640/1380"><img src="/images/projets/grpf/grpf-m4.webp?v=9d32c6cc" loading="lazy" decoding="async" alt="Maquette mobile du site GRPF, écran 4" width="640" height="1380"></figure><figure class="tile shot" style="--ar:640/1380"><img src="/images/projets/grpf/grpf-m5.webp?v=ae2aa9d0" loading="lazy" decoding="async" alt="Maquette mobile du site GRPF, écran 5" width="640" height="1380"></figure><figure class="tile shot" style="--ar:640/1380"><img src="/images/projets/grpf/grpf-m6.webp?v=6a890d12" loading="lazy" decoding="async" alt="Maquette mobile du site GRPF, écran 6" width="640" height="1380"></figure></div></div></div>
           </section>
           <section class="chapter" id="ch-results">
-            <div class="ch-head" data-reveal><h2>En quelques chiffres</h2></div>
+            <div class="ch-head" data-reveal><h2>En chiffres</h2></div>
             <div class="stats">
     <div class="stat" data-reveal style="--d:0">
       <p class="stat-num" aria-label="+10"><span aria-hidden="true">+<span class="stat-val" data-to="10">10</span></span></p>

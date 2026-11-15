@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>CD Pixel Studio | UI/UX &amp; Brand Designer</title>
 <meta name="description" content="Portfolio CD Pixel Studio, design UI/UX et identité de marque. Sites web, interfaces et identités visuelles pensés pour des marques qui se retiennent.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-yodyPOzb+V2PpLlAkPZa+U2fEwZ/dkhZlyx7dXZlQLk='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-YN5niJuR0ROJzN4IhBDDy5Gw1KqwDLoRhT2/2zZHn/k='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://cdpixelstudio.com/">
 <link rel="alternate" hreflang="fr" href="https://cdpixelstudio.com/">
@@ -24,14 +24,14 @@
 <meta name="theme-color" content="#FFFEFC">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://cdpixelstudio.com/#studio", "name": "CD Pixel Studio", "url": "https://cdpixelstudio.com/", "email": "mailto:cdprojectspro@gmail.com"}, {"@type": "WebSite", "@id": "https://cdpixelstudio.com/#site", "name": "CD Pixel Studio", "url": "https://cdpixelstudio.com/", "inLanguage": "fr", "publisher": {"@id": "https://cdpixelstudio.com/#studio"}}]}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>(function(d){var r=matchMedia("(prefers-reduced-motion: reduce)").matches;if(!r)d.classList.add("anim");var s=0;try{s=sessionStorage.getItem("cd-loaded")}catch(e){}if(!r&&!s){d.classList.add("is-loading");setTimeout(function(){d.classList.remove("is-loading")},5000)}})(document.documentElement)</script>
+<script>(function(d){try{if(localStorage.getItem("cd-theme")==="dark")d.setAttribute("data-theme","dark")}catch(e){}var r=matchMedia("(prefers-reduced-motion: reduce)").matches;if(!r)d.classList.add("anim");var s=0;try{s=sessionStorage.getItem("cd-loaded")}catch(e){}if(!r&&!s){d.classList.add("is-loading");setTimeout(function(){d.classList.remove("is-loading")},5000)}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=448c99f6">
+<link rel="stylesheet" href="/assets/css/style.css?v=34f11fc5">
 
 <script src="/assets/js/gsap.min.js?v=47da594c" defer></script>
-<script src="/assets/js/main.js?v=9fc74d2e" defer></script>
+<script src="/assets/js/main.js?v=6756af01" defer></script>
 </head>
 <body>
 <div class="loader" aria-hidden="true">
@@ -44,9 +44,10 @@
     <div class="nav-shell" id="nav-shell">
       <div class="bar">
         <a class="brand" href="/" data-path="/" data-i18n-aria="brandAria" aria-label="CD Pixel Studio, accueil">
-          <span class="brand-name">CD Pixel Studio</span>
+          <span class="brand-name">CD Pixel<span class="brand-x"> Studio</span></span>
         </a>
         <div class="bar-end">
+          <button class="theme-btn fill" type="button" aria-pressed="false" aria-label="Passer en mode sombre"><span class="lr" aria-hidden="true"></span></button>
           <button class="lang-btn fill" type="button" lang="en" aria-label="Switch to English">EN</button>
           <button class="sm-toggle fill" type="button" aria-expanded="false" aria-controls="sm-panel" aria-label="Ouvrir le menu">
             <span class="sm-toggle-textWrap" aria-hidden="true"><span class="sm-toggle-textInner"><span class="sm-toggle-line">Menu</span></span></span>

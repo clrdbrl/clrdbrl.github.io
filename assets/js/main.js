@@ -69,27 +69,6 @@ var IMG = {
   "alt": "Page d'accueil du site Groupe APB",
   "alt_en": "Groupe APB website homepage"
  },
- "pages": {
-  "src": "/images/projets/groupe-apb/groupe-apb-site-pages.webp?v=a7429aa3",
-  "w": 1205,
-  "h": 537,
-  "alt": "Six pages du site Groupe APB",
-  "alt_en": "Six pages of the Groupe APB website"
- },
- "hand": {
-  "src": "/images/projets/groupe-apb/groupe-apb-mobile-main.webp?v=2f78a51f",
-  "w": 580,
-  "h": 976,
-  "alt": "Site Groupe APB affiché sur un smartphone",
-  "alt_en": "Groupe APB website on a smartphone"
- },
- "phones": {
-  "src": "/images/projets/groupe-apb/groupe-apb-mobile-ecrans.webp?v=ca88f6dd",
-  "w": 761,
-  "h": 975,
-  "alt": "Six écrans mobiles du site Groupe APB",
-  "alt_en": "Six mobile screens of the Groupe APB website"
- },
  "apbpro_browser": {
   "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-navigateur.webp?v=73982a6f",
   "w": 628,
@@ -111,13 +90,6 @@ var IMG = {
   "alt": "Logo Groupe APB Pro",
   "alt_en": "Groupe APB Pro logo"
  },
- "apbpro_pages": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-pages.webp?v=0969a749",
-  "w": 1475,
-  "h": 735,
-  "alt": "Pages du site Groupe APB Pro",
-  "alt_en": "Groupe APB Pro website pages"
- },
  "apbpro_palette": {
   "src": "",
   "w": 1050,
@@ -133,9 +105,9 @@ var IMG = {
   "alt_en": "Lifestyle photo with the Groupe APB Pro symbol"
  },
  "apbpro_site": {
-  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-accueil.webp?v=51c07e37",
-  "w": 1474,
-  "h": 970,
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-site-accueil.webp?v=4533cd73",
+  "w": 2400,
+  "h": 1583,
   "alt": "Page d’accueil du site Groupe APB Pro",
   "alt_en": "Groupe APB Pro website homepage"
  },
@@ -174,26 +146,12 @@ var IMG = {
   "alt": "Carte de visite GRPF",
   "alt_en": "GRPF business card"
  },
- "grpf_hand": {
-  "src": "/images/projets/grpf/grpf-mobile-main.webp?v=5eb4aa7f",
-  "w": 612,
-  "h": 1030,
-  "alt": "Site GRPF affiché sur un smartphone",
-  "alt_en": "GRPF website on a smartphone"
- },
  "grpf_logo": {
   "src": "/images/projets/grpf/grpf-logo-anime.gif?v=e4b9b491",
   "w": 1920,
   "h": 956,
   "alt": "Logo GRPF",
   "alt_en": "GRPF logo"
- },
- "grpf_pages": {
-  "src": "/images/projets/grpf/grpf-site-pages.webp?v=d6e5b1f4",
-  "w": 1476,
-  "h": 735,
-  "alt": "Pages du site GRPF",
-  "alt_en": "GRPF website pages"
  },
  "grpf_palette": {
   "src": "",
@@ -202,26 +160,12 @@ var IMG = {
   "alt": "Palette de couleurs de GRPF",
   "alt_en": "GRPF colour palette"
  },
- "grpf_phones": {
-  "src": "/images/projets/grpf/grpf-mobile-ecrans.webp?v=399ef4ef",
-  "w": 803,
-  "h": 1030,
-  "alt": "Écrans mobiles du site GRPF",
-  "alt_en": "GRPF mobile screens"
- },
  "grpf_photo": {
   "src": "/images/projets/grpf/grpf-photo.webp?v=889871d7",
   "w": 823,
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme GRPF",
   "alt_en": "Lifestyle photo with the GRPF symbol"
- },
- "grpf_site": {
-  "src": "/images/projets/grpf/grpf-site-accueil.webp?v=b89ddf96",
-  "w": 1474,
-  "h": 970,
-  "alt": "Page d’accueil du site GRPF",
-  "alt_en": "GRPF website homepage"
  },
  "grpf_slogan": {
   "src": "/images/projets/grpf/grpf-slogan.webp?v=0b3ddb93",
@@ -265,13 +209,6 @@ var IMG = {
   "alt": "Logo NYRO",
   "alt_en": "NYRO logo"
  },
- "nyro_pages": {
-  "src": "/images/projets/nyro/nyro-site-pages.webp?v=7201e787",
-  "w": 1475,
-  "h": 433,
-  "alt": "Pages du site NYRO",
-  "alt_en": "NYRO website pages"
- },
  "nyro_palette": {
   "src": "",
   "w": 1050,
@@ -285,13 +222,6 @@ var IMG = {
   "h": 396,
   "alt": "Photo d’ambiance avec le pictogramme NYRO",
   "alt_en": "Lifestyle photo with the NYRO symbol"
- },
- "nyro_site": {
-  "src": "/images/projets/nyro/nyro-site-accueil.webp?v=bf3a41c6",
-  "w": 1474,
-  "h": 970,
-  "alt": "Page d’accueil du site NYRO",
-  "alt_en": "NYRO website homepage"
  },
  "nyro_slogan": {
   "src": "/images/projets/nyro/nyro-slogan.webp?v=29860c23",
@@ -514,6 +444,237 @@ var IMG = {
   "h": 4832,
   "alt": "One-page d’accueil de 2M Energie",
   "alt_en": "2M Energie home one-page"
+ },
+ "grpf_d1": {
+  "src": "/images/projets/grpf/grpf-d1.webp?v=99772963",
+  "w": 1600,
+  "h": 1057,
+  "alt": "Maquette desktop du site GRPF, page Accueil",
+  "alt_en": "GRPF website desktop mockup, Homepage page"
+ },
+ "grpf_d2": {
+  "src": "/images/projets/grpf/grpf-d2.webp?v=363a0867",
+  "w": 1600,
+  "h": 1057,
+  "alt": "Maquette desktop du site GRPF, page Offre du moment",
+  "alt_en": "GRPF website desktop mockup, Current offers page"
+ },
+ "grpf_d3": {
+  "src": "/images/projets/grpf/grpf-d3.webp?v=b8a76a0a",
+  "w": 1600,
+  "h": 1057,
+  "alt": "Maquette desktop du site GRPF, page Solutions",
+  "alt_en": "GRPF website desktop mockup, Solutions page"
+ },
+ "grpf_d4": {
+  "src": "/images/projets/grpf/grpf-d4.webp?v=58954e8a",
+  "w": 1600,
+  "h": 1060,
+  "alt": "Maquette desktop du site GRPF, page Produits ITE",
+  "alt_en": "GRPF website desktop mockup, External wall insulation product page page"
+ },
+ "grpf_d5": {
+  "src": "/images/projets/grpf/grpf-d5.webp?v=9501bbe9",
+  "w": 1600,
+  "h": 1060,
+  "alt": "Maquette desktop du site GRPF, page À propos",
+  "alt_en": "GRPF website desktop mockup, About page"
+ },
+ "grpf_d6": {
+  "src": "/images/projets/grpf/grpf-d6.webp?v=63eb0572",
+  "w": 1600,
+  "h": 1060,
+  "alt": "Maquette desktop du site GRPF, page Aides",
+  "alt_en": "GRPF website desktop mockup, Grants page"
+ },
+ "grpf_m1": {
+  "src": "/images/projets/grpf/grpf-m1.webp?v=ac1a5b12",
+  "w": 640,
+  "h": 1380,
+  "alt": "Maquette mobile du site GRPF, écran 1",
+  "alt_en": "GRPF website mobile mockup, screen 1"
+ },
+ "grpf_m2": {
+  "src": "/images/projets/grpf/grpf-m2.webp?v=fdd30bc5",
+  "w": 640,
+  "h": 1380,
+  "alt": "Maquette mobile du site GRPF, écran 2",
+  "alt_en": "GRPF website mobile mockup, screen 2"
+ },
+ "grpf_m3": {
+  "src": "/images/projets/grpf/grpf-m3.webp?v=c5409523",
+  "w": 640,
+  "h": 1380,
+  "alt": "Maquette mobile du site GRPF, écran 3",
+  "alt_en": "GRPF website mobile mockup, screen 3"
+ },
+ "grpf_m4": {
+  "src": "/images/projets/grpf/grpf-m4.webp?v=9d32c6cc",
+  "w": 640,
+  "h": 1380,
+  "alt": "Maquette mobile du site GRPF, écran 4",
+  "alt_en": "GRPF website mobile mockup, screen 4"
+ },
+ "grpf_m5": {
+  "src": "/images/projets/grpf/grpf-m5.webp?v=ae2aa9d0",
+  "w": 640,
+  "h": 1380,
+  "alt": "Maquette mobile du site GRPF, écran 5",
+  "alt_en": "GRPF website mobile mockup, screen 5"
+ },
+ "grpf_m6": {
+  "src": "/images/projets/grpf/grpf-m6.webp?v=6a890d12",
+  "w": 640,
+  "h": 1380,
+  "alt": "Maquette mobile du site GRPF, écran 6",
+  "alt_en": "GRPF website mobile mockup, screen 6"
+ },
+ "grpf_site": {
+  "src": "/images/projets/grpf/grpf-site-accueil.webp?v=b89ddf96",
+  "w": 1474,
+  "h": 970,
+  "alt": "Page d’accueil du site GRPF",
+  "alt_en": "GRPF website homepage"
+ },
+ "apb_d1": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-d1.webp?v=dbc5531a",
+  "w": 1600,
+  "h": 1055,
+  "alt": "Groupe APB, maquette desktop, page d'accueil avec méga-menu",
+  "alt_en": "Groupe APB, desktop mockup, home page with mega menu"
+ },
+ "apb_d2": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-d2.webp?v=284d2de5",
+  "w": 1600,
+  "h": 1055,
+  "alt": "Groupe APB, maquette desktop, section chiffres clés et carrière",
+  "alt_en": "Groupe APB, desktop mockup, key figures and careers section"
+ },
+ "apb_d3": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-d3.webp?v=5e749fc9",
+  "w": 1600,
+  "h": 1055,
+  "alt": "Groupe APB, maquette desktop, article de blog",
+  "alt_en": "Groupe APB, desktop mockup, blog article"
+ },
+ "apb_d4": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-d4.webp?v=4efa237d",
+  "w": 1600,
+  "h": 1055,
+  "alt": "Groupe APB, maquette desktop, page des chantiers",
+  "alt_en": "Groupe APB, desktop mockup, projects page"
+ },
+ "apb_d5": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-d5.webp?v=24d70543",
+  "w": 1600,
+  "h": 1055,
+  "alt": "Groupe APB, maquette desktop, page conseils et actualités",
+  "alt_en": "Groupe APB, desktop mockup, advice and news page"
+ },
+ "apb_d6": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-d6.webp?v=74291501",
+  "w": 1600,
+  "h": 1055,
+  "alt": "Groupe APB, maquette desktop, page des pôles d'accompagnement",
+  "alt_en": "Groupe APB, desktop mockup, support teams page"
+ },
+ "apb_m1": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m1.webp?v=30af3212",
+  "w": 640,
+  "h": 1380,
+  "alt": "Groupe APB, maquette mobile, accueil",
+  "alt_en": "Groupe APB, mobile mockup, home"
+ },
+ "apb_m2": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m2.webp?v=2d9da155",
+  "w": 640,
+  "h": 1380,
+  "alt": "Groupe APB, maquette mobile, menu",
+  "alt_en": "Groupe APB, mobile mockup, menu"
+ },
+ "apb_m3": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m3.webp?v=0a2052ed",
+  "w": 640,
+  "h": 1379,
+  "alt": "Groupe APB, maquette mobile, chiffres clés",
+  "alt_en": "Groupe APB, mobile mockup, key figures"
+ },
+ "apb_m4": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m4.webp?v=9790f38c",
+  "w": 640,
+  "h": 1380,
+  "alt": "Groupe APB, maquette mobile, pôles d'accompagnement",
+  "alt_en": "Groupe APB, mobile mockup, support teams"
+ },
+ "apb_m5": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m5.webp?v=51220874",
+  "w": 640,
+  "h": 1380,
+  "alt": "Groupe APB, maquette mobile, article de blog",
+  "alt_en": "Groupe APB, mobile mockup, blog article"
+ },
+ "apb_m6": {
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m6.webp?v=e9cb0b4f",
+  "w": 640,
+  "h": 1380,
+  "alt": "Groupe APB, maquette mobile, chantiers",
+  "alt_en": "Groupe APB, mobile mockup, projects"
+ },
+ "nyro_home1": {
+  "src": "/images/projets/nyro/nyro-home1.webp?v=69405664",
+  "w": 1200,
+  "h": 2345,
+  "alt": "Page d’accueil du site NYRO, partie 1",
+  "alt_en": "NYRO website homepage, part 1"
+ },
+ "nyro_home2": {
+  "src": "/images/projets/nyro/nyro-home2.webp?v=dbf060f3",
+  "w": 1200,
+  "h": 2345,
+  "alt": "Page d’accueil du site NYRO, partie 2",
+  "alt_en": "NYRO website homepage, part 2"
+ },
+ "apbpro_d1": {
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-d1.webp?v=f212a74a",
+  "w": 1600,
+  "h": 1056,
+  "alt": "Groupe APB Pro, maquette desktop, accueil",
+  "alt_en": "Groupe APB Pro, desktop mockup, home page"
+ },
+ "apbpro_d2": {
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-d2.webp?v=c9bfa596",
+  "w": 1600,
+  "h": 1056,
+  "alt": "Groupe APB Pro, maquette desktop, secteur des copropriétés",
+  "alt_en": "Groupe APB Pro, desktop mockup, condominiums sector"
+ },
+ "apbpro_d3": {
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-d3.webp?v=94e53268",
+  "w": 1600,
+  "h": 1056,
+  "alt": "Groupe APB Pro, maquette desktop, secteur industriel",
+  "alt_en": "Groupe APB Pro, desktop mockup, industrial sector"
+ },
+ "apbpro_d4": {
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-d4.webp?v=831ad48b",
+  "w": 1600,
+  "h": 1056,
+  "alt": "Groupe APB Pro, maquette desktop, secteur tertiaire",
+  "alt_en": "Groupe APB Pro, desktop mockup, commercial sector"
+ },
+ "apbpro_d5": {
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-d5.webp?v=3ba34867",
+  "w": 1600,
+  "h": 1056,
+  "alt": "Groupe APB Pro, maquette desktop, secteur agricole",
+  "alt_en": "Groupe APB Pro, desktop mockup, agricultural sector"
+ },
+ "apbpro_d6": {
+  "src": "/images/projets/groupe-apb-pro/groupe-apb-pro-d6.webp?v=72fd91fd",
+  "w": 1600,
+  "h": 1056,
+  "alt": "Groupe APB Pro, maquette desktop, secteur des collectivités",
+  "alt_en": "Groupe APB Pro, desktop mockup, local authorities sector"
  }
 };
 
@@ -541,7 +702,7 @@ fr:{
   metaContact:"Alternance, mission freelance ou projet de marque, contactez CD Pixel Studio, design UI/UX et identité de marque.",
   heroAlt:"Visuel du projet", tProjects:"Projets", tAbout:"À propos", tContact:"Contact",
   brandAria:"CD Pixel Studio, accueil", navAria:"Navigation principale", 
-  menuOpen:"Ouvrir le menu", menuClose:"Fermer le menu", langSwitch:"EN", langAria:"Switch to English",
+  themeDark:"Passer en mode sombre", themeLight:"Passer en mode clair", menuOpen:"Ouvrir le menu", menuClose:"Fermer le menu", langSwitch:"EN", langAria:"Switch to English",
   navHome:"Accueil", navProjects:"Projets", navAbout:"À propos", navContact:"Contact", smMenu:"Menu", smClose:"Fermer",
   socials:"Réseaux sociaux", socialsAria:"Réseaux sociaux", newTab:" (nouvel onglet)",
   footTitle:"Un projet en tête ?", footPortfolio:"Portfolio", footProjects:"Découvrir les projets", footBtn:"Me contacter", toTop:"Revenir en haut de page",
@@ -562,11 +723,11 @@ fr:{
   loading:"Chargement…", viewGrid:"Grille", viewList:"Liste", viewGridA:"Afficher les projets en grille", viewListA:"Afficher les projets en liste", filterAll:"Tous les projets", filterAria:"Filtrer les projets", nProjects:function(n){return n+(n>1?" projets":" projet")},
   allProjects:"Tous les projets", role:"Rôle", company:"Entreprise", year:"Année", tools:"Outils", todo:"À compléter",
   descTodo:"Description de l’entreprise à compléter.", cursorCard:"Découvrir", cursorVisit:"Visiter", footTime:"Basée à Paris", moreTitle:"Autres projets", carAria:"Carrousel des autres projets", tocAria:"Sommaire du projet",
-  chResults:"En quelques chiffres",
+  chResults:"En chiffres",
   
   
   emptyVisuals:"Les visuels de ce projet arrivent bientôt.",
-  ch:{identity:"Identité de marque", applications:"Déclinaisons", website:"Site web",onepage:"One-page",onepages:"One-pages", mobile:"Version mobile", universe:"Univers visuel", campaign:"Campagne d\u2019affichage"},
+  ch:{identity:"Identité de marque", applications:"Déclinaisons", website:"Site web",onepage:"One-page",onepages:"One-pages", mobile:"Version mobile", desktop:"Version desktop", universe:"Univers visuel", campaign:"Campagne d\u2019affichage"},
   
   aboutHi:"À propos",
   aboutLead:"Après plusieurs années dans la communication et le marketing, j’ai choisi de me spécialiser dans le domaine du web, au croisement de l’identité de marque et de l’expérience utilisateur. Aujourd’hui, je conçois des sites qui valorisent les marques, des interfaces qui facilitent les interactions et des identités visuelles qui en révèlent la singularité.",
@@ -587,7 +748,7 @@ en:{
   metaContact:"Work-study, freelance assignment or brand project, get in touch with CD Pixel Studio, UI/UX and brand identity design.",
   heroAlt:"Project visual for", tProjects:"Projects", tAbout:"About", tContact:"Contact",
   brandAria:"CD Pixel Studio, home", navAria:"Main navigation", 
-  menuOpen:"Open menu", menuClose:"Close menu", langSwitch:"FR", langAria:"Passer en français",
+  themeDark:"Switch to dark mode", themeLight:"Switch to light mode", menuOpen:"Open menu", menuClose:"Close menu", langSwitch:"FR", langAria:"Passer en français",
   navHome:"Home", navProjects:"Projects", navAbout:"About", navContact:"Contact", smMenu:"Menu", smClose:"Close",
   socials:"Social media", socialsAria:"Social media", newTab:" (opens in a new tab)",
   footTitle:"Have a project in mind?", footPortfolio:"Portfolio", footProjects:"Discover the projects", footBtn:"Get in touch", toTop:"Back to top",
@@ -612,7 +773,7 @@ en:{
   
   
   emptyVisuals:"Visuals for this project are coming soon.",
-  ch:{identity:"Brand identity", applications:"Applications", website:"Website",onepage:"One-page",onepages:"One-pages", mobile:"Mobile version", universe:"Visual universe", campaign:"Billboard campaign"},
+  ch:{identity:"Brand identity", applications:"Applications", website:"Website",onepage:"One-page",onepages:"One-pages", mobile:"Mobile version", desktop:"Desktop version", universe:"Visual universe", campaign:"Billboard campaign"},
   
   aboutHi:"About",
   aboutLead:"After several years in communication and marketing, I chose to specialise in the web, where brand identity meets user experience. Today, I design websites that showcase brands, interfaces that make interactions easier and visual identities that reveal what makes them unique.",
@@ -731,8 +892,8 @@ var PROJECTS=[
           {to:30,plus:true,label:{fr:"composants UI créés, cartes, boutons d\u2019action, formulaires, avis clients, FAQ\u2026",en:"UI components built, cards, CTAs, forms, testimonials, FAQ\u2026"}},
           {to:8,label:{fr:"points d\u2019entrée vers la conversion, du contact aux pages services et au guide des aides financières.",en:"conversion entry points, from contact to service pages and financial aid guidance."}}],
    chapters:std("grpf",[
-     {key:"website",rows:[{type:"row",items:["grpf_site"],framed:true},{type:"row",items:["grpf_pages"],framed:true}]},
-     {key:"mobile",rows:[{type:"row",items:["grpf_hand","grpf_phones"],framed:true}]}])},
+     {key:"website",rows:[{type:"row",items:["grpf_site"],framed:true},{type:"row",items:["grpf_d1","grpf_d2"],shot:true},{type:"row",items:["grpf_d3","grpf_d4"],shot:true},{type:"row",items:["grpf_d5","grpf_d6"],shot:true}]},
+     {key:"mobile",rows:[{type:"row",items:["grpf_m1","grpf_m2","grpf_m3","grpf_m4","grpf_m5","grpf_m6"],shot:true,keep:true}]}])},
   {slug:"groupe-apb", name:"Groupe APB", year:"2026", color:"#1E49CA", cover:"mk_apb", category:CAT, tags:["Branding","UX","UI"],
    role:{fr:"Brand et UI/UX Designer",en:"Brand and UI/UX Designer"},
    stats:[{to:5,label:{fr:"univers d\u2019offres structurés, isolation, chauffage, solaire, ventilation et menuiserie.",en:"offer categories structured, insulation, heating, solar, ventilation and joinery."}},
@@ -744,8 +905,8 @@ var PROJECTS=[
    chapters:[
      {key:"identity",rows:[{type:"row",items:["logo"]},{type:"row",items:["browser","house"]},{type:"row",items:["typo","palette"]},{type:"row",items:["apb_icons"]}]},
      {key:"applications",rows:[{type:"stack",left:["sign","slogan"],right:"tote"}]},
-     {key:"website",rows:[{type:"row",items:["site"],framed:true},{type:"row",items:["pages"],framed:true}]},
-     {key:"mobile",rows:[{type:"row",items:["hand","phones"],framed:true}]}]},
+     {key:"website",rows:[{type:"row",items:["site"],framed:true},{type:"row",items:["apb_d1","apb_d2"],shot:true},{type:"row",items:["apb_d3","apb_d4"],shot:true},{type:"row",items:["apb_d5","apb_d6"],shot:true}]},
+     {key:"mobile",rows:[{type:"row",items:["apb_m1","apb_m2","apb_m3","apb_m4","apb_m5","apb_m6"],shot:true,keep:true}]}]},
   {slug:"nyro", name:"NYRO", year:"2025", color:"#F1EEFF", cover:"mk_nyro", noResults:true, tags:["Branding","UI"],
    category:{fr:"Identité de marque et site e-commerce",en:"Brand identity and e-commerce website"},
    description:{fr:["NYRO est née d\u2019une conviction simple, la beauté doit être révélée et non masquée. Le projet donne vie à une marque de soins naturels, sains et efficaces, adaptés à toutes les peaux et carnations, dont les formules s\u2019appuient sur la recherche dermatologique et une efficacité validée cliniquement.",
@@ -753,11 +914,11 @@ var PROJECTS=[
                 en:["NYRO was born from a simple belief, beauty should be revealed, not masked. The project brings to life a natural skincare brand, healthy and effective, suited to every skin type and tone, with formulas grounded in dermatological research and clinically proven efficacy.",
                     "The visual identity expresses this standard through a clean, luminous universe. White and blue inspire trust, violet evokes the gentleness of care and red adds warmth. At the crossroads of medical rigour and sensitivity, it embodies an inclusive vision of natural beauty."]},
    
-   chapters:(function(c){c[1].rows.push({type:"row",items:["nyro_prod"]},{type:"row",items:["nyro_schema"],framed:true});return c})(std("nyro",[{key:"onepage",rows:[{type:"row",items:["nyro_site"],framed:true},{type:"row",items:["nyro_pages"],framed:true}]}]))},
+   chapters:(function(c){c[1].rows.push({type:"row",items:["nyro_prod"]},{type:"row",items:["nyro_schema"],framed:true});return c})(std("nyro",[{key:"onepage",rows:[{type:"row",items:["nyro_home1","nyro_home2"],shot:true,keep:true}]}]))},
   {slug:"groupe-apb-pro", noResults:true, name:"Groupe APB Pro", year:"2025", color:"#02113E", cover:"mk_apbpro", category:CAT, tags:["Branding","UX","UI"],
    description:{fr:["Groupe APB Pro est la branche professionnelle de Groupe APB, proposant des solutions de rénovation énergétique adaptées aux copropriétés, à l’industrie, au secteur tertiaire, au monde agricole et aux collectivités.", "Le projet a porté sur la refonte de l’identité de marque et du site web afin d’adapter la communication aux différents profils professionnels et aux enjeux propres à chaque secteur. L’objectif était de faciliter l’identification des solutions adaptées à chaque activité, tout en renforçant la clarté de l’offre, la crédibilité de la marque et l’expérience utilisateur."],
                 en:["Groupe APB Pro is the professional branch of Groupe APB, offering energy renovation solutions tailored to co-ownership properties, industry, the service sector, agriculture and local authorities.", "The project covered the redesign of the brand identity and website to adapt communication to different professional profiles and to the specific challenges of each sector. The goal was to make it easier to identify the right solutions for each activity, while strengthening the clarity of the offer, brand credibility and the user experience."]},
-   chapters:std("apbpro",[{key:"website",rows:[{type:"row",items:["apbpro_site"],framed:true},{type:"row",items:["apbpro_pages"],framed:true}]}])},
+   chapters:std("apbpro",[{key:"website",desk:true,rows:[{type:"row",items:["apbpro_site"],shot:true},{type:"row",items:["apbpro_d1","apbpro_d2"],shot:true,mhide1:true},{type:"row",items:["apbpro_d4","apbpro_d3"],shot:true},{type:"row",items:["apbpro_d5","apbpro_d6"],shot:true}]}])},
   {slug:"2m-energie", name:"2M Energie", year:"2025", color:"#F1FAEC", cover:"mk_m2", noResults:true, category:CAT, tags:["Branding","UI"],
    description:{fr:["2M Energie est une entreprise française spécialisée dans la rénovation énergétique des particuliers, proposant des solutions telles que l’installation de panneaux solaires et de pompes à chaleur.", "Le projet a porté sur la création de l’identité visuelle et la conception des maquettes du site web, avec pour objectif de développer une image moderne et accessible, reflétant l’expertise de la marque. Le design vise à inspirer confiance, à valoriser l’innovation et à mettre en avant un accompagnement personnalisé des propriétaires dans leurs projets de rénovation énergétique."],
                 en:["2M Energie is a French company specialising in energy renovation for homeowners, offering solutions such as solar panel and heat pump installation.", "The project covered the creation of the visual identity and the design of the website mock-ups, with the aim of building a modern, accessible image that reflects the brand’s expertise. The design sets out to inspire trust, highlight innovation and showcase personalised support for homeowners throughout their energy renovation projects."]},
@@ -1004,14 +1165,23 @@ function renderRow(r){
     var a=ratio(r.left[0]),b=ratio(r.right)*2;
     return `<div class="stack" style="--cols:${a.toFixed(3)}fr ${b.toFixed(3)}fr"><div class="stack-left">${r.left.map(k=>tile(k)).join("")}</div>${tile(r.right,"tall")}</div>`;
   }
-  return `<div class="row${r.keep?" keep":""}" style="--cols:${(function(){var rs=r.items.map(ratio),sm=rs.reduce((x,y)=>x+y,0),f=sm<1?1/sm:1;return rs.map(x=>(x*f).toFixed(3)+"fr").join(" ")})()}">${r.items.map(k=>tile(k,r.framed?"framed":"")).join("")}</div>`;
+  return `<div class="row${r.keep?" keep":""}${r.mhide1?" mhide1":""}" style="--cols:${(function(){var rs=r.items.map(ratio),sm=rs.reduce((x,y)=>x+y,0),f=sm<1?1/sm:1;return rs.map(x=>(x*f).toFixed(3)+"fr").join(" ")})()}">${r.items.map(k=>tile(k,r.shot?"shot":r.framed?"framed":"")).join("")}</div>`;
 }
 function pageCase(p){
   var next=PROJECTS[(PROJECTS.indexOf(p)+1)%PROJECTS.length];
   var todo=`<span class="todo">${t("todo")}</span>`;
   var tools=p.toolList?`<ul class="tags">${p.toolList.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:todo;
   var chapters=[];
-  (p.chapters||[]).forEach(c=>chapters.push({id:"ch-"+c.key,title:t("ch")[c.key],html:`<div class="bento">${c.rows.map(r=>`<div data-reveal>${renderRow(r)}</div>`).join("")}</div>`}));
+  var rowsHtml=rs=>rs.map(r=>`<div data-reveal>${renderRow(r)}</div>`).join(""),subH=k=>`<h3 class="ch-sub" data-reveal>${t("ch")[k]}</h3>`;
+  (p.chapters||[]).forEach(function(c,i,all){
+    if(c.key==="mobile"&&i&&all[i-1].key==="website")return; /* fusionné dans « Site web », pas dans le sommaire */
+    var nx=all[i+1],html;
+    if(c.key==="website"&&nx&&nx.key==="mobile"||c.desk){
+      var cut=c.rows.length>1?1:0;
+      html=`<div class="bento">${rowsHtml(c.rows.slice(0,cut))}${subH("desktop")}${rowsHtml(c.rows.slice(cut))}${c.desk?"":subH("mobile")+rowsHtml(nx.rows)}</div>`;
+    }else html=`<div class="bento">${rowsHtml(c.rows)}</div>`;
+    chapters.push({id:"ch-"+c.key,title:t("ch")[c.key],html:html});
+  });
   if(!p.chapters)chapters.push({id:"ch-visuals",title:t("ch").identity,html:`<div class="empty-tile" style="--c:${p.color}"><span>${t("emptyVisuals")}</span></div>`});
   var res=L(p.results);
   if(!p.noResults)chapters.push({id:"ch-results",title:p.resultsTitle?L(p.resultsTitle):t("chResults"),html:statsBlock(p)+`<div class="ch-text">${res?res.map(x=>`<p>${esc(x)}</p>`).join(""):""}</div>`});
@@ -1285,6 +1455,7 @@ function applyStatic(){
   document.querySelectorAll("[data-path]").forEach(el=>{el.setAttribute("href",u(el.getAttribute("data-path")))});
   document.querySelectorAll(".js-behance").forEach(a=>{if(BEHANCE_URL)a.href=BEHANCE_URL});
   document.querySelectorAll(".js-linkedin").forEach(a=>{if(LINKEDIN_URL)a.href=LINKEDIN_URL});
+  if(window.__themeSync)window.__themeSync();
   document.querySelectorAll(".lang-btn").forEach(lb=>{rollLabel(lb,t("langSwitch"));lb.setAttribute("aria-label",t("langAria"));lb.setAttribute("lang",LANG==="fr"?"en":"fr")});
   if(window.__clockTick)window.__clockTick();
   var bu=document.querySelector(".sm-toggle");
@@ -2116,6 +2287,40 @@ window.__prerender=function(path){var r=resolve(path);return {html:r.html,title:
 /* ===== Décors : motifs et formes en parallaxe pour animer le scroll ===== */
 /* [sélecteur, type, couleur, position CSS, taille, vitesse de parallaxe, rotation au scroll] */
 
+/* ===== Header : se cache en descendant, réapparaît en remontant ===== */
+(function(){
+  var h=document.querySelector(".site-header");if(!h)return;
+  var last=scrollY,raf=0,root=document.documentElement;
+  function upd(){raf=0;var y=Math.max(0,scrollY),d=y-last;
+    if(root.classList.contains("sm-open")||y<h.offsetHeight){h.classList.remove("hdr-hide");last=y;return}
+    if(d>6){h.classList.add("hdr-hide");last=y}
+    else if(d<-6){h.classList.remove("hdr-hide");last=y}}
+  addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(upd)},{passive:true});
+  h.addEventListener("focusin",function(){h.classList.remove("hdr-hide")});
+})();
+/* ===== Mode clair / sombre : bouton rond du header (et pilule dans le menu sur mobile), choix gardé sur cet appareil ===== */
+(function(){
+  var btns=[].slice.call(document.querySelectorAll(".theme-btn"));if(!btns.length)return;var root=document.documentElement;
+  var ICON={moon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>',
+    sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>'};
+  var isDark=()=>root.getAttribute("data-theme")==="dark";
+  function roll(btn,html,anim){var w=btn.querySelector(".lr");
+    if(!anim||reduce||!w.firstChild){w.innerHTML='<span class="lr-i">'+html+'</span>';return}
+    w.querySelectorAll(".lr-i.out").forEach(x=>x.remove());var old=w.lastElementChild,nx=document.createElement("span");nx.className="lr-i in";nx.innerHTML=html;w.appendChild(nx);
+    old.classList.add("out");setTimeout(()=>old.remove(),560);setTimeout(()=>nx.classList.remove("in"),560)}
+  function sync(anim){var d=isDark();btns.forEach(function(b){
+    var ic=d?ICON.sun:ICON.moon,txt=b.classList.contains("theme-btn--txt");
+    roll(b,txt?'<span>'+t(d?"themeLightS":"themeDarkS")+'</span>'+ic:ic,anim);
+    b.setAttribute("aria-pressed",String(d));b.setAttribute("aria-label",t(d?"themeLight":"themeDark"))})}
+  window.__themeSync=function(){sync(false)};
+  btns.forEach(function(b){b.addEventListener("click",function(){
+    var d=!isDark();root.classList.add("theme-anim");
+    if(d)root.setAttribute("data-theme","dark");else root.removeAttribute("data-theme");
+    try{localStorage.setItem("cd-theme",d?"dark":"light")}catch(e){}
+    sync(true);setTimeout(function(){root.classList.remove("theme-anim")},450);
+  })});
+  sync(false);
+})();
 /* ===== Heure de Paris dans le menu ouvert (heures:minutes, secondes en gris), mise à jour chaque seconde ===== */
 (function(){
   var el=document.querySelector(".js-clock"),sec=document.querySelector(".js-clock-s"),off=document.querySelector(".js-clock-off");if(!el||!window.Intl)return;
