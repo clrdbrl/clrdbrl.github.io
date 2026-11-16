@@ -579,42 +579,42 @@ var IMG = {
   "alt_en": "Groupe APB, desktop mockup, support teams page"
  },
  "apb_m1": {
-  "src": "/images/projets/groupe-apb/groupe-apb-apb-m1.webp?v=30af3212",
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m1.webp?v=bcf8bc40",
   "w": 640,
   "h": 1380,
   "alt": "Groupe APB, maquette mobile, accueil",
   "alt_en": "Groupe APB, mobile mockup, home"
  },
  "apb_m2": {
-  "src": "/images/projets/groupe-apb/groupe-apb-apb-m2.webp?v=2d9da155",
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m2.webp?v=c7e8251b",
   "w": 640,
   "h": 1380,
   "alt": "Groupe APB, maquette mobile, menu",
   "alt_en": "Groupe APB, mobile mockup, menu"
  },
  "apb_m3": {
-  "src": "/images/projets/groupe-apb/groupe-apb-apb-m3.webp?v=0a2052ed",
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m3.webp?v=00ae83bc",
   "w": 640,
   "h": 1379,
   "alt": "Groupe APB, maquette mobile, chiffres clés",
   "alt_en": "Groupe APB, mobile mockup, key figures"
  },
  "apb_m4": {
-  "src": "/images/projets/groupe-apb/groupe-apb-apb-m4.webp?v=9790f38c",
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m4.webp?v=570e9d7b",
   "w": 640,
   "h": 1380,
   "alt": "Groupe APB, maquette mobile, pôles d'accompagnement",
   "alt_en": "Groupe APB, mobile mockup, support teams"
  },
  "apb_m5": {
-  "src": "/images/projets/groupe-apb/groupe-apb-apb-m5.webp?v=51220874",
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m5.webp?v=97e89669",
   "w": 640,
   "h": 1380,
   "alt": "Groupe APB, maquette mobile, article de blog",
   "alt_en": "Groupe APB, mobile mockup, blog article"
  },
  "apb_m6": {
-  "src": "/images/projets/groupe-apb/groupe-apb-apb-m6.webp?v=e9cb0b4f",
+  "src": "/images/projets/groupe-apb/groupe-apb-apb-m6.webp?v=2a95f6ae",
   "w": 640,
   "h": 1380,
   "alt": "Groupe APB, maquette mobile, chantiers",
