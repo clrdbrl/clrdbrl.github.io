@@ -621,7 +621,7 @@ var IMG = {
   "alt_en": "Groupe APB, mobile mockup, projects"
  },
  "nyro_home1": {
-  "src": "/images/projets/nyro/nyro-home1.webp?v=69405664",
+  "src": "/images/projets/nyro/nyro-home1.webp?v=79b1547e",
   "w": 1200,
   "h": 2345,
   "alt": "Page d’accueil du site NYRO, partie 1",
