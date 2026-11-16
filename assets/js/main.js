@@ -621,16 +621,16 @@ var IMG = {
   "alt_en": "Groupe APB, mobile mockup, projects"
  },
  "nyro_home1": {
-  "src": "/images/projets/nyro/nyro-home1.webp?v=79b1547e",
+  "src": "/images/projets/nyro/nyro-home1.webp?v=7001b7ca",
   "w": 1200,
   "h": 2345,
   "alt": "Page d’accueil du site NYRO, partie 1",
   "alt_en": "NYRO website homepage, part 1"
  },
  "nyro_home2": {
-  "src": "/images/projets/nyro/nyro-home2.webp?v=dbf060f3",
+  "src": "/images/projets/nyro/nyro-home2.webp?v=f9132ad1",
   "w": 1200,
-  "h": 2345,
+  "h": 2332,
   "alt": "Page d’accueil du site NYRO, partie 2",
   "alt_en": "NYRO website homepage, part 2"
  },

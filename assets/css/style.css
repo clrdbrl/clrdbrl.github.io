@@ -140,19 +140,6 @@ main:focus {
   font-size: 1.125rem;
   white-space: nowrap;
 }
-/* Emplacement du logo : remplacer <span class="logo-slot"> par <img class="logo-slot" src="..." alt=""> */
-.logo-slot {
-  width: 32px;
-  height: 32px;
-  flex: none;
-  border-radius: 50%;
-  border: 1.5px dashed rgba(255,255,255,.35);
-}
-img.logo-slot {
-  border: 0;
-  border-radius: 0;
-  object-fit: contain;
-}
 .bar-end {
   display: flex;
   align-items: center;
@@ -243,9 +230,7 @@ img.logo-slot {
   border: 1px solid var(--c-border);
   color: var(--c-ink);
 }
-.site-header .logo-slot {
-  border-color: rgba(26,26,26,.35);
-}
+
 .site-header .bar-end {
   gap: 8px;
 }
@@ -856,13 +841,11 @@ img.logo-slot {
   }
 }
 
-
 @media (hover:none) {
   .cta-card:active .fill::before {
     clip-path: circle(150% at 50% 50%);
   }
 }
-
 
 @media (min-width:900px) {
   .proj.stack-card {
@@ -1176,17 +1159,7 @@ img.logo-slot {
   justify-content: space-between;
 }
 /* Segment « rubber » des filtres */
-.rseg-scroll {
-  min-width: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  margin: -6px;
-  padding: 6px;
-}
-.rseg-scroll::-webkit-scrollbar {
-  display: none;
-}
+
 .rseg {
   position: relative;
   display: inline-grid;
@@ -1258,11 +1231,6 @@ img.logo-slot {
   border-radius: 999px;
   pointer-events: none;
   clip-path: inset(0 100% 0 0 round 999px);
-}
-.rseg-copy {
-  color: inherit;
-  opacity: 1;
-  cursor: default;
 }
 
 @media (max-width:719px) {
@@ -1444,14 +1412,11 @@ img.logo-slot {
   }
 }
 
-
 @media (max-width:719px) {
   .gsel {
     display: inline-block;
   }
-  .filters .rseg-scroll {
-    display: none;
-  }
+
 }
 
 .chip {
@@ -2038,10 +2003,7 @@ img.logo-slot {
   opacity: .45;
   transition: filter var(--skc-dur) ease,opacity var(--skc-dur) ease;
 }
-.skc-slide.is-active .skc-title {
-  filter: none;
-  opacity: 1;
-}
+
 .skc-slide:focus-visible {
   outline: none;
 }
@@ -2336,7 +2298,6 @@ img.logo-slot {
   transform: translate(-50%,0);
 }
 
-
 /* Bouton copier : même remplissage citron que les autres boutons, sans couper « Copiée » */
 .ct-copy.fill {
   overflow: visible;
@@ -2485,7 +2446,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     border-color: var(--c-accent);
   }
 }
-
 
 @media (hover:none) {
   .fill:active::before, .to-top:active .fill::before {
@@ -2641,7 +2601,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     height: 56px;
   }
 }
-
 
 @media (prefers-reduced-motion:reduce) {
   *, *::before, *::after {
@@ -2876,7 +2835,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
-
 @media (max-width:899px) {
   .feat-cta .cta-card {
     aspect-ratio: auto;
@@ -2901,7 +2859,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     margin-top: 80px;
   }
 }
-
 
 @media (min-width:900px) {
   .about-hero .lead {
@@ -3072,13 +3029,11 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
-
 @media (min-width:768px) and (max-width:1023px) {
   .mc-list {
     grid-template-columns: 1fr;
   }
 }
-
 
 @media (max-width:767px) {
   .mc-front {
@@ -3091,7 +3046,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     grid-template-columns: repeat(3,minmax(0,1fr));
   }
 }
-
 
 @media (max-width:599px) {
   .mc-list {
@@ -3112,7 +3066,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     margin-top: 140px;
   }
 }
-
 
 @media (max-width:719px) {
   .pg-home #app>section.hero+#home-projets {
@@ -3303,22 +3256,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   line-height: 1.6;
   max-width: 62ch;
 }
-.ap-outs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-}
-.ap-outs .badges {
-  display: contents;
-}
-.ap-outs-l {
-  font-family: var(--f-display);
-  font-weight: 500;
-  font-size: .9375rem;
-  color: var(--c-ink);
-  margin-right: 4px;
-}
+
 .ap-toggle {
   display: none;
 }
@@ -3345,7 +3283,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     margin-bottom: 0;
   }
 }
-
 
 @media (max-width:767px) {
   .ap-row {
@@ -3405,9 +3342,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   .ap-text {
     margin-bottom: 16px;
   }
-  .ap-inner .ap-outs {
-    padding-bottom: 4px;
-  }
+
 }
 
 /* À propos : mêmes espacements que la homepage */
@@ -3423,7 +3358,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     padding-bottom: 96px;
   }
 }
-
 
 @media (min-width:720px) and (max-width:1199px) {
   .pg-about #app>section+section {
@@ -3589,10 +3523,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   font: 600 clamp(1.375rem,2vw,1.75rem)/1.1 var(--f-display);
   letter-spacing: -.02em;
 }
-.ct-soc-s {
-  color: var(--c-ink-soft);
-  font-size: .9375rem;
-}
 
 @media (hover:hover) {
   .ct-soc:hover .ct-ico-o {
@@ -3624,7 +3554,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
-
 @media (min-width:600px) and (max-width:899px) {
   .ct-bento {
     grid-template-columns: repeat(2,minmax(0,1fr));
@@ -3636,7 +3565,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     min-height: 0;
   }
 }
-
 
 @media (max-width:599px) {
   .ct-mail {
@@ -3757,7 +3685,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
-
 @media (max-width:599px) {
   .ct-mail .ct-addr-row {
     flex-wrap: nowrap;
@@ -3852,16 +3779,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   grid-template-columns: 1fr;
 }
 /* v105 : nom, logos, chips contact */
-.hero-name {
-  margin: 48px 0 0;
-  font: 600 clamp(1rem,1.3vw,1.25rem)/1.2 var(--f-display);
-  letter-spacing: .01em;
-  color: var(--c-ink);
-}
-.anim .hero .hero-name {
-  animation: fadeUp .9s var(--ease-out) both;
-  animation-delay: .08s;
-}
+
 .ll-sec {
   display: grid;
   justify-items: center;
@@ -3935,13 +3853,11 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
-
 @media (min-width:720px) and (max-width:1199px) {
   .pg-home #app>.ll-sec+#home-projets {
     margin-top: 140px;
   }
 }
-
 
 @media (max-width:719px) {
   .pg-home #app>.ll-sec+#home-projets {
@@ -3985,9 +3901,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
-.hero-name+h1 {
-  margin-top: 32px;
-}
 .ll {
   --ll-gap: 96px;
 }
@@ -4037,7 +3950,6 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
     margin-top: 88px;
   }
 }
-
 
 @media (hover:hover) {
   .mc:hover .mc-btn.fill::before {
@@ -4195,20 +4107,17 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
   }
 }
 
-
 @media (min-width:600px) {
   .ct-soc {
     min-height: 168px;
   }
 }
 
-
 @media (max-width:599px) {
   .ct-mail .ct-address {
     font-size: clamp(.875rem,4.3vw,1.375rem);
   }
 }
-
 
 /* Heure de Paris (menu ouvert), au-dessus des réseaux */
 .sm-time {
@@ -4494,9 +4403,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 .gsel {
   display: inline-block !important;
 }
-.filters .rseg-scroll {
-  display: none !important;
-}
+
 /* le bouton du filtre a la même largeur que son menu (280 px), et rétrécit sur mobile sans toucher le bouton Grille / Liste */
 .filters {
   gap: 12px;
@@ -4554,9 +4461,7 @@ a:focus-visible .ul::after, button:focus-visible .ul::after, a.ul:focus-visible:
 }
 
 /* accueil : plus de bandeau « Ouverte aux nouvelles opportunités », le nom ouvre le hero */
-.hero>.hero-name:first-child {
-  margin-top: 0;
-}
+
 .hero>h1:first-child {
   margin-top: 0;
 }
@@ -4860,7 +4765,7 @@ html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *
   opacity: 0 !important;
   transform: translateY(40px) !important;
 }
-.is-loading .hero h1 .line>span, .is-loading .hero .status, .is-loading .hero-name, .is-loading .hero-lead, .is-loading .hero .btn-row {
+.is-loading .hero h1 .line>span, .is-loading .hero .status, .is-loading .hero-lead, .is-loading .hero .btn-row {
   animation-play-state: paused !important;
 }
 .toc button:focus:not(:focus-visible) {
